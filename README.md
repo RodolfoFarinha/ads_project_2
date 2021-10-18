@@ -10,3 +10,6 @@ After the results obtained, the application allows users to manually adjust sche
 ## App
 
 App project was developed in Angular 9.1.15
+
+ssh -i ./ads_key.pem ubuntu@adsapi.menu-ai.com
+
