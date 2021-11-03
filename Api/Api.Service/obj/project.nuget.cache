@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ErBUJRwqih3yk7gvinyvt+ZzJ7FVvXOTJKacT9QmuZyxOmxqOTvkX7E+AH4j3EkhnYqlhUe3F895MxON1B9FVg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rodol\\Documentos\\GitHub\\ads_project_2\\ApiNetCore\\Api.Service\\Api.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rodol\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\rodol\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\rodol\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

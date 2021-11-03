@@ -1,0 +1,165 @@
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Serilog.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Serilog.AspNetCore.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Serilog.Extensions.Hosting.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Serilog.Extensions.Logging.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Serilog.Formatting.Compact.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Serilog.Settings.Configuration.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.Console.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.Debug.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.Domain.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.Service.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.Service.pdb
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.Domain.pdb
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.csprojAssemblyReference.cache
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.AssemblyInfoInputs.cache
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.AssemblyInfo.cs
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.csproj.CoreCompileInputs.cache
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\staticwebassets\Api.StaticWebAssets.Manifest.cache
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\staticwebassets\Api.StaticWebAssets.xml
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\scopedcss\bundle\Api.styles.css
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.RazorTargetAssemblyInfo.cache
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.pdb
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.exe
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.deps.json
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.runtimeconfig.json
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.runtimeconfig.dev.json
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.pdb
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.csproj.CopyComplete
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.genruntimeconfig.cache
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.Infra.CrossCutting.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.Infra.Data.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.Infra.CrossCutting.pdb
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.Infra.Data.pdb
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.exe
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.deps.json
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.runtimeconfig.json
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.runtimeconfig.dev.json
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Serilog.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Serilog.AspNetCore.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Serilog.Extensions.Hosting.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Serilog.Extensions.Logging.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Serilog.Formatting.Compact.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Serilog.Settings.Configuration.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.Console.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.Debug.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.Domain.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.Infra.CrossCutting.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.Infra.Data.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.Service.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.Infra.CrossCutting.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.Domain.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.Infra.Data.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.Service.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.csprojAssemblyReference.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.AssemblyInfoInputs.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.AssemblyInfo.cs
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.csproj.CoreCompileInputs.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\staticwebassets\Api.StaticWebAssets.Manifest.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\staticwebassets\Api.StaticWebAssets.xml
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\scopedcss\bundle\Api.styles.css
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.RazorTargetAssemblyInfo.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.csproj.CopyComplete
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\obj\Debug\netcoreapp3.1\Api.genruntimeconfig.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\web.config
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api\bin\Debug\netcoreapp3.1\Api.xml

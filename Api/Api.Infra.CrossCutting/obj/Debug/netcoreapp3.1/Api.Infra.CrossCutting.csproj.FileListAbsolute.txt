@@ -1,0 +1,33 @@
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\Api.Infra.CrossCutting.deps.json
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\Api.Infra.CrossCutting.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\Api.Infra.CrossCutting.pdb
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\Api.Domain.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\Api.Infra.Data.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\Api.Service.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\Api.Infra.Data.pdb
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\Api.Service.pdb
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\Api.Domain.pdb
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\obj\Debug\netcoreapp3.1\Api.Infra.CrossCutting.csprojAssemblyReference.cache
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\obj\Debug\netcoreapp3.1\Api.Infra.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\obj\Debug\netcoreapp3.1\Api.Infra.CrossCutting.AssemblyInfo.cs
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\obj\Debug\netcoreapp3.1\Api.Infra.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\obj\Debug\netcoreapp3.1\Api.Infra.CrossCutting.csproj.CopyComplete
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\obj\Debug\netcoreapp3.1\Api.Infra.CrossCutting.dll
+C:\Users\rodol\Documentos\Documentos\Documentos\Escola\ISCTE-IUL\2º Ano\1º Semestre 2021\(ADS) - Arquitetura de Software\Project\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\obj\Debug\netcoreapp3.1\Api.Infra.CrossCutting.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\Api.Infra.CrossCutting.deps.json
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\Api.Infra.CrossCutting.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\Api.Infra.CrossCutting.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\Api.Domain.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\Api.Infra.Data.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\Api.Service.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\Api.Infra.Data.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\Api.Service.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\Api.Domain.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\obj\Debug\netcoreapp3.1\Api.Infra.CrossCutting.csprojAssemblyReference.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\obj\Debug\netcoreapp3.1\Api.Infra.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\obj\Debug\netcoreapp3.1\Api.Infra.CrossCutting.AssemblyInfo.cs
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\obj\Debug\netcoreapp3.1\Api.Infra.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\obj\Debug\netcoreapp3.1\Api.Infra.CrossCutting.csproj.CopyComplete
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\obj\Debug\netcoreapp3.1\Api.Infra.CrossCutting.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\obj\Debug\netcoreapp3.1\Api.Infra.CrossCutting.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.CrossCutting\bin\Debug\netcoreapp3.1\ApiInfraCrossCutting.xml

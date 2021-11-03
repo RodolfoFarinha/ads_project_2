@@ -1,0 +1,105 @@
+using Api.Indra.CrossCutting.DependecyContainer;
+using Api.Infra.CrossCutting.Middleware;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
+using Serilog;
+using System;
+using System.IO;
+using System.Reflection;
+
+namespace Api
+{
+    /// <summary>
+    /// Startup api 
+    /// </summary>
+    public class Startup
+    {
+        private IConfiguration Configuration { get; }
+
+        /// <summary>
+        /// Constructor of startup
+        /// </summary>
+        /// <param name="configuration"></param>
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
+        /// <summary>
+        /// Configuration of services collection
+        /// </summary>
+        /// <param name="services"></param>
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddApiConfigurations(Configuration);
+
+            services.AddControllers();
+
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc(
+                    "Api",
+                    new Microsoft.OpenApi.Models.OpenApiInfo()
+                    {
+                        Title = "Shcedule Api",
+                        Version = "1.0"
+                    }
+                );
+
+                var xmlCommentsFiles = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlCommentsFullPath = Path.Combine(AppContext.BaseDirectory, xmlCommentsFiles);
+
+                options.IncludeXmlComments(xmlCommentsFullPath);
+            });
+        }
+
+        /// <summary>
+        /// Configuration of application and host environment
+        /// </summary>
+        /// <param name="app"></param>
+        /// <param name="env"></param>
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            app.UseSerilogRequestLogging(options =>
+            {
+                var assembly = System.Reflection.Assembly.GetEntryAssembly()?.GetName().Name;
+                options.MessageTemplate =
+                    "{" + assembly +
+                    "} HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms";
+                options.EnrichDiagnosticContext = SerilogConfiguration.EnrichFromRequest;
+            });
+
+            app.UseMiddleware<ErrorHandlingMiddleware>();
+            app.UseStaticFiles();
+            app.UseCors("CorsPolicy");
+
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
+                RequestPath = new PathString("/Resources")
+            });
+
+            //app.UseAuthentication();
+            //app.UseAuthorization();
+
+            app.UseSwagger()
+                .UseSwaggerUI(options =>
+                {
+                    options.SwaggerEndpoint("swagger/Api/swagger.json", "Api");
+                    options.RoutePrefix = "";
+                }    
+            );
+
+            app.UseRouting();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
+        }
+    }
+}
