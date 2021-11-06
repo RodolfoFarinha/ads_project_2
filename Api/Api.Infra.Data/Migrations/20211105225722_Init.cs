@@ -35,6 +35,29 @@ namespace Api.Infra.Data.Migrations
             //    });
 
             migrationBuilder.CreateTable(
+                name: "Configurations",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
+                    ConfigurationKey = table.Column<byte[]>(type: "varbinary(16)", nullable: false),
+                    Key = table.Column<string>(type: "varchar(250)", maxLength: 250, nullable: true),
+                    Value = table.Column<string>(type: "varchar(250)", maxLength: 250, nullable: true),
+                    CreateUser = table.Column<string>(type: "varchar(250)", maxLength: 250, nullable: true),
+                    CreateDate = table.Column<DateTime>(type: "datetime", nullable: true),
+                    ModifyUser = table.Column<string>(type: "varchar(250)", maxLength: 250, nullable: true),
+                    ModifyDate = table.Column<DateTime>(type: "datetime", nullable: true),
+                    Deleted = table.Column<bool>(type: "tinyint(1)", nullable: false),
+                    DeleteUser = table.Column<string>(type: "varchar(250)", maxLength: 250, nullable: true),
+                    DeleteDate = table.Column<DateTime>(type: "datetime", nullable: true),
+                },
+                constraints: table =>
+                {
+                    table.UniqueConstraint("AK_ConfigurationsId", x => x.Id);
+                    table.PrimaryKey("PK_Configurations", x => x.ConfigurationKey);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Buildings",
                 columns: table => new
                 {
@@ -279,6 +302,7 @@ namespace Api.Infra.Data.Migrations
                     ScheduleVersion = table.Column<int>(type: "int", nullable: false),
                     ShiftKey = table.Column<byte[]>(type: "varbinary(16)", nullable: false),
                     UnitKey = table.Column<byte[]>(type: "varbinary(16)", nullable: false),
+                    ShiftName = table.Column<string>(type: "varchar(250)", maxLength: 250, nullable: true),
                     ShiftType = table.Column<byte[]>(type: "varbinary(16)", nullable: false),
                     EnrolledStudents = table.Column<int>(type: "int", nullable: false),
                     CreateUser = table.Column<string>(type: "varchar(250)", maxLength: 250, nullable: true),
@@ -450,6 +474,12 @@ namespace Api.Infra.Data.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+               name: "IX_Configurations_Id",
+               table: "Configurations",
+               column: "Id",
+               unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Buildings_Id",
                 table: "Buildings",
                 column: "Id",
@@ -599,6 +629,9 @@ namespace Api.Infra.Data.Migrations
         {
             migrationBuilder.DropTable(
                 name: "BaseEntity");
+
+            migrationBuilder.DropTable(
+                name: "Configurations");
 
             migrationBuilder.DropTable(
                 name: "ClassShifts");

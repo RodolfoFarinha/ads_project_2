@@ -1,0 +1,15 @@
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Service\bin\Release\netcoreapp3.1\Api.Service.deps.json
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Service\bin\Release\netcoreapp3.1\Api.Service.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Service\bin\Release\netcoreapp3.1\Api.Service.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Service\bin\Release\netcoreapp3.1\Api.Domain.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Service\bin\Release\netcoreapp3.1\Api.Domain.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Service\obj\Release\netcoreapp3.1\Api.Service.csprojAssemblyReference.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Service\obj\Release\netcoreapp3.1\Api.Service.AssemblyInfoInputs.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Service\obj\Release\netcoreapp3.1\Api.Service.AssemblyInfo.cs
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Service\obj\Release\netcoreapp3.1\Api.Service.csproj.CoreCompileInputs.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Service\obj\Release\netcoreapp3.1\Api.Service.csproj.CopyComplete
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Service\obj\Release\netcoreapp3.1\Api.Service.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Service\obj\Release\netcoreapp3.1\Api.Service.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Service\bin\Release\netcoreapp3.1\Api.Service.xml
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Service\bin\Release\netcoreapp3.1\Api.Domain.xml
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Service\obj\Release\netcoreapp3.1\Api.Service.xml

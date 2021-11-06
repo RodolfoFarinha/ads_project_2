@@ -5,7 +5,7 @@ namespace Api.Domain.Entities
     /// <summary>
     /// Slot entity
     /// </summary>
-    public class Slot : Schedule
+    public class Slot : ScheduleEntity
     {
         /// <summary>
         /// Get or Set Slot Key

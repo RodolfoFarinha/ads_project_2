@@ -4,7 +4,7 @@ using Serilog;
 using System.Linq;
 using System.Security.Claims;
 
-namespace Api.Indra.CrossCutting.DependecyContainer
+namespace Api.Infra.CrossCutting.DependecyContainer
 {
     /// <summary>
     /// Serilog configuration

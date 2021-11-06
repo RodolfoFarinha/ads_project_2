@@ -36,40 +36,40 @@
             <param name="key"></param>
             <returns></returns>
         </member>
-        <member name="T:Api.Controllers.BuildingsController">
+        <member name="T:Api.Controllers.QualitySchedulesController">
             <summary>
-            Controller for building model
+            Controller for quality schedule model
             </summary>
         </member>
-        <member name="M:Api.Controllers.BuildingsController.#ctor(Api.Service.Interfaces.Services.IBuildingService)">
+        <member name="M:Api.Controllers.QualitySchedulesController.#ctor(Api.Service.Interfaces.Services.IQualityScheduleService)">
             <summary>
-            Contructor of building controller
+            Contructor of quality schedule controller
             </summary>
             <param name="service"></param>
         </member>
-        <member name="M:Api.Controllers.BuildingsController.GetAll">
+        <member name="M:Api.Controllers.QualitySchedulesController.GetAll">
             <summary>
-            Get all buildings
+            Get all quality schedules
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Api.Controllers.BuildingsController.GetByKey(System.Guid)">
+        <member name="M:Api.Controllers.QualitySchedulesController.GetByKey(System.Guid)">
             <summary>
-            Get building by key
+            Get quality schedule by key
             </summary>
             <param name="key"></param>
             <returns></returns>
         </member>
-        <member name="M:Api.Controllers.BuildingsController.Save(Api.Service.ViewModels.BuildingViewModel)">
+        <member name="M:Api.Controllers.QualitySchedulesController.Save(Api.Service.ViewModels.QualityScheduleViewModel)">
             <summary>
-            Add or edit building
+            Add or edit quality schedule
             </summary>
             <param name="obj"></param>
             <returns></returns>
         </member>
-        <member name="M:Api.Controllers.BuildingsController.Remove(System.Guid)">
+        <member name="M:Api.Controllers.QualitySchedulesController.Remove(System.Guid)">
             <summary>
-            Delete building by key
+            Delete quality schedule by key
             </summary>
             <param name="key"></param>
             <returns></returns>
@@ -108,6 +108,44 @@
         <member name="M:Api.Controllers.ClassesController.Remove(System.Guid)">
             <summary>
             Delete class by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.ConfigurationsController">
+            <summary>
+            Controller for configuration model
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.ConfigurationsController.#ctor(Api.Service.Interfaces.Services.IConfigurationService)">
+            <summary>
+            Contructor of configuration controller
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Api.Controllers.ConfigurationsController.GetAll">
+            <summary>
+            Get all configurations
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ConfigurationsController.GetByKey(System.Guid)">
+            <summary>
+            Get configuration by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ConfigurationsController.Save(Api.Service.ViewModels.ConfigurationViewModel)">
+            <summary>
+            Add or edit configuration
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ConfigurationsController.Remove(System.Guid)">
+            <summary>
+            Delete configuration by key
             </summary>
             <param name="key"></param>
             <returns></returns>
@@ -189,6 +227,44 @@
         <member name="M:Api.Controllers.PropertiesController.Remove(System.Guid)">
             <summary>
             Delete property by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.BuildingsController">
+            <summary>
+            Controller for building model
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.BuildingsController.#ctor(Api.Service.Interfaces.Services.IBuildingService)">
+            <summary>
+            Contructor of building controller
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Api.Controllers.BuildingsController.GetAll">
+            <summary>
+            Get all buildings
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.BuildingsController.GetByKey(System.Guid)">
+            <summary>
+            Get building by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.BuildingsController.Save(Api.Service.ViewModels.BuildingViewModel)">
+            <summary>
+            Add or edit building
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.BuildingsController.Remove(System.Guid)">
+            <summary>
+            Delete building by key
             </summary>
             <param name="key"></param>
             <returns></returns>
@@ -303,6 +379,44 @@
         <member name="M:Api.Controllers.ShiftsController.Remove(System.Guid)">
             <summary>
             Delete shift by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.SlotsController">
+            <summary>
+            Controller for slot model
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.SlotsController.#ctor(Api.Service.Interfaces.Services.ISlotService)">
+            <summary>
+            Contructor of slot controller
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Api.Controllers.SlotsController.GetAll">
+            <summary>
+            Get all slots
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.SlotsController.GetByKey(System.Guid)">
+            <summary>
+            Get slot by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.SlotsController.Save(Api.Service.ViewModels.SlotViewModel)">
+            <summary>
+            Add or edit slot
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.SlotsController.Remove(System.Guid)">
+            <summary>
+            Delete slot by key
             </summary>
             <param name="key"></param>
             <returns></returns>

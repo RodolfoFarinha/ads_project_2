@@ -1,4 +1,4 @@
-using Api.Indra.CrossCutting.DependecyContainer;
+using Api.Infra.CrossCutting.DependecyContainer;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -30,7 +30,7 @@ namespace Api
             {
                 Log.Information("Api Started");
 
-                CreateHostBuilder(args).Build().Run();
+                CreateHostBuilder(args).Build().DbSeedData().Run();
             }
             catch (Exception e)
             {

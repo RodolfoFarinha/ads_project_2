@@ -6,7 +6,7 @@ namespace Api.Domain.Entities
     /// <summary>
     /// Building entity
     /// </summary>
-    public class Building : Schedule
+    public class Building : ScheduleEntity
     {
         /// <summary>
         /// Get or Set Building Key

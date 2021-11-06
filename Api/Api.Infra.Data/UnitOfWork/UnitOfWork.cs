@@ -57,6 +57,14 @@ namespace Api.Infra.Data.UnitOfWork
         /// <summary>
         /// Course instance repository
         /// </summary>
+        public IConfigurationRepository ConfigurationRepository
+        {
+            get { return new ConfigurationRepository(_apiDBContext); }
+        }
+
+        /// <summary>
+        /// Course instance repository
+        /// </summary>
         public ICourseRepository CourseRepository
         {
             get { return new CourseRepository(_apiDBContext); }
