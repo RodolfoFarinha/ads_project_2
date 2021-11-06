@@ -16,6 +16,62 @@
             <param name="services"></param>
             <param name="configuration"></param>
         </member>
+        <member name="T:Api.Infra.CrossCutting.DependecyContainer.DependecyContainer">
+            <summary>
+            Dependecy container register
+            </summary>
+        </member>
+        <member name="M:Api.Infra.CrossCutting.DependecyContainer.DependecyContainer.AddApiConfigurations(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Method to add configuration, automapper and register services on service collection
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:Api.Infra.CrossCutting.DependecyContainer.DependecyContainer.RegisterServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Method to register all services
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="T:Api.Infra.CrossCutting.DependecyContainer.Seed">
+            <summary>
+            Seed static data
+            </summary>
+        </member>
+        <member name="M:Api.Infra.CrossCutting.DependecyContainer.Seed.DbSeedData(Microsoft.Extensions.Hosting.IHost)">
+            <summary>
+            Method to add static data in database
+            </summary>
+            <param name="host"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Infra.CrossCutting.DependecyContainer.Seed.SeedData(Api.Infra.Data.Context.ApiDBContext)">
+            <summary>
+            Method to create new entities to add database
+            </summary>
+            <param name="dataCtx"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Infra.CrossCutting.DependecyContainer.SerilogConfiguration">
+            <summary>
+            Serilog configuration
+            </summary>
+        </member>
+        <member name="M:Api.Infra.CrossCutting.DependecyContainer.SerilogConfiguration.AddSerilog(Microsoft.Extensions.Hosting.IHostBuilder)">
+            <summary>
+            Method to add serilog on builder
+            </summary>
+            <param name="builder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Infra.CrossCutting.DependecyContainer.SerilogConfiguration.EnrichFromRequest(Serilog.IDiagnosticContext,Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Method to enrich from request
+            </summary>
+            <param name="diagnosticContext"></param>
+            <param name="httpContext"></param>
+        </member>
         <member name="T:Api.Infra.CrossCutting.Exceptions.RestException">
             <summary>
             Rest Exception
@@ -88,43 +144,6 @@
             <param name="context"></param>
             <param name="exception"></param>
             <returns></returns>
-        </member>
-        <member name="T:Api.Indra.CrossCutting.DependecyContainer.DependecyContainer">
-            <summary>
-            Dependecy container register
-            </summary>
-        </member>
-        <member name="M:Api.Indra.CrossCutting.DependecyContainer.DependecyContainer.AddApiConfigurations(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
-            <summary>
-            Method to add configuration, automapper and register services on service collection
-            </summary>
-            <param name="services"></param>
-            <param name="configuration"></param>
-        </member>
-        <member name="M:Api.Indra.CrossCutting.DependecyContainer.DependecyContainer.RegisterServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
-            <summary>
-            Method to register all services
-            </summary>
-            <param name="services"></param>
-        </member>
-        <member name="T:Api.Indra.CrossCutting.DependecyContainer.SerilogConfiguration">
-            <summary>
-            Serilog configuration
-            </summary>
-        </member>
-        <member name="M:Api.Indra.CrossCutting.DependecyContainer.SerilogConfiguration.AddSerilog(Microsoft.Extensions.Hosting.IHostBuilder)">
-            <summary>
-            Method to add serilog on builder
-            </summary>
-            <param name="builder"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Api.Indra.CrossCutting.DependecyContainer.SerilogConfiguration.EnrichFromRequest(Serilog.IDiagnosticContext,Microsoft.AspNetCore.Http.HttpContext)">
-            <summary>
-            Method to enrich from request
-            </summary>
-            <param name="diagnosticContext"></param>
-            <param name="httpContext"></param>
         </member>
     </members>
 </doc>

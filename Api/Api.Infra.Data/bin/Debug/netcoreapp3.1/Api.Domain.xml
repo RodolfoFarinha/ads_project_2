@@ -124,6 +124,26 @@
             Get or Set Shift
             </summary>
         </member>
+        <member name="T:Api.Domain.Entities.Configuration">
+            <summary>
+            Configuration entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Configuration.ConfigurationKey">
+            <summary>
+            Get or Set Configuration Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Configuration.Key">
+            <summary>
+            Get or Set Configuration Key Dictionary
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Configuration.Value">
+            <summary>
+            Get or Set Configuration Value Dictionary
+            </summary>
+        </member>
         <member name="T:Api.Domain.Entities.Course">
             <summary>
             Course entity
@@ -414,17 +434,17 @@
             Get or Set Property
             </summary>
         </member>
-        <member name="T:Api.Domain.Entities.Schedule">
+        <member name="T:Api.Domain.Entities.ScheduleEntity">
             <summary>
             Schedule entity
             </summary>
         </member>
-        <member name="P:Api.Domain.Entities.Schedule.ScheduleKey">
+        <member name="P:Api.Domain.Entities.ScheduleEntity.ScheduleKey">
             <summary>
             Get or Set Schedule Id
             </summary>
         </member>
-        <member name="P:Api.Domain.Entities.Schedule.ScheduleVersion">
+        <member name="P:Api.Domain.Entities.ScheduleEntity.ScheduleVersion">
             <summary>
             Get or Set Schedule Version
             </summary>
@@ -507,6 +527,11 @@
         <member name="P:Api.Domain.Entities.Shift.Unit">
             <summary>
             Get or Set Unit
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Shift.ShiftName">
+            <summary>
+            Get or Set Shift Name
             </summary>
         </member>
         <member name="P:Api.Domain.Entities.Shift.ShiftType">
@@ -607,6 +632,11 @@
         <member name="P:Api.Domain.Interfaces.IUnitOfWork.ClassRepository">
             <summary>
             Class repository
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Interfaces.IUnitOfWork.ConfigurationRepository">
+            <summary>
+            Configuration repository
             </summary>
         </member>
         <member name="P:Api.Domain.Interfaces.IUnitOfWork.CourseRepository">
@@ -726,6 +756,11 @@
         <member name="T:Api.Domain.Interfaces.Repositories.IClassShiftRepository">
             <summary>
             Class shift repository
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Interfaces.Repositories.IConfigurationRepository">
+            <summary>
+            Configuration repository
             </summary>
         </member>
         <member name="T:Api.Domain.Interfaces.Repositories.ICourseRepository">

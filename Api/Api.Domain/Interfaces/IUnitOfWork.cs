@@ -19,6 +19,11 @@ namespace Api.Domain.Interfaces
         IClassRepository ClassRepository { get; }
 
         /// <summary>
+        /// Configuration repository
+        /// </summary>
+        IConfigurationRepository ConfigurationRepository { get; }
+
+        /// <summary>
         /// Course repository
         /// </summary>
         ICourseRepository CourseRepository { get; }

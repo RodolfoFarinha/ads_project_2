@@ -95,6 +95,38 @@
             <param name="key"></param>
             <returns></returns>
         </member>
+        <member name="T:Api.Service.Interfaces.Services.IConfigurationService">
+            <summary>
+            Configuration service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IConfigurationService.GetByKey(System.Guid)">
+            <summary>
+            Method to get configuration by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IConfigurationService.GetAll">
+            <summary>
+            Method to get all configurations
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IConfigurationService.Save(Api.Service.ViewModels.ConfigurationViewModel)">
+            <summary>
+            Method to save configuration
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IConfigurationService.Delete(System.Guid)">
+            <summary>
+            Method to delete configuration
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
         <member name="T:Api.Service.Interfaces.Services.ICourseService">
             <summary>
             Course service
@@ -160,6 +192,38 @@
         <member name="M:Api.Service.Interfaces.Services.IPropertyService.Delete(System.Guid)">
             <summary>
             Method to delete property
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Interfaces.Services.IQualityScheduleService">
+            <summary>
+            QualitySchedule service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IQualityScheduleService.GetByKey(System.Guid)">
+            <summary>
+            Method to get quality schedule by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IQualityScheduleService.GetAll">
+            <summary>
+            Method to get all quality schedules
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IQualityScheduleService.Save(Api.Service.ViewModels.QualityScheduleViewModel)">
+            <summary>
+            Method to save quality schedule
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IQualityScheduleService.Delete(System.Guid)">
+            <summary>
+            Method to delete quality schedule
             </summary>
             <param name="key"></param>
             <returns></returns>
@@ -457,6 +521,45 @@
             <param name="key"></param>
             <returns></returns>
         </member>
+        <member name="T:Api.Service.Services.ConfigurationService">
+            <summary>
+            Configuration service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Services.ConfigurationService.#ctor(AutoMapper.IMapper,Api.Domain.Interfaces.IUnitOfWork)">
+            <summary>
+            Configuration service constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="unitOfWork"></param>
+        </member>
+        <member name="M:Api.Service.Services.ConfigurationService.GetByKey(System.Guid)">
+            <summary>
+            Method to get configuration by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.ConfigurationService.GetAll">
+            <summary>
+            Method to get all configurations
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.ConfigurationService.Save(Api.Service.ViewModels.ConfigurationViewModel)">
+            <summary>
+            Method to save configuration
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.ConfigurationService.Delete(System.Guid)">
+            <summary>
+            Method to delete configuration
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
         <member name="T:Api.Service.Services.CourseService">
             <summary>
             Course service
@@ -531,6 +634,45 @@
         <member name="M:Api.Service.Services.PropertyService.Delete(System.Guid)">
             <summary>
             Method to delete property
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Services.QualityScheduleService">
+            <summary>
+            QualitySchedule service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Services.QualityScheduleService.#ctor(AutoMapper.IMapper,Api.Domain.Interfaces.IUnitOfWork)">
+            <summary>
+            Quality schedule service constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="unitOfWork"></param>
+        </member>
+        <member name="M:Api.Service.Services.QualityScheduleService.GetByKey(System.Guid)">
+            <summary>
+            Method to get quality schedule by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.QualityScheduleService.GetAll">
+            <summary>
+            Method to get all quality schedules
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.QualityScheduleService.Save(Api.Service.ViewModels.QualityScheduleViewModel)">
+            <summary>
+            Method to save quality schedule
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.QualityScheduleService.Delete(System.Guid)">
+            <summary>
+            Method to delete quality schedule
             </summary>
             <param name="key"></param>
             <returns></returns>
@@ -808,6 +950,26 @@
         <member name="P:Api.Service.ViewModels.ClassShiftViewModel.Shift">
             <summary>
             Get or Set Shift
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.ConfigurationViewModel">
+            <summary>
+            Configuration entity
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ConfigurationViewModel.ConfigurationKey">
+            <summary>
+            Get or Set Configuration Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ConfigurationViewModel.Key">
+            <summary>
+            Get or Set Configuration Key Dictionary
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ConfigurationViewModel.Value">
+            <summary>
+            Get or Set Configuration Value Dictionary
             </summary>
         </member>
         <member name="T:Api.Service.ViewModels.CourseViewModel">
@@ -1188,6 +1350,16 @@
         <member name="P:Api.Service.ViewModels.ShiftViewModel.Unit">
             <summary>
             Get or Set Unit
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ShiftViewModel.ShiftName">
+            <summary>
+            Get or Set Shift Name
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ShiftViewModel.ShiftType">
+            <summary>
+            Get or Set Shift Type
             </summary>
         </member>
         <member name="P:Api.Service.ViewModels.ShiftViewModel.EnrolledStudents">

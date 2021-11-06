@@ -6,7 +6,7 @@ namespace Api.Domain.Entities
     /// <summary>
     /// Session entity
     /// </summary>
-    public class Session : Schedule
+    public class Session : ScheduleEntity
     {
         /// <summary>
         /// Get or Set Session Key
