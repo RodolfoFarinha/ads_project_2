@@ -4,7 +4,6 @@ using Api.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Api.Infra.Data.Migrations
 {
@@ -12,6 +11,10 @@ namespace Api.Infra.Data.Migrations
     [Migration("20211105225722_Init")]
     partial class Init
     {
+        /// <summary>
+        /// Build target model
+        /// </summary>
+        /// <param name="modelBuilder"></param>
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
@@ -50,6 +53,56 @@ namespace Api.Infra.Data.Migrations
 
             //        b.ToTable("BaseEntity");
             //    });
+
+            modelBuilder.Entity("Api.Domain.Entities.Configuration", b =>
+            {
+                b.Property<byte[]>("ConfigurationKey")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("varbinary(16)");
+
+                b.Property<string>("Key")
+                    .HasMaxLength(250)
+                    .HasColumnType("varchar(250)");
+
+                b.Property<string>("Value")
+                    .HasMaxLength(250)
+                    .HasColumnType("varchar(250)");
+
+                b.Property<DateTime?>("CreateDate")
+                    .HasColumnType("datetime");
+
+                b.Property<string>("CreateUser")
+                    .HasMaxLength(250)
+                    .HasColumnType("varchar(250)");
+
+                b.Property<DateTime?>("DeleteDate")
+                    .HasColumnType("datetime");
+
+                b.Property<string>("DeleteUser")
+                    .HasMaxLength(250)
+                    .HasColumnType("varchar(250)");
+
+                b.Property<bool>("Deleted")
+                    .HasColumnType("tinyint(1)");
+
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
+
+                b.Property<DateTime?>("ModifyDate")
+                    .HasColumnType("datetime");
+
+                b.Property<string>("ModifyUser")
+                    .HasMaxLength(250)
+                    .HasColumnType("varchar(250)");
+
+                b.HasKey("ConfigurationKey");
+
+                b.HasIndex("Id")
+                    .IsUnique();
+
+                b.ToTable("Configurations");
+            });
 
             modelBuilder.Entity("Api.Domain.Entities.Building", b =>
                 {
@@ -724,6 +777,10 @@ namespace Api.Infra.Data.Migrations
 
                     b.Property<int>("ScheduleVersion")
                         .HasColumnType("int");
+
+                    b.Property<string>("ShiftName")
+                        .HasMaxLength(250)
+                        .HasColumnType("varchar(250)");
 
                     b.Property<byte[]>("ShiftType")
                         .IsRequired()

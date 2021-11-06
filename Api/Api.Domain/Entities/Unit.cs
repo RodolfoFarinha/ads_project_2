@@ -6,7 +6,7 @@ namespace Api.Domain.Entities
     /// <summary>
     /// Unit entity
     /// </summary>
-    public class Unit : Schedule
+    public class Unit : ScheduleEntity
     {
         /// <summary>
         /// Get or Set Unit Key

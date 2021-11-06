@@ -24,9 +24,14 @@
             Class shift context
             </summary>
         </member>
+        <member name="P:Api.Infra.Data.Context.ApiDBContext.Configurations">
+            <summary>
+            Configuration context
+            </summary>
+        </member>
         <member name="P:Api.Infra.Data.Context.ApiDBContext.Courses">
             <summary>
-            Building context
+            Course context
             </summary>
         </member>
         <member name="P:Api.Infra.Data.Context.ApiDBContext.CourseUnits">
@@ -122,6 +127,17 @@
         <member name="M:Api.Infra.Data.EntityConfig.ClassShiftConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Api.Domain.Entities.ClassShift})">
             <summary>
             Class shift configuration builder
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:Api.Infra.Data.EntityConfig.ConfigurationConfiguration">
+            <summary>
+            Configuration configuration
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.EntityConfig.ConfigurationConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Api.Domain.Entities.Configuration})">
+            <summary>
+            Configuration configuration builder
             </summary>
             <param name="builder"></param>
         </member>
@@ -252,6 +268,18 @@
             </summary>
             <param name="migrationBuilder"></param>
         </member>
+        <member name="M:Api.Infra.Data.Migrations.Init.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Build target model
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="M:Api.Infra.Data.Migrations.ApiDBContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Build Model
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
         <member name="T:Api.Infra.Data.Repository.BaseRepository`1">
             <summary>
             Base repository
@@ -333,6 +361,17 @@
         <member name="M:Api.Infra.Data.Repository.ClassShiftRepository.#ctor(Api.Infra.Data.Context.ApiDBContext)">
             <summary>
             Class shift repository constructor
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Api.Infra.Data.Repository.ConfigurationRepository">
+            <summary>
+            Configuration repository
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.ConfigurationRepository.#ctor(Api.Infra.Data.Context.ApiDBContext)">
+            <summary>
+            Configuration repository constructor
             </summary>
             <param name="context"></param>
         </member>
@@ -480,6 +519,11 @@
         <member name="P:Api.Infra.Data.UnitOfWork.UnitOfWork.ClassShiftRepository">
             <summary>
             Class shift instance repository
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.UnitOfWork.UnitOfWork.ConfigurationRepository">
+            <summary>
+            Course instance repository
             </summary>
         </member>
         <member name="P:Api.Infra.Data.UnitOfWork.UnitOfWork.CourseRepository">

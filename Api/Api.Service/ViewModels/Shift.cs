@@ -24,6 +24,16 @@ namespace Api.Service.ViewModels
         public UnitViewModel Unit { get; set; }
 
         /// <summary>
+        /// Get or Set Shift Name
+        /// </summary>
+        public Guid ShiftName { get; set; }
+
+        /// <summary>
+        /// Get or Set Shift Type
+        /// </summary>
+        public Guid ShiftType { get; set; }
+
+        /// <summary>
         /// Get or Set Enrolled Students
         /// </summary>
         public int EnrolledStudents { get; set; }

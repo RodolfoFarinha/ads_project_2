@@ -8,6 +8,10 @@
     <DocumentationFile>Api.xml</DocumentationFile>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Remove="Documentation\**" />
     <Content Remove="Documentation\**" />

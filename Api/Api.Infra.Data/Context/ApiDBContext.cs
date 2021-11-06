@@ -26,7 +26,12 @@ namespace Api.Infra.Data.Context
         public DbSet<ClassShift> ClassShifts { get; set; }
 
         /// <summary>
-        /// Building context
+        /// Configuration context
+        /// </summary>
+        public DbSet<Configuration> Configurations { get; set; }
+
+        /// <summary>
+        /// Course context
         /// </summary>
         public DbSet<Course> Courses { get; set; }
 

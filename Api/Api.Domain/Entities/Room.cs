@@ -6,7 +6,7 @@ namespace Api.Domain.Entities
     /// <summary>
     /// Room entity
     /// </summary>
-    public class Room : Schedule
+    public class Room : ScheduleEntity
     {
         /// <summary>
         /// Get or Set Room Key
