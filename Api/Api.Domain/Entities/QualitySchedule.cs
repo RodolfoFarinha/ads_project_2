@@ -5,7 +5,7 @@ namespace Api.Domain.Entities
     /// <summary>
     /// Quality schedule entity
     /// </summary>
-    public class QualitySchedule : Schedule
+    public class QualitySchedule : ScheduleEntity
     {
         /// <summary>
         /// Get or Set Time Execution

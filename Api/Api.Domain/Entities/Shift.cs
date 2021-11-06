@@ -6,7 +6,7 @@ namespace Api.Domain.Entities
     /// <summary>
     /// Shift entity
     /// </summary>
-    public class Shift : Schedule
+    public class Shift : ScheduleEntity
     {
         /// <summary>
         /// Get or Set Shift Key
@@ -23,6 +23,11 @@ namespace Api.Domain.Entities
         /// </summary>
         public Unit Unit { get; set; }
 
+        /// <summary>
+        /// Get or Set Shift Name
+        /// </summary>
+        public Guid ShiftName { get; set; }
+        
         /// <summary>
         /// Get or Set Shift Type
         /// </summary>

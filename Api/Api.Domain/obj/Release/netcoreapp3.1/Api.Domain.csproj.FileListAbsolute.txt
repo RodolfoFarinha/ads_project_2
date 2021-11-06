@@ -1,0 +1,11 @@
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Domain\bin\Release\netcoreapp3.1\Api.Domain.deps.json
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Domain\bin\Release\netcoreapp3.1\Api.Domain.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Domain\bin\Release\netcoreapp3.1\Api.Domain.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Domain\obj\Release\netcoreapp3.1\Api.Domain.csprojAssemblyReference.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Domain\obj\Release\netcoreapp3.1\Api.Domain.AssemblyInfoInputs.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Domain\obj\Release\netcoreapp3.1\Api.Domain.AssemblyInfo.cs
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Domain\obj\Release\netcoreapp3.1\Api.Domain.csproj.CoreCompileInputs.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Domain\obj\Release\netcoreapp3.1\Api.Domain.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Domain\obj\Release\netcoreapp3.1\Api.Domain.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Domain\bin\Release\netcoreapp3.1\Api.Domain.xml
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Domain\obj\Release\netcoreapp3.1\Api.Domain.xml

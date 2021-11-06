@@ -5,7 +5,7 @@ namespace Api.Domain.Entities
     /// <summary>
     /// Schedule entity
     /// </summary>
-    public class Schedule : BaseEntity
+    public class ScheduleEntity : BaseEntity
     {
         /// <summary>
         /// Get or Set Schedule Id

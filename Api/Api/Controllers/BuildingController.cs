@@ -8,56 +8,56 @@ using System.Linq;
 namespace Api.Controllers
 {
     /// <summary>
-    /// Controller for building model
+    /// Controller for quality schedule model
     /// </summary>
-    public class BuildingsController : BaseController<BuildingViewModel, Guid>
+    public class QualitySchedulesController : BaseController<QualityScheduleViewModel, Guid>
     {
-        private readonly IBuildingService _service;
+        private readonly IQualityScheduleService _service;
 
         /// <summary>
-        /// Contructor of building controller
+        /// Contructor of quality schedule controller
         /// </summary>
         /// <param name="service"></param>
-        public BuildingsController(IBuildingService service)
+        public QualitySchedulesController(IQualityScheduleService service)
         {
             _service = service;
         }
 
         /// <summary>
-        /// Get all buildings
+        /// Get all quality schedules
         /// </summary>
         /// <returns></returns>
-        public override ActionResult<List<BuildingViewModel>> GetAll()
+        public override ActionResult<List<QualityScheduleViewModel>> GetAll()
         {
             return _service.GetAll().ToList();
         }
 
         /// <summary>
-        /// Get building by key
+        /// Get quality schedule by key
         /// </summary>
         /// <param name="key"></param>
         /// <returns></returns>
-        public override ActionResult<BuildingViewModel> GetByKey(Guid key)
+        public override ActionResult<QualityScheduleViewModel> GetByKey(Guid key)
         {
             return _service.GetByKey(key);
         }
 
         /// <summary>
-        /// Add or edit building
+        /// Add or edit quality schedule
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public override ActionResult<BuildingViewModel> Save(BuildingViewModel obj)
+        public override ActionResult<QualityScheduleViewModel> Save(QualityScheduleViewModel obj)
         {
             return _service.Save(obj);
         }
 
         /// <summary>
-        /// Delete building by key
+        /// Delete quality schedule by key
         /// </summary>
         /// <param name="key"></param>
         /// <returns></returns>
-        public override ActionResult<BuildingViewModel> Remove(Guid key)
+        public override ActionResult<QualityScheduleViewModel> Remove(Guid key)
         {
             return _service.Delete(key);
         }

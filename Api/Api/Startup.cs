@@ -1,4 +1,4 @@
-using Api.Indra.CrossCutting.DependecyContainer;
+using Api.Infra.CrossCutting.DependecyContainer;
 using Api.Infra.CrossCutting.Middleware;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -9,7 +9,6 @@ using Microsoft.Extensions.FileProviders;
 using Serilog;
 using System;
 using System.IO;
-using System.Reflection;
 
 namespace Api
 {
