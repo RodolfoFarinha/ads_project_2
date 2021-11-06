@@ -41,9 +41,6 @@ namespace Api.Infra.CrossCutting.DependecyContainer
            
             if (!await dataCtx.Configurations.AnyAsync())
             {
-                dataCtx.Buildings.Add(new Building() { ScheduleKey = Guid.NewGuid(), ScheduleVersion = 1, BuildingKey = Guid.NewGuid(), BuildingName = "Test", CreateUser = "Unknow", CreateDate = DateTime.Now });
-
-
                 dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, Key = "BuildingName", Value = "Edifício" });
                 dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, Key = "RoomName", Value = "Nome sala" });
                 dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, Key = "NormalCapacity", Value = "Capacidade Normal" });
