@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Api.Service.ViewModels
 {
-    public class SessionViewModel : BaseModel
+    /// <summary>
+    /// Session model
+    /// </summary>
+    public class SessionViewModel : ScheduleModel
     {
         /// <summary>
         /// Get or Set Session Key
@@ -30,16 +34,6 @@ namespace Api.Service.ViewModels
         public PropertyViewModel Property { get; set; }
 
         /// <summary>
-        /// Get or Set Room Key
-        /// </summary>
-        public Guid RoomKey { get; set; }
-
-        /// <summary>
-        /// Get or Set Room
-        /// </summary>
-        public RoomViewModel Room { get; set; }
-
-        /// <summary>
         /// Get or Set Start Date
         /// </summary>
         public DateTime StartDate { get; set; }
@@ -48,5 +42,36 @@ namespace Api.Service.ViewModels
         /// Get or Set End Date
         /// </summary>
         public DateTime EndDate { get; set; }
+
+        /// <summary>
+        /// Get or Set Time Length
+        /// </summary>
+        public TimeSpan TimeLength { get => EndDate - StartDate; }
+
+        /// <summary>
+        /// Get or Set Time Slot
+        /// </summary>
+        public TimeSpan TimeSlot
+        {
+            get
+            {
+                TimeSpan timeSlot = new TimeSpan();
+
+                foreach (var slot in Slots)
+                    timeSlot += slot.EndDate - slot.StartDate;
+
+                return timeSlot;
+            }
+        }
+
+        /// <summary>
+        /// Get or Set Session Is Completed
+        /// </summary>
+        public bool SessionIsCompleted { get => TimeLength == TimeSlot; }
+
+        /// <summary>
+        /// Get or Set Slots
+        /// </summary>
+        public IEnumerable<SlotViewModel> Slots { get; set; }
     }
 }

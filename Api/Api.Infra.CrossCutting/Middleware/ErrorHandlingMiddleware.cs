@@ -9,17 +9,37 @@ using System.Threading.Tasks;
 
 namespace Api.Infra.CrossCutting.Middleware
 {
+    /// <summary>
+    /// Error handling middleware
+    /// </summary>
     public class ErrorHandlingMiddleware
     {
+        /// <summary>
+        /// Request delegate
+        /// </summary>
         private readonly RequestDelegate _next;
+        
+        /// <summary>
+        /// Logger
+        /// </summary>
         private readonly ILogger<ErrorHandlingMiddleware> _logger;
 
+        /// <summary>
+        /// Error handling middleware contructor
+        /// </summary>
+        /// <param name="next"></param>
+        /// <param name="logger"></param>
         public ErrorHandlingMiddleware(RequestDelegate next, ILogger<ErrorHandlingMiddleware> logger)
         {
             _next = next;
             _logger = logger;
         }
 
+        /// <summary>
+        /// Method to invoke http context
+        /// </summary>
+        /// <param name="context"></param>
+        /// <returns></returns>
         public async Task Invoke(HttpContext context)
         {
             try
@@ -32,6 +52,12 @@ namespace Api.Infra.CrossCutting.Middleware
             }
         }
 
+        /// <summary>
+        /// Method to get handle exception
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="exception"></param>
+        /// <returns></returns>
         private async Task HandleExceptionAsync(HttpContext context, Exception exception)
         {
 

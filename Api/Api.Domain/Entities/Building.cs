@@ -6,12 +6,17 @@ namespace Api.Domain.Entities
     /// <summary>
     /// Building entity
     /// </summary>
-    public class Building : BaseEntity
+    public class Building : Schedule
     {
         /// <summary>
         /// Get or Set Building Key
         /// </summary>
         public Guid BuildingKey { get; set; }
+
+        /// <summary>
+        /// Get or Set Building Name
+        /// </summary>
+        public string BuildingName { get; set; }
 
         /// <summary>
         /// Get or Set Building Rooms

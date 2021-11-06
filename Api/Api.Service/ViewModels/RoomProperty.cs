@@ -2,6 +2,9 @@
 
 namespace Api.Service.ViewModels
 {
+    /// <summary>
+    /// Room property model
+    /// </summary>
     public class RoomPropertyViewModel : BaseModel
     {
         /// <summary>

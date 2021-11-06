@@ -8,10 +8,23 @@ using System.Collections.Generic;
 
 namespace Api.Service.Services
 {
+    /// <summary>
+    /// Shift service
+    /// </summary>
     public class ShiftService : BaseService, IShiftService
     {
+        /// <summary>
+        /// Shift service constructor
+        /// </summary>
+        /// <param name="mapper"></param>
+        /// <param name="unitOfWork"></param>
         public ShiftService(IMapper mapper, IUnitOfWork unitOfWork) : base(mapper, unitOfWork) { }
 
+        /// <summary>
+        /// Method to get shift by key
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public ShiftViewModel GetByKey(Guid key)
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -22,6 +35,10 @@ namespace Api.Service.Services
             }
         }
 
+        /// <summary>
+        /// Method to get all shifts
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<ShiftViewModel> GetAll()
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -32,6 +49,11 @@ namespace Api.Service.Services
             }
         }
 
+        /// <summary>
+        /// Method to save shift
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public ShiftViewModel Save(ShiftViewModel obj)
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -50,6 +72,11 @@ namespace Api.Service.Services
             }
         }
 
+        /// <summary>
+        /// Method to delete shift
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public ShiftViewModel Delete(Guid key)
         {
             using (var unitOfwork = GetUnitOfWorkInstance())

@@ -2,6 +2,9 @@
 
 namespace Api.Service.ViewModels
 {
+    /// <summary>
+    /// Class shift model
+    /// </summary>
     public class ClassShiftViewModel : BaseModel
     {
         /// <summary>

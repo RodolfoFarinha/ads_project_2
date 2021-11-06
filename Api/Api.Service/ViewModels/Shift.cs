@@ -3,7 +3,10 @@ using System.Collections.Generic;
 
 namespace Api.Service.ViewModels
 {
-    public class ShiftViewModel : BaseModel
+    /// <summary>
+    /// Shift model
+    /// </summary>
+    public class ShiftViewModel : ScheduleModel
     {
         /// <summary>
         /// Get or Set Shift Key

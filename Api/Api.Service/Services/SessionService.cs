@@ -8,10 +8,23 @@ using System.Collections.Generic;
 
 namespace Api.Service.Services
 {
+    /// <summary>
+    /// Session service
+    /// </summary>
     public class SessionService : BaseService, ISessionService
     {
+        /// <summary>
+        /// Session service constructor
+        /// </summary>
+        /// <param name="mapper"></param>
+        /// <param name="unitOfWork"></param>
         public SessionService(IMapper mapper, IUnitOfWork unitOfWork) : base(mapper, unitOfWork) { }
 
+        /// <summary>
+        /// Method to get session by key
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public SessionViewModel GetByKey(Guid key)
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -22,6 +35,10 @@ namespace Api.Service.Services
             }
         }
 
+        /// <summary>
+        /// Method to get all sessions
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<SessionViewModel> GetAll()
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -32,6 +49,11 @@ namespace Api.Service.Services
             }
         }
 
+        /// <summary>
+        /// Method to save session
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public SessionViewModel Save(SessionViewModel obj)
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -50,6 +72,11 @@ namespace Api.Service.Services
             }
         }
 
+        /// <summary>
+        /// Method to delete session
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public SessionViewModel Delete(Guid key)
         {
             using (var unitOfwork = GetUnitOfWorkInstance())

@@ -6,7 +6,7 @@ namespace Api.Domain.Entities
     /// <summary>
     /// Shift entity
     /// </summary>
-    public class Shift : BaseEntity
+    public class Shift : Schedule
     {
         /// <summary>
         /// Get or Set Shift Key
@@ -22,6 +22,11 @@ namespace Api.Domain.Entities
         /// Get or Set Unit
         /// </summary>
         public Unit Unit { get; set; }
+
+        /// <summary>
+        /// Get or Set Shift Type
+        /// </summary>
+        public Guid ShiftType { get; set; }
 
         /// <summary>
         /// Get or Set Enrolled Students

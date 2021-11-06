@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m41gnT11Shr7ChRQXPT+KeWlHpLs4a6S81ejFwwvIqbTXec3kQjCabVrdcO4AMIRNI9ZolV2uGW3to1oCBVgMw==",
+  "dgSpecHash": "HHqqzOUBswk2ii5dvVvzKhlzTcs9dAzYH3y3yihlZSrhZ542OHuaXoU+trE+gWubhLchMFag+UQV1RLfaMEFTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rodol\\Documentos\\GitHub\\ads_project_2\\ApiNetCore\\Api.Domain\\Api.Domain.csproj",
+  "projectFilePath": "C:\\Users\\rodol\\Documentos\\GitHub\\ads_project_2\\Api\\Api.Domain\\Api.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

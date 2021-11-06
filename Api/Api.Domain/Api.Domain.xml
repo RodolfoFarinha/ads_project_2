@@ -64,6 +64,11 @@
             Get or Set Building Key
             </summary>
         </member>
+        <member name="P:Api.Domain.Entities.Building.BuildingName">
+            <summary>
+            Get or Set Building Name
+            </summary>
+        </member>
         <member name="P:Api.Domain.Entities.Building.Rooms">
             <summary>
             Get or Set Building Rooms
@@ -132,6 +137,11 @@
         <member name="P:Api.Domain.Entities.Course.CourseName">
             <summary>
             Get or Set Course Name
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Course.Type">
+            <summary>
+            Get or Set Course Type
             </summary>
         </member>
         <member name="P:Api.Domain.Entities.Course.CourseUnits">
@@ -214,6 +224,121 @@
             Get or Set Sessions
             </summary>
         </member>
+        <member name="T:Api.Domain.Entities.QualitySchedule">
+            <summary>
+            Quality schedule entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TimeExecution">
+            <summary>
+            Get or Set Time Execution
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomsWithoutSession">
+            <summary>
+            Get or Set Total Rooms Without Session
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomsWithoutSessionMasters">
+            <summary>
+            Get or Set Total Rooms Without Session Masters
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomsWithoutSessionDegrees">
+            <summary>
+            Get or Set Total Rooms Without Session Degrees
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomsWithoutSessionWork">
+            <summary>
+            Get or Set Total Rooms Without Session Work
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomsWithoutSessionAfterWork">
+            <summary>
+            Get or Set Total Rooms Without Session After Work
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInSessions">
+            <summary>
+            Get or Set Total Room Change In Sessions
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInSessionsMasters">
+            <summary>
+            Get or Set Total Room Change In Sessions Masters
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInSessionsDegrees">
+            <summary>
+            Get or Set Total Room Change In Sessions Degrees
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInSessionsWork">
+            <summary>
+            Get or Set Total Room Change In Sessions Work
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInSessionsAfterWork">
+            <summary>
+            Get or Set Total Room Change In Sessions After Work
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeBetweenSessions">
+            <summary>
+            Get or Set Total Room Change Between Sessions
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeBetweenSessionsMasters">
+            <summary>
+            Get or Set Total Room Change Between Sessions Masters
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeBetweenSessionsDegrees">
+            <summary>
+            Get or Set Total Room Change Between Sessions Degrees
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeBetweenSessionsWork">
+            <summary>
+            Get or Set Total Room Change Between Sessions Work
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeBetweenSessionsAfterWork">
+            <summary>
+            Get or Set Total Room Change Between Sessions After Work
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInShifts">
+            <summary>
+            Get or Set Total Room Change In Shifts
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInShiftsMasters">
+            <summary>
+            Get or Set Total Room Change In Shifts Masters
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInShiftsDegrees">
+            <summary>
+            Get or Set Total Room Change In Shifts Degrees
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInShiftsWork">
+            <summary>
+            Get or Set Total Room Change In Shifts Work
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInShiftsAfterWork">
+            <summary>
+            Get or Set Total Room Change In Shifts After Work
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.AvarageGapBetweenSessionsByShift">
+            <summary>
+            Get or Set Avarage Gap Between Sessions By Shift
+            </summary>
+        </member>
         <member name="T:Api.Domain.Entities.Room">
             <summary>
             Room entity
@@ -254,9 +379,9 @@
             Get or Set Room Properties
             </summary>
         </member>
-        <member name="P:Api.Domain.Entities.Room.Sessions">
+        <member name="P:Api.Domain.Entities.Room.Slots">
             <summary>
-            Get or Set Sessions
+            Get or Set Slots
             </summary>
         </member>
         <member name="T:Api.Domain.Entities.RoomProperty">
@@ -289,6 +414,21 @@
             Get or Set Property
             </summary>
         </member>
+        <member name="T:Api.Domain.Entities.Schedule">
+            <summary>
+            Schedule entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Schedule.ScheduleKey">
+            <summary>
+            Get or Set Schedule Id
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Schedule.ScheduleVersion">
+            <summary>
+            Get or Set Schedule Version
+            </summary>
+        </member>
         <member name="T:Api.Domain.Entities.Session">
             <summary>
             Session entity
@@ -319,16 +459,6 @@
             Get or Set Property
             </summary>
         </member>
-        <member name="P:Api.Domain.Entities.Session.RoomKey">
-            <summary>
-            Get or Set Room Key
-            </summary>
-        </member>
-        <member name="P:Api.Domain.Entities.Session.Room">
-            <summary>
-            Get or Set Room
-            </summary>
-        </member>
         <member name="P:Api.Domain.Entities.Session.StartDate">
             <summary>
             Get or Set Start Date
@@ -337,6 +467,26 @@
         <member name="P:Api.Domain.Entities.Session.EndDate">
             <summary>
             Get or Set End Date
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Session.TimeLength">
+            <summary>
+            Get or Set Time Length
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Session.TimeSlot">
+            <summary>
+            Get or Set Time Slot
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Session.SessionIsCompleted">
+            <summary>
+            Get or Set Session Is Completed
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Session.Slots">
+            <summary>
+            Get or Set Slots
             </summary>
         </member>
         <member name="T:Api.Domain.Entities.Shift">
@@ -359,6 +509,11 @@
             Get or Set Unit
             </summary>
         </member>
+        <member name="P:Api.Domain.Entities.Shift.ShiftType">
+            <summary>
+            Get or Set Shift Type
+            </summary>
+        </member>
         <member name="P:Api.Domain.Entities.Shift.EnrolledStudents">
             <summary>
             Get or Set Enrolled Students
@@ -372,6 +527,46 @@
         <member name="P:Api.Domain.Entities.Shift.Sessions">
             <summary>
             Get or Set Sessions
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Entities.Slot">
+            <summary>
+            Slot entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Slot.SlotKey">
+            <summary>
+            Get or Set Slot Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Slot.SessionKey">
+            <summary>
+            Get or Set Session Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Slot.Session">
+            <summary>
+            Get or Set Session
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Slot.RoomKey">
+            <summary>
+            Get or Set Room Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Slot.Room">
+            <summary>
+            Get or Set Room
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Slot.StartDate">
+            <summary>
+            Get or Set Start Date
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Slot.EndDate">
+            <summary>
+            Get or Set End Date
             </summary>
         </member>
         <member name="T:Api.Domain.Entities.Unit">
@@ -429,6 +624,11 @@
             Property repository
             </summary>
         </member>
+        <member name="P:Api.Domain.Interfaces.IUnitOfWork.QualityScheduleRepository">
+            <summary>
+            Quality schedule instance repository
+            </summary>
+        </member>
         <member name="P:Api.Domain.Interfaces.IUnitOfWork.RoomPropertyRepository">
             <summary>
             Room property repository
@@ -447,6 +647,11 @@
         <member name="P:Api.Domain.Interfaces.IUnitOfWork.ShiftRepository">
             <summary>
             Shift repository
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Interfaces.IUnitOfWork.SlotRepository">
+            <summary>
+            Slot repository
             </summary>
         </member>
         <member name="P:Api.Domain.Interfaces.IUnitOfWork.UnitRepository">
@@ -538,6 +743,11 @@
             Property repository
             </summary>
         </member>
+        <member name="T:Api.Domain.Interfaces.Repositories.IQualityScheduleRepository">
+            <summary>
+            Quality schedule repository
+            </summary>
+        </member>
         <member name="T:Api.Domain.Interfaces.Repositories.IRoomPropertyRepository">
             <summary>
             Room property repository
@@ -556,6 +766,11 @@
         <member name="T:Api.Domain.Interfaces.Repositories.IShiftRepository">
             <summary>
             Shift repository
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Interfaces.Repositories.ISlotRepository">
+            <summary>
+            Slot repository
             </summary>
         </member>
         <member name="T:Api.Domain.Interfaces.Repositories.IUnitRepository">

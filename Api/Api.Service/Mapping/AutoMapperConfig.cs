@@ -4,8 +4,15 @@ using AutoMapper;
 
 namespace Api.Service.Mapping
 {
+    /// <summary>
+    /// Automapper configuration
+    /// </summary>
     public class AutoMapperConfig : Profile
     {
+        /// <summary>
+        /// Method to register all mappings
+        /// </summary>
+        /// <returns></returns>
         public static MapperConfiguration RegisterMappings()
         {
             return new MapperConfiguration(cfg =>

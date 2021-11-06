@@ -23,3 +23,17 @@ C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.Data\obj\Deb
 C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.Data\obj\Debug\netcoreapp3.1\Api.Infra.Data.dll
 C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.Data\obj\Debug\netcoreapp3.1\Api.Infra.Data.pdb
 C:\Users\rodol\Documentos\GitHub\ads_project_2\ApiNetCore\Api.Infra.Data\bin\Debug\netcoreapp3.1\ApiInfraData.xml
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Infra.Data\bin\Debug\netcoreapp3.1\Api.Infra.Data.deps.json
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Infra.Data\bin\Debug\netcoreapp3.1\Api.Infra.Data.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Infra.Data\bin\Debug\netcoreapp3.1\Api.Infra.Data.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Infra.Data\bin\Debug\netcoreapp3.1\Api.Domain.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Infra.Data\bin\Debug\netcoreapp3.1\Api.Domain.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Infra.Data\obj\Debug\netcoreapp3.1\Api.Infra.Data.csprojAssemblyReference.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Infra.Data\obj\Debug\netcoreapp3.1\Api.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Infra.Data\obj\Debug\netcoreapp3.1\Api.Infra.Data.AssemblyInfo.cs
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Infra.Data\obj\Debug\netcoreapp3.1\Api.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Infra.Data\obj\Debug\netcoreapp3.1\Api.Infra.Data.csproj.CopyComplete
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Infra.Data\obj\Debug\netcoreapp3.1\Api.Infra.Data.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Infra.Data\obj\Debug\netcoreapp3.1\Api.Infra.Data.pdb
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Infra.Data\bin\Debug\netcoreapp3.1\Api.Infra.Data.xml
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Infra.Data\bin\Debug\netcoreapp3.1\Api.Domain.xml

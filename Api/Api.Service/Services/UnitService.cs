@@ -8,10 +8,23 @@ using System.Collections.Generic;
 
 namespace Api.Service.Services
 {
+    /// <summary>
+    /// Unit service
+    /// </summary>
     public class UnitService : BaseService, IUnitService
     {
-         public UnitService(IMapper mapper, IUnitOfWork unitOfWork) : base(mapper, unitOfWork) { }
+        /// <summary>
+        /// Unit service constructor
+        /// </summary>
+        /// <param name="mapper"></param>
+        /// <param name="unitOfWork"></param>
+        public UnitService(IMapper mapper, IUnitOfWork unitOfWork) : base(mapper, unitOfWork) { }
 
+        /// <summary>
+        /// Method to get unit by key
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public UnitViewModel GetByKey(Guid key)
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -22,6 +35,10 @@ namespace Api.Service.Services
             }
         }
 
+        /// <summary>
+        /// Method to get all units
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<UnitViewModel> GetAll()
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -32,6 +49,11 @@ namespace Api.Service.Services
             }
         }
 
+        /// <summary>
+        /// Method to save unit
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public UnitViewModel Save(UnitViewModel obj)
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -50,6 +72,11 @@ namespace Api.Service.Services
             }
         }
 
+        /// <summary>
+        /// Method to delete unit
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public UnitViewModel Delete(Guid key)
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -60,7 +87,7 @@ namespace Api.Service.Services
                 entity.Deleted = true;
 
                 unitOfwork.UnitRepository.Delete(entity);
-                
+
                 Commit();
 
                 return GetMapperInstance().Map<Unit, UnitViewModel>(entity);

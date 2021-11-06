@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace Api.Service.ViewModels
 {
+    /// <summary>
+    /// Property model
+    /// </summary>
     public class PropertyViewModel : BaseModel
     {
         /// <summary>

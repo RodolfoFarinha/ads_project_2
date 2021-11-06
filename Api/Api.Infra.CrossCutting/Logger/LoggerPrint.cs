@@ -5,8 +5,17 @@ using System.Text;
 
 namespace Api.Infra.CrossCutting.Logger
 {
+    /// <summary>
+    /// Logger print
+    /// </summary>
     public class LoggerPrint
     {
+        /// <summary>
+        /// Method to write log in console aplication
+        /// </summary>
+        /// <param name="type"></param>
+        /// <param name="httpContext"></param>
+        /// <param name="exception"></param>
         public static void WriteLog(string type, HttpContext httpContext, Exception exception)
         {
             var folder = Path.Combine("Resources", "Logs");

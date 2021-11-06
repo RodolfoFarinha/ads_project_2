@@ -6,14 +6,27 @@ using System.Security.Claims;
 
 namespace Api.Indra.CrossCutting.DependecyContainer
 {
+    /// <summary>
+    /// Serilog configuration
+    /// </summary>
     public static class SerilogConfiguration
     {
+        /// <summary>
+        /// Method to add serilog on builder
+        /// </summary>
+        /// <param name="builder"></param>
+        /// <returns></returns>
         public static IHostBuilder AddSerilog(this IHostBuilder builder)
         {
             builder.UseSerilog();
             return builder;
         }
 
+        /// <summary>
+        /// Method to enrich from request
+        /// </summary>
+        /// <param name="diagnosticContext"></param>
+        /// <param name="httpContext"></param>
         public static void EnrichFromRequest(IDiagnosticContext diagnosticContext, HttpContext httpContext)
         {
             var request = httpContext.Request;

@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Api.Domain.Entities
 {
     /// <summary>
     /// Session entity
     /// </summary>
-    public class Session : BaseEntity
+    public class Session : Schedule
     {
         /// <summary>
         /// Get or Set Session Key
@@ -33,16 +34,6 @@ namespace Api.Domain.Entities
         public Property Property { get; set; }
 
         /// <summary>
-        /// Get or Set Room Key
-        /// </summary>
-        public Guid RoomKey { get; set; }
-
-        /// <summary>
-        /// Get or Set Room
-        /// </summary>
-        public Room Room { get; set; }
-
-        /// <summary>
         /// Get or Set Start Date
         /// </summary>
         public DateTime StartDate { get; set; }
@@ -51,5 +42,36 @@ namespace Api.Domain.Entities
         /// Get or Set End Date
         /// </summary>
         public DateTime EndDate { get; set; }
+
+        /// <summary>
+        /// Get or Set Time Length
+        /// </summary>
+        public TimeSpan TimeLength { get => EndDate - StartDate; }
+
+        /// <summary>
+        /// Get or Set Time Slot
+        /// </summary>
+        public TimeSpan TimeSlot
+        {
+            get
+            {
+                TimeSpan timeSlot = new TimeSpan();
+
+                foreach (var slot in Slots)
+                    timeSlot += slot.EndDate - slot.StartDate;
+                
+                return timeSlot;
+            }
+        }
+
+        /// <summary>
+        /// Get or Set Session Is Completed
+        /// </summary>
+        public bool SessionIsCompleted { get => TimeLength == TimeSlot; }
+
+        /// <summary>
+        /// Get or Set Slots
+        /// </summary>
+        public IEnumerable<Slot> Slots { get; set; }  
     }
 }

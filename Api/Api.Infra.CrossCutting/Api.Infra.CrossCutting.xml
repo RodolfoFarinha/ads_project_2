@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api.Infra.CrossCutting</name>
+    </assembly>
+    <members>
+        <member name="T:Api.Infra.CrossCutting.DependecyContainer.DatabaseSetup">
+            <summary>
+            Database setup configuration
+            </summary>
+        </member>
+        <member name="M:Api.Infra.CrossCutting.DependecyContainer.DatabaseSetup.AddDatabaseSetup(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Method to add database setup configuration
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="T:Api.Infra.CrossCutting.Exceptions.RestException">
+            <summary>
+            Rest Exception
+            </summary>
+        </member>
+        <member name="P:Api.Infra.CrossCutting.Exceptions.RestException.Code">
+            <summary>
+            Code status of http request
+            </summary>
+        </member>
+        <member name="P:Api.Infra.CrossCutting.Exceptions.RestException.Error">
+            <summary>
+            Error object
+            </summary>
+        </member>
+        <member name="M:Api.Infra.CrossCutting.Exceptions.RestException.#ctor(System.Net.HttpStatusCode,System.String,System.Object)">
+            <summary>
+            Method to get rest exception
+            </summary>
+            <param name="code"></param>
+            <param name="statusText"></param>
+            <param name="error"></param>
+        </member>
+        <member name="T:Api.Infra.CrossCutting.Logger.LoggerPrint">
+            <summary>
+            Logger print
+            </summary>
+        </member>
+        <member name="M:Api.Infra.CrossCutting.Logger.LoggerPrint.WriteLog(System.String,Microsoft.AspNetCore.Http.HttpContext,System.Exception)">
+            <summary>
+            Method to write log in console aplication
+            </summary>
+            <param name="type"></param>
+            <param name="httpContext"></param>
+            <param name="exception"></param>
+        </member>
+        <member name="T:Api.Infra.CrossCutting.Middleware.ErrorHandlingMiddleware">
+            <summary>
+            Error handling middleware
+            </summary>
+        </member>
+        <member name="F:Api.Infra.CrossCutting.Middleware.ErrorHandlingMiddleware._next">
+            <summary>
+            Request delegate
+            </summary>
+        </member>
+        <member name="F:Api.Infra.CrossCutting.Middleware.ErrorHandlingMiddleware._logger">
+            <summary>
+            Logger
+            </summary>
+        </member>
+        <member name="M:Api.Infra.CrossCutting.Middleware.ErrorHandlingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger{Api.Infra.CrossCutting.Middleware.ErrorHandlingMiddleware})">
+            <summary>
+            Error handling middleware contructor
+            </summary>
+            <param name="next"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Api.Infra.CrossCutting.Middleware.ErrorHandlingMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Method to invoke http context
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Infra.CrossCutting.Middleware.ErrorHandlingMiddleware.HandleExceptionAsync(Microsoft.AspNetCore.Http.HttpContext,System.Exception)">
+            <summary>
+            Method to get handle exception
+            </summary>
+            <param name="context"></param>
+            <param name="exception"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Indra.CrossCutting.DependecyContainer.DependecyContainer">
+            <summary>
+            Dependecy container register
+            </summary>
+        </member>
+        <member name="M:Api.Indra.CrossCutting.DependecyContainer.DependecyContainer.AddApiConfigurations(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Method to add configuration, automapper and register services on service collection
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:Api.Indra.CrossCutting.DependecyContainer.DependecyContainer.RegisterServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Method to register all services
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="T:Api.Indra.CrossCutting.DependecyContainer.SerilogConfiguration">
+            <summary>
+            Serilog configuration
+            </summary>
+        </member>
+        <member name="M:Api.Indra.CrossCutting.DependecyContainer.SerilogConfiguration.AddSerilog(Microsoft.Extensions.Hosting.IHostBuilder)">
+            <summary>
+            Method to add serilog on builder
+            </summary>
+            <param name="builder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Indra.CrossCutting.DependecyContainer.SerilogConfiguration.EnrichFromRequest(Serilog.IDiagnosticContext,Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Method to enrich from request
+            </summary>
+            <param name="diagnosticContext"></param>
+            <param name="httpContext"></param>
+        </member>
+    </members>
+</doc>

@@ -50,10 +50,15 @@ namespace Api
                     }
                 );
 
-                var xmlCommentsFiles = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                var xmlCommentsFullPath = Path.Combine(AppContext.BaseDirectory, xmlCommentsFiles);
+                var xmlCommentsFullPath = Path.Combine(AppContext.BaseDirectory, "Api.xml");
+                var xmlCommentsFullPathDomain = Path.Combine(AppContext.BaseDirectory, "Api.Domain.xml");
+                var xmlCommentsFullPathServices = Path.Combine(AppContext.BaseDirectory, "Api.Service.xml");
+                var xmlCommentsFullPathInfraData = Path.Combine(AppContext.BaseDirectory, "Api.Infra.Data.xml");
 
                 options.IncludeXmlComments(xmlCommentsFullPath);
+                options.IncludeXmlComments(xmlCommentsFullPathDomain);
+                options.IncludeXmlComments(xmlCommentsFullPathServices);
+                options.IncludeXmlComments(xmlCommentsFullPathInfraData);
             });
         }
 

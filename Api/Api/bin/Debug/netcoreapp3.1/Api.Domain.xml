@@ -1,0 +1,782 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:Api.Domain.Business.Calculater">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Entities.BaseEntity">
+            <summary>
+            Base entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.BaseEntity.Id">
+            <summary>
+            Get or Set Id
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.BaseEntity.CreateUser">
+            <summary>
+            Get or Set Create By User
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.BaseEntity.CreateDate">
+            <summary>
+            Get or Set Create Date
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.BaseEntity.ModifyUser">
+            <summary>
+            Get or Set Modify By User
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.BaseEntity.ModifyDate">
+            <summary>
+            Get or Set Modify Date
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.BaseEntity.Deleted">
+            <summary>
+            Get or Set Deleted
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.BaseEntity.DeleteUser">
+            <summary>
+            Get or Set Deleted By User
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.BaseEntity.DeleteDate">
+            <summary>
+            Get or Set Deleted Date
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Entities.Building">
+            <summary>
+            Building entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Building.BuildingKey">
+            <summary>
+            Get or Set Building Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Building.BuildingName">
+            <summary>
+            Get or Set Building Name
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Building.Rooms">
+            <summary>
+            Get or Set Building Rooms
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Entities.Class">
+            <summary>
+            Class entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Class.ClassKey">
+            <summary>
+            Get or Set Class Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Class.ClassName">
+            <summary>
+            Get or Set Class Name
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Class.ClassShifts">
+            <summary>
+            Get or Set Class Shifts
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Entities.ClassShift">
+            <summary>
+            Class shift entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.ClassShift.ClassShiftKey">
+            <summary>
+            Get or Set Class Shift Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.ClassShift.ClassKey">
+            <summary>
+            Get or Set Class Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.ClassShift.Class">
+            <summary>
+            Get or Set Class
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.ClassShift.ShiftKey">
+            <summary>
+            Get or Set Shift Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.ClassShift.Shift">
+            <summary>
+            Get or Set Shift
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Entities.Course">
+            <summary>
+            Course entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Course.CourseKey">
+            <summary>
+            Get or Set Course Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Course.CourseName">
+            <summary>
+            Get or Set Course Name
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Course.Type">
+            <summary>
+            Get or Set Course Type
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Course.CourseUnits">
+            <summary>
+            Get or Set Course Units
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Entities.CourseUnit">
+            <summary>
+            Course unit entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.CourseUnit.CourseUnitKey">
+            <summary>
+            Get or Set Course Unit Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.CourseUnit.CourseKey">
+            <summary>
+            Get or Set Course Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.CourseUnit.Course">
+            <summary>
+            Get or Set Course
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.CourseUnit.UnitKey">
+            <summary>
+            Get or Set Unit Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.CourseUnit.Unit">
+            <summary>
+            Get or Set Unit Id
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Entities.Property">
+            <summary>
+            Property entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Property.PropertyKey">
+            <summary>
+            Get or Set Property Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Property.PropertyName">
+            <summary>
+            Get or Set Property Name
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Property.PropertyDescription">
+            <summary>
+            Get or Set Property Description
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Property.PropertyStatus">
+            <summary>
+            Get or Set Property Status
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Property.AvailableManagement">
+            <summary>
+            Get or Set Available Management
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Property.AvailableRequest">
+            <summary>
+            Get or Set Available Request
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Property.PropertyRooms">
+            <summary>
+            Get or Set Property Rooms
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Property.Sessions">
+            <summary>
+            Get or Set Sessions
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Entities.QualitySchedule">
+            <summary>
+            Quality schedule entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TimeExecution">
+            <summary>
+            Get or Set Time Execution
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomsWithoutSession">
+            <summary>
+            Get or Set Total Rooms Without Session
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomsWithoutSessionMasters">
+            <summary>
+            Get or Set Total Rooms Without Session Masters
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomsWithoutSessionDegrees">
+            <summary>
+            Get or Set Total Rooms Without Session Degrees
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomsWithoutSessionWork">
+            <summary>
+            Get or Set Total Rooms Without Session Work
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomsWithoutSessionAfterWork">
+            <summary>
+            Get or Set Total Rooms Without Session After Work
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInSessions">
+            <summary>
+            Get or Set Total Room Change In Sessions
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInSessionsMasters">
+            <summary>
+            Get or Set Total Room Change In Sessions Masters
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInSessionsDegrees">
+            <summary>
+            Get or Set Total Room Change In Sessions Degrees
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInSessionsWork">
+            <summary>
+            Get or Set Total Room Change In Sessions Work
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInSessionsAfterWork">
+            <summary>
+            Get or Set Total Room Change In Sessions After Work
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeBetweenSessions">
+            <summary>
+            Get or Set Total Room Change Between Sessions
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeBetweenSessionsMasters">
+            <summary>
+            Get or Set Total Room Change Between Sessions Masters
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeBetweenSessionsDegrees">
+            <summary>
+            Get or Set Total Room Change Between Sessions Degrees
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeBetweenSessionsWork">
+            <summary>
+            Get or Set Total Room Change Between Sessions Work
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeBetweenSessionsAfterWork">
+            <summary>
+            Get or Set Total Room Change Between Sessions After Work
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInShifts">
+            <summary>
+            Get or Set Total Room Change In Shifts
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInShiftsMasters">
+            <summary>
+            Get or Set Total Room Change In Shifts Masters
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInShiftsDegrees">
+            <summary>
+            Get or Set Total Room Change In Shifts Degrees
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInShiftsWork">
+            <summary>
+            Get or Set Total Room Change In Shifts Work
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.TotalRoomChangeInShiftsAfterWork">
+            <summary>
+            Get or Set Total Room Change In Shifts After Work
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.QualitySchedule.AvarageGapBetweenSessionsByShift">
+            <summary>
+            Get or Set Avarage Gap Between Sessions By Shift
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Entities.Room">
+            <summary>
+            Room entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Room.RoomKey">
+            <summary>
+            Get or Set Room Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Room.BuildingKey">
+            <summary>
+            Get or Set Building Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Room.Building">
+            <summary>
+            Get or Set Building
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Room.RoomName">
+            <summary>
+            Get or Set Room Name
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Room.NormalCapacity">
+            <summary>
+            Get or Set Normal Capacity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Room.ExamCapacity">
+            <summary>
+            Get or Set Exam Capacity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Room.RoomProperties">
+            <summary>
+            Get or Set Room Properties
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Room.Slots">
+            <summary>
+            Get or Set Slots
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Entities.RoomProperty">
+            <summary>
+            Room property entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.RoomProperty.RoomPropertyKey">
+            <summary>
+            Get or Set Room Property Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.RoomProperty.RoomKey">
+            <summary>
+            Get or Set Room Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.RoomProperty.Room">
+            <summary>
+            Get or Set Room
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.RoomProperty.PropertyKey">
+            <summary>
+            Get or Set Property Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.RoomProperty.Property">
+            <summary>
+            Get or Set Property
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Entities.Schedule">
+            <summary>
+            Schedule entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Schedule.ScheduleKey">
+            <summary>
+            Get or Set Schedule Id
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Schedule.ScheduleVersion">
+            <summary>
+            Get or Set Schedule Version
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Entities.Session">
+            <summary>
+            Session entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Session.SessionKey">
+            <summary>
+            Get or Set Session Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Session.ShiftKey">
+            <summary>
+            Get or Set Shift Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Session.Shift">
+            <summary>
+            Get or Set Shift
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Session.PropertyKey">
+            <summary>
+            Get or Set Property Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Session.Property">
+            <summary>
+            Get or Set Property
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Session.StartDate">
+            <summary>
+            Get or Set Start Date
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Session.EndDate">
+            <summary>
+            Get or Set End Date
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Session.TimeLength">
+            <summary>
+            Get or Set Time Length
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Session.TimeSlot">
+            <summary>
+            Get or Set Time Slot
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Session.SessionIsCompleted">
+            <summary>
+            Get or Set Session Is Completed
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Session.Slots">
+            <summary>
+            Get or Set Slots
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Entities.Shift">
+            <summary>
+            Shift entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Shift.ShiftKey">
+            <summary>
+            Get or Set Shift Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Shift.UnitKey">
+            <summary>
+            Get or Set Unit Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Shift.Unit">
+            <summary>
+            Get or Set Unit
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Shift.ShiftType">
+            <summary>
+            Get or Set Shift Type
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Shift.EnrolledStudents">
+            <summary>
+            Get or Set Enrolled Students
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Shift.ShiftClasses">
+            <summary>
+            Get or Set Shift Classes
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Shift.Sessions">
+            <summary>
+            Get or Set Sessions
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Entities.Slot">
+            <summary>
+            Slot entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Slot.SlotKey">
+            <summary>
+            Get or Set Slot Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Slot.SessionKey">
+            <summary>
+            Get or Set Session Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Slot.Session">
+            <summary>
+            Get or Set Session
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Slot.RoomKey">
+            <summary>
+            Get or Set Room Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Slot.Room">
+            <summary>
+            Get or Set Room
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Slot.StartDate">
+            <summary>
+            Get or Set Start Date
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Slot.EndDate">
+            <summary>
+            Get or Set End Date
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Entities.Unit">
+            <summary>
+            Unit entity
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Unit.UnitKey">
+            <summary>
+            Get or Set Unit Key
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Unit.UnitName">
+            <summary>
+            Get or Set Unit Name
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Unit.UnitCourses">
+            <summary>
+            Get or Set Unit Courses
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Entities.Unit.Shifts">
+            <summary>
+            Get or Set Shifts
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Interfaces.IUnitOfWork">
+            <summary>
+            Unit of work pattern
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Interfaces.IUnitOfWork.BuildingRepository">
+            <summary>
+            Building repository
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Interfaces.IUnitOfWork.ClassRepository">
+            <summary>
+            Class repository
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Interfaces.IUnitOfWork.CourseRepository">
+            <summary>
+            Course repository
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Interfaces.IUnitOfWork.CourseUnitRepository">
+            <summary>
+            Course unit repository
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Interfaces.IUnitOfWork.PropertyRepository">
+            <summary>
+            Property repository
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Interfaces.IUnitOfWork.QualityScheduleRepository">
+            <summary>
+            Quality schedule instance repository
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Interfaces.IUnitOfWork.RoomPropertyRepository">
+            <summary>
+            Room property repository
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Interfaces.IUnitOfWork.RoomRepository">
+            <summary>
+            Room repository
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Interfaces.IUnitOfWork.SessionRepository">
+            <summary>
+            Session repository
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Interfaces.IUnitOfWork.ShiftRepository">
+            <summary>
+            Shift repository
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Interfaces.IUnitOfWork.SlotRepository">
+            <summary>
+            Slot repository
+            </summary>
+        </member>
+        <member name="P:Api.Domain.Interfaces.IUnitOfWork.UnitRepository">
+            <summary>
+            Unit repository
+            </summary>
+        </member>
+        <member name="M:Api.Domain.Interfaces.IUnitOfWork.BeginTransaction">
+            <summary>
+            Begin transaction to insert values in database
+            </summary>
+        </member>
+        <member name="M:Api.Domain.Interfaces.IUnitOfWork.Commit">
+            <summary>
+            Commit changes to insert database
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Interfaces.Repositories.IBaseRepository`1">
+            <summary>
+            Base repository
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="M:Api.Domain.Interfaces.Repositories.IBaseRepository`1.GetByKey(System.Guid)">
+            <summary>
+            Get generic by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Domain.Interfaces.Repositories.IBaseRepository`1.GetAll">
+            <summary>
+            Get all generic
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Domain.Interfaces.Repositories.IBaseRepository`1.Add(`0)">
+            <summary>
+            Add generic
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Domain.Interfaces.Repositories.IBaseRepository`1.Update(`0)">
+            <summary>
+            Edit generic
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Domain.Interfaces.Repositories.IBaseRepository`1.Delete(`0)">
+            <summary>
+            Delete generic
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Api.Domain.Interfaces.Repositories.IBaseRepository`1.Dispose">
+            <summary>
+            Dispose
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Interfaces.Repositories.IBuildingRepository">
+            <summary>
+            Building repository
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Interfaces.Repositories.IClassRepository">
+            <summary>
+            Class repository
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Interfaces.Repositories.IClassShiftRepository">
+            <summary>
+            Class shift repository
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Interfaces.Repositories.ICourseRepository">
+            <summary>
+            Course repository
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Interfaces.Repositories.ICourseUnitRepository">
+            <summary>
+            Course unit repository
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Interfaces.Repositories.IPropertyRepository">
+            <summary>
+            Property repository
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Interfaces.Repositories.IQualityScheduleRepository">
+            <summary>
+            Quality schedule repository
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Interfaces.Repositories.IRoomPropertyRepository">
+            <summary>
+            Room property repository
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Interfaces.Repositories.IRoomRepository">
+            <summary>
+            Room repository
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Interfaces.Repositories.ISessionRepository">
+            <summary>
+            Session repository
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Interfaces.Repositories.IShiftRepository">
+            <summary>
+            Shift repository
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Interfaces.Repositories.ISlotRepository">
+            <summary>
+            Slot repository
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Interfaces.Repositories.IUnitRepository">
+            <summary>
+            Unit repository
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -3,8 +3,6 @@ using System;
 using Api.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Api.Infra.Data.Migrations
 {
@@ -15,37 +13,35 @@ namespace Api.Infra.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.11")
-                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                .HasAnnotation("Relational:MaxIdentifierLength", 64)
+                .HasAnnotation("ProductVersion", "5.0.11");
 
             //modelBuilder.Entity("Api.Domain.Entities.BaseEntity", b =>
             //    {
             //        b.Property<int>("Id")
             //            .ValueGeneratedOnAdd()
-            //            .HasColumnType("int")
-            //            .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+            //            .HasColumnType("int");
 
             //        b.Property<DateTime?>("CreateDate")
-            //            .HasColumnType("datetime2");
+            //            .HasColumnType("datetime");
 
             //        b.Property<string>("CreateUser")
-            //            .HasColumnType("nvarchar(max)");
+            //            .HasColumnType("text");
 
             //        b.Property<DateTime?>("DeleteDate")
-            //            .HasColumnType("datetime2");
+            //            .HasColumnType("datetime");
 
             //        b.Property<string>("DeleteUser")
-            //            .HasColumnType("nvarchar(max)");
+            //            .HasColumnType("text");
 
             //        b.Property<bool>("Deleted")
-            //            .HasColumnType("bit");
+            //            .HasColumnType("tinyint(1)");
 
             //        b.Property<DateTime?>("ModifyDate")
-            //            .HasColumnType("datetime2");
+            //            .HasColumnType("datetime");
 
             //        b.Property<string>("ModifyUser")
-            //            .HasColumnType("nvarchar(max)");
+            //            .HasColumnType("text");
 
             //        b.HasKey("Id");
 
@@ -54,139 +50,156 @@ namespace Api.Infra.Data.Migrations
 
             modelBuilder.Entity("Api.Domain.Entities.Building", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<byte[]>("BuildingKey")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("varbinary(16)");
 
-                    b.Property<Guid>("BuildingKey")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("BuildingName")
+                        .HasMaxLength(250)
+                        .HasColumnType("varchar(250)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("CreateUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<DateTime?>("DeleteDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("DeleteUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<bool>("Deleted")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("ModifyUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<byte[]>("ScheduleKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
+
+                    b.Property<int>("ScheduleVersion")
+                        .HasColumnType("int");
+
+                    b.HasKey("BuildingKey");
 
                     b.HasIndex("Id")
                         .IsUnique();
-
-                    b.HasKey("BuildingKey");
 
                     b.ToTable("Buildings");
                 });
 
             modelBuilder.Entity("Api.Domain.Entities.Class", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<byte[]>("ClassKey")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<Guid>("ClassKey")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("varbinary(16)");
 
                     b.Property<string>("ClassName")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("CreateUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<DateTime?>("DeleteDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("DeleteUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<bool>("Deleted")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("ModifyUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<byte[]>("ScheduleKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
+
+                    b.Property<int>("ScheduleVersion")
+                        .HasColumnType("int");
+
+                    b.HasKey("ClassKey");
 
                     b.HasIndex("Id")
                         .IsUnique();
-
-                    b.HasKey("ClassKey");
 
                     b.ToTable("Classes");
                 });
 
             modelBuilder.Entity("Api.Domain.Entities.ClassShift", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<byte[]>("ClassShiftKey")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("varbinary(16)");
 
-                    b.Property<Guid>("ClassShiftKey")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("ClassKey")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<byte[]>("ClassKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("CreateUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<DateTime?>("DeleteDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("DeleteUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<bool>("Deleted")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("ModifyUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
-                    b.Property<Guid>("ShiftKey")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<byte[]>("ShiftKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
+
+                    b.HasKey("ClassShiftKey");
 
                     b.HasIndex("Id")
                         .IsUnique();
-
-                    b.HasKey("ClassShiftKey");
 
                     b.HasIndex("ShiftKey");
 
@@ -198,96 +211,107 @@ namespace Api.Infra.Data.Migrations
 
             modelBuilder.Entity("Api.Domain.Entities.Course", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<byte[]>("CourseKey")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<Guid>("CourseKey")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("varbinary(16)");
 
                     b.Property<string>("CourseName")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("CreateUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<DateTime?>("DeleteDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("DeleteUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<bool>("Deleted")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("ModifyUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<byte[]>("ScheduleKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
+
+                    b.Property<int>("ScheduleVersion")
+                        .HasColumnType("int");
+
+                    b.Property<byte[]>("Type")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
+
+                    b.HasKey("CourseKey");
 
                     b.HasIndex("Id")
                         .IsUnique();
-
-                    b.HasKey("CourseKey");
 
                     b.ToTable("Courses");
                 });
 
             modelBuilder.Entity("Api.Domain.Entities.CourseUnit", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<byte[]>("CourseUnitKey")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("varbinary(16)");
 
-                    b.Property<Guid>("CourseUnitKey")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("CourseKey")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<byte[]>("CourseKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("CreateUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<DateTime?>("DeleteDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("DeleteUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<bool>("Deleted")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("ModifyUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
-                    b.Property<Guid>("UnitKey")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<byte[]>("UnitKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
+
+                    b.HasKey("CourseUnitKey");
 
                     b.HasIndex("Id")
                         .IsUnique();
-
-                    b.HasKey("CourseUnitKey");
 
                     b.HasIndex("UnitKey");
 
@@ -299,167 +323,285 @@ namespace Api.Infra.Data.Migrations
 
             modelBuilder.Entity("Api.Domain.Entities.Property", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<byte[]>("PropertyKey")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<Guid>("PropertyKey")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("varbinary(16)");
 
                     b.Property<bool>("AvailableManagement")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<bool>("AvailableRequest")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("CreateUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<DateTime?>("DeleteDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("DeleteUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<bool>("Deleted")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("ModifyUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<string>("PropertyDescription")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<string>("PropertyName")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<bool>("PropertyStatus")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
+
+                    b.HasKey("PropertyKey");
 
                     b.HasIndex("Id")
                         .IsUnique();
 
-                    b.HasKey("PropertyKey");
-
                     b.ToTable("Properties");
+                });
+
+            modelBuilder.Entity("Api.Domain.Entities.QualitySchedule", b =>
+                {
+                    b.Property<byte[]>("ScheduleKey")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("varbinary(16)");
+
+                    b.Property<int>("AvarageGapBetweenSessionsByShift")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("CreateDate")
+                        .HasColumnType("datetime");
+
+                    b.Property<string>("CreateUser")
+                        .HasMaxLength(250)
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<DateTime?>("DeleteDate")
+                        .HasColumnType("datetime");
+
+                    b.Property<string>("DeleteUser")
+                        .HasMaxLength(250)
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<bool>("Deleted")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("ModifyDate")
+                        .HasColumnType("datetime");
+
+                    b.Property<string>("ModifyUser")
+                        .HasMaxLength(250)
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<int>("ScheduleVersion")
+                        .HasColumnType("int");
+
+                    b.Property<TimeSpan>("TimeExecution")
+                        .HasColumnType("time");
+
+                    b.Property<int>("TotalRoomChangeBetweenSessions")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomChangeBetweenSessionsAfterWork")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomChangeBetweenSessionsDegrees")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomChangeBetweenSessionsMasters")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomChangeBetweenSessionsWork")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomChangeInSessions")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomChangeInSessionsAfterWork")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomChangeInSessionsDegrees")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomChangeInSessionsMasters")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomChangeInSessionsWork")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomChangeInShifts")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomChangeInShiftsAfterWork")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomChangeInShiftsDegrees")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomChangeInShiftsMasters")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomChangeInShiftsWork")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomsWithoutSession")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomsWithoutSessionAfterWork")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomsWithoutSessionDegrees")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomsWithoutSessionMasters")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalRoomsWithoutSessionWork")
+                        .HasColumnType("int");
+
+                    b.HasKey("ScheduleKey");
+
+                    b.HasIndex("Id")
+                        .IsUnique();
+
+                    b.ToTable("QualitySchedules");
                 });
 
             modelBuilder.Entity("Api.Domain.Entities.Room", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<byte[]>("RoomKey")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("varbinary(16)");
 
-                    b.Property<Guid>("RoomKey")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("BuildingKey")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<byte[]>("BuildingKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("CreateUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<DateTime?>("DeleteDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("DeleteUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<bool>("Deleted")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<int>("ExamCapacity")
                         .HasColumnType("int");
-  
+
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("ModifyUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<int>("NormalCapacity")
                         .HasColumnType("int");
 
                     b.Property<string>("RoomName")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
-                    b.HasIndex("Id")
-                        .IsUnique();
+                    b.Property<byte[]>("ScheduleKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
+
+                    b.Property<int>("ScheduleVersion")
+                        .HasColumnType("int");
 
                     b.HasKey("RoomKey");
 
                     b.HasIndex("BuildingKey");
+
+                    b.HasIndex("Id")
+                        .IsUnique();
 
                     b.ToTable("Rooms");
                 });
 
             modelBuilder.Entity("Api.Domain.Entities.RoomProperty", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<byte[]>("RoomPropertyKey")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<Guid>("RoomPropertyKey")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("varbinary(16)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("CreateUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<DateTime?>("DeleteDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("DeleteUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<bool>("Deleted")
-                        .HasColumnType("bit");
-                    
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("ModifyUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
-                    b.Property<Guid>("PropertyKey")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<byte[]>("PropertyKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
 
-                    b.Property<Guid>("RoomKey")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<byte[]>("RoomKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
+
+                    b.HasKey("RoomPropertyKey");
 
                     b.HasIndex("Id")
                         .IsUnique();
-
-                    b.HasKey("RoomPropertyKey");
 
                     b.HasIndex("PropertyKey");
 
@@ -471,62 +613,65 @@ namespace Api.Infra.Data.Migrations
 
             modelBuilder.Entity("Api.Domain.Entities.Session", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<byte[]>("SessionKey")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<Guid>("SessionKey")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("varbinary(16)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("CreateUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<DateTime?>("DeleteDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("DeleteUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<bool>("Deleted")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<DateTime>("EndDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
+
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("ModifyUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
-                    b.Property<Guid>("PropertyKey")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<byte[]>("PropertyKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
 
-                    b.Property<Guid>("RoomKey")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<byte[]>("ScheduleKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
 
-                    b.Property<Guid>("ShiftKey")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int>("ScheduleVersion")
+                        .HasColumnType("int");
+
+                    b.Property<byte[]>("ShiftKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
 
                     b.Property<DateTime>("StartDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
+
+                    b.HasKey("SessionKey");
 
                     b.HasIndex("Id")
                         .IsUnique();
 
-                    b.HasKey("SessionKey");
-
                     b.HasIndex("PropertyKey");
-
-                    b.HasIndex("RoomKey");
 
                     b.HasIndex("ShiftKey");
 
@@ -535,98 +680,182 @@ namespace Api.Infra.Data.Migrations
 
             modelBuilder.Entity("Api.Domain.Entities.Shift", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<byte[]>("ShiftKey")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<Guid>("ShiftKey")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("varbinary(16)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("CreateUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<DateTime?>("DeleteDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("DeleteUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<bool>("Deleted")
-                        .HasColumnType("bit");
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<int>("EnrolledStudents")
                         .HasColumnType("int");
-              
+
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("ModifyUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
-                    b.Property<Guid>("UnitKey")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<byte[]>("ScheduleKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
+
+                    b.Property<int>("ScheduleVersion")
+                        .HasColumnType("int");
+
+                    b.Property<byte[]>("ShiftType")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
+
+                    b.Property<byte[]>("UnitKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
+
+                    b.HasKey("ShiftKey");
 
                     b.HasIndex("Id")
                         .IsUnique();
-
-                    b.HasKey("ShiftKey");
 
                     b.HasIndex("UnitKey");
 
                     b.ToTable("Shifts");
                 });
 
-            modelBuilder.Entity("Api.Domain.Entities.Unit", b =>
+            modelBuilder.Entity("Api.Domain.Entities.Slot", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<byte[]>("SlotKey")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<Guid>("UnitKey")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("varbinary(16)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("CreateUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<DateTime?>("DeleteDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("DeleteUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<bool>("Deleted")
-                        .HasColumnType("bit");
-             
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime");
+
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
                     b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("ModifyUser")
                         .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("varchar(250)");
 
-                    b.Property<string>("UnitName")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                    b.Property<byte[]>("RoomKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
+
+                    b.Property<byte[]>("ScheduleKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
+
+                    b.Property<int>("ScheduleVersion")
+                        .HasColumnType("int");
+
+                    b.Property<byte[]>("SessionKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime");
+
+                    b.HasKey("SlotKey");
 
                     b.HasIndex("Id")
                         .IsUnique();
 
+                    b.HasIndex("RoomKey");
+
+                    b.HasIndex("SessionKey");
+
+                    b.ToTable("Slots");
+                });
+
+            modelBuilder.Entity("Api.Domain.Entities.Unit", b =>
+                {
+                    b.Property<byte[]>("UnitKey")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("varbinary(16)");
+
+                    b.Property<DateTime?>("CreateDate")
+                        .HasColumnType("datetime");
+
+                    b.Property<string>("CreateUser")
+                        .HasMaxLength(250)
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<DateTime?>("DeleteDate")
+                        .HasColumnType("datetime");
+
+                    b.Property<string>("DeleteUser")
+                        .HasMaxLength(250)
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<bool>("Deleted")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("ModifyDate")
+                        .HasColumnType("datetime");
+
+                    b.Property<string>("ModifyUser")
+                        .HasMaxLength(250)
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<byte[]>("ScheduleKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(16)");
+
+                    b.Property<int>("ScheduleVersion")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UnitName")
+                        .HasMaxLength(250)
+                        .HasColumnType("varchar(250)");
+
                     b.HasKey("UnitKey");
+
+                    b.HasIndex("Id")
+                        .IsUnique();
 
                     b.ToTable("Units");
                 });
@@ -707,12 +936,6 @@ namespace Api.Infra.Data.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("Api.Domain.Entities.Room", "Room")
-                        .WithMany("Sessions")
-                        .HasForeignKey("RoomKey")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.HasOne("Api.Domain.Entities.Shift", "Shift")
                         .WithMany("Sessions")
                         .HasForeignKey("ShiftKey")
@@ -720,8 +943,6 @@ namespace Api.Infra.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Property");
-
-                    b.Navigation("Room");
 
                     b.Navigation("Shift");
                 });
@@ -735,6 +956,25 @@ namespace Api.Infra.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Unit");
+                });
+
+            modelBuilder.Entity("Api.Domain.Entities.Slot", b =>
+                {
+                    b.HasOne("Api.Domain.Entities.Room", "Room")
+                        .WithMany("Slots")
+                        .HasForeignKey("RoomKey")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Api.Domain.Entities.Session", "Session")
+                        .WithMany("Slots")
+                        .HasForeignKey("SessionKey")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Room");
+
+                    b.Navigation("Session");
                 });
 
             modelBuilder.Entity("Api.Domain.Entities.Building", b =>
@@ -763,7 +1003,12 @@ namespace Api.Infra.Data.Migrations
                 {
                     b.Navigation("RoomProperties");
 
-                    b.Navigation("Sessions");
+                    b.Navigation("Slots");
+                });
+
+            modelBuilder.Entity("Api.Domain.Entities.Session", b =>
+                {
+                    b.Navigation("Slots");
                 });
 
             modelBuilder.Entity("Api.Domain.Entities.Shift", b =>

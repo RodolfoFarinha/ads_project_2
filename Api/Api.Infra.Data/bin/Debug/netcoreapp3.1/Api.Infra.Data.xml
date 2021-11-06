@@ -1,0 +1,557 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api.Infra.Data</name>
+    </assembly>
+    <members>
+        <member name="T:Api.Infra.Data.Context.ApiDBContext">
+            <summary>
+            Application database context
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.Context.ApiDBContext.Buildings">
+            <summary>
+            Building context
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.Context.ApiDBContext.Classes">
+            <summary>
+            Class context
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.Context.ApiDBContext.ClassShifts">
+            <summary>
+            Class shift context
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.Context.ApiDBContext.Courses">
+            <summary>
+            Building context
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.Context.ApiDBContext.CourseUnits">
+            <summary>
+            Course unit context
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.Context.ApiDBContext.Properties">
+            <summary>
+            Property context
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.Context.ApiDBContext.Rooms">
+            <summary>
+            Room context
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.Context.ApiDBContext.RoomProperties">
+            <summary>
+            Room property context
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.Context.ApiDBContext.QualitySchedules">
+            <summary>
+            Quality schedule context
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.Context.ApiDBContext.Sessions">
+            <summary>
+            Session context
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.Context.ApiDBContext.Shifts">
+            <summary>
+            Shift context
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.Context.ApiDBContext.Slots">
+            <summary>
+            Slot context
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.Context.ApiDBContext.Units">
+            <summary>
+            Unit context
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Context.ApiDBContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{Api.Infra.Data.Context.ApiDBContext})">
+            <summary>
+            Application database context constructor
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="M:Api.Infra.Data.Context.ApiDBContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Method to creating model application database context
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="M:Api.Infra.Data.Context.ApiDBContext.SaveChanges">
+            <summary>
+            Method to save application database context 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Infra.Data.EntityConfig.BuildingConfiguration">
+            <summary>
+            Building configuration
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.EntityConfig.BuildingConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Api.Domain.Entities.Building})">
+            <summary>
+            Building configuration builder
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:Api.Infra.Data.EntityConfig.ClassConfiguration">
+            <summary>
+            Class configuration
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.EntityConfig.ClassConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Api.Domain.Entities.Class})">
+            <summary>
+            Class configuration builder
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:Api.Infra.Data.EntityConfig.ClassShiftConfiguration">
+            <summary>
+            Class shift configuration
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.EntityConfig.ClassShiftConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Api.Domain.Entities.ClassShift})">
+            <summary>
+            Class shift configuration builder
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:Api.Infra.Data.EntityConfig.CourseConfiguration">
+            <summary>
+            Course configuration
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.EntityConfig.CourseConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Api.Domain.Entities.Course})">
+            <summary>
+            Course configuration builder
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:Api.Infra.Data.EntityConfig.CourseUnitConfiguration">
+            <summary>
+            Course unit configuration
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.EntityConfig.CourseUnitConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Api.Domain.Entities.CourseUnit})">
+            <summary>
+            Course unit configuration builder
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:Api.Infra.Data.EntityConfig.PropertyConfiguration">
+            <summary>
+            Property configuration
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.EntityConfig.PropertyConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Api.Domain.Entities.Property})">
+            <summary>
+            Property configuration builder
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:Api.Infra.Data.EntityConfig.QualityScheduleConfiguration">
+            <summary>
+            Quality schedule configuration
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.EntityConfig.QualityScheduleConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Api.Domain.Entities.QualitySchedule})">
+            <summary>
+            Quality schedule configuration builder
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:Api.Infra.Data.EntityConfig.RoomConfiguration">
+            <summary>
+            Room configuration
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.EntityConfig.RoomConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Api.Domain.Entities.Room})">
+            <summary>
+            Room configuration builder
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:Api.Infra.Data.EntityConfig.RoomPropertyConfiguration">
+            <summary>
+            Room property configuration
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.EntityConfig.RoomPropertyConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Api.Domain.Entities.RoomProperty})">
+            <summary>
+            Room property configuration builder
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:Api.Infra.Data.EntityConfig.SessionConfiguration">
+            <summary>
+            Session configuration
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.EntityConfig.SessionConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Api.Domain.Entities.Session})">
+            <summary>
+            Session configuration builder
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:Api.Infra.Data.EntityConfig.ShiftConfiguration">
+            <summary>
+            Shift configuration
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.EntityConfig.ShiftConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Api.Domain.Entities.Shift})">
+            <summary>
+            Shift configuration builder
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:Api.Infra.Data.EntityConfig.SlotConfiguration">
+            <summary>
+            Slot configuration
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.EntityConfig.SlotConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Api.Domain.Entities.Slot})">
+            <summary>
+            Slot configuration builder
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:Api.Infra.Data.EntityConfig.UnitConfiguration">
+            <summary>
+            Unit configuration
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.EntityConfig.UnitConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Api.Domain.Entities.Unit})">
+            <summary>
+            Unit configuration builder
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:Api.Infra.Data.Migrations.Init">
+            <summary>
+            Init migration
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Migrations.Init.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <summary>
+            Up migration
+            </summary>
+            <param name="migrationBuilder"></param>
+        </member>
+        <member name="M:Api.Infra.Data.Migrations.Init.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <summary>
+            Down migration
+            </summary>
+            <param name="migrationBuilder"></param>
+        </member>
+        <member name="T:Api.Infra.Data.Repository.BaseRepository`1">
+            <summary>
+            Base repository
+            </summary>
+        </member>
+        <member name="F:Api.Infra.Data.Repository.BaseRepository`1._context">
+            <summary>
+            Database context
+            </summary>
+        </member>
+        <member name="F:Api.Infra.Data.Repository.BaseRepository`1._dbSet">
+            <summary>
+            Database set
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.BaseRepository`1.#ctor(Api.Infra.Data.Context.ApiDBContext)">
+            <summary>
+            Base repository constructor
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.BaseRepository`1.GetByKey(System.Guid)">
+            <summary>
+            Method get generic entity by key
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.BaseRepository`1.GetAll">
+            <summary>
+            Method get all generic entity
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.BaseRepository`1.Add(`0)">
+            <summary>
+            Method add generic entity
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.BaseRepository`1.Update(`0)">
+            <summary>
+            Method update generic entity
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.BaseRepository`1.Delete(`0)">
+            <summary>
+            Method delete generic entity
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.BaseRepository`1.Dispose">
+            <summary>
+            Method dispose
+            </summary>
+        </member>
+        <member name="T:Api.Infra.Data.Repository.BuildingRepository">
+            <summary>
+            Building repository
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.BuildingRepository.#ctor(Api.Infra.Data.Context.ApiDBContext)">
+            <summary>
+            Building repository constructor
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Api.Infra.Data.Repository.ClassRepository">
+            <summary>
+            Class repository
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.ClassRepository.#ctor(Api.Infra.Data.Context.ApiDBContext)">
+            <summary>
+            Class repository constructor
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Api.Infra.Data.Repository.ClassShiftRepository">
+            <summary>
+            Class shift repository
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.ClassShiftRepository.#ctor(Api.Infra.Data.Context.ApiDBContext)">
+            <summary>
+            Class shift repository constructor
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Api.Infra.Data.Repository.CourseRepository">
+            <summary>
+            Course repository
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.CourseRepository.#ctor(Api.Infra.Data.Context.ApiDBContext)">
+            <summary>
+            Course repository constructor
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Api.Infra.Data.Repository.CourseUnitRepository">
+            <summary>
+            Course unit repository
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.CourseUnitRepository.#ctor(Api.Infra.Data.Context.ApiDBContext)">
+            <summary>
+            Course unit repository constructor
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Api.Infra.Data.Repository.PropertyRepository">
+            <summary>
+            Property repository
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.PropertyRepository.#ctor(Api.Infra.Data.Context.ApiDBContext)">
+            <summary>
+            Property repository constructor
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Api.Infra.Data.Repository.QualityScheduleRepository">
+            <summary>
+            Quality schedule repository
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.QualityScheduleRepository.#ctor(Api.Infra.Data.Context.ApiDBContext)">
+            <summary>
+            Quality schedule repository constructor
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Api.Infra.Data.Repository.RoomPropertyRepository">
+            <summary>
+            Room property repository
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.RoomPropertyRepository.#ctor(Api.Infra.Data.Context.ApiDBContext)">
+            <summary>
+            Room property repository constructor
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Api.Infra.Data.Repository.RoomRepository">
+            <summary>
+            Room repository
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.RoomRepository.#ctor(Api.Infra.Data.Context.ApiDBContext)">
+            <summary>
+            Room repository constructor
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Api.Infra.Data.Repository.SessionRepository">
+            <summary>
+            Session repository
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.SessionRepository.#ctor(Api.Infra.Data.Context.ApiDBContext)">
+            <summary>
+            Session repository constructor
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Api.Infra.Data.Repository.ShiftRepository">
+            <summary>
+            Shift repository
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.ShiftRepository.#ctor(Api.Infra.Data.Context.ApiDBContext)">
+            <summary>
+            Shift repository constructor
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Api.Infra.Data.Repository.SlotRepository">
+            <summary>
+            Slot repository
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.SlotRepository.#ctor(Api.Infra.Data.Context.ApiDBContext)">
+            <summary>
+            Slot repository constructor
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Api.Infra.Data.Repository.UnitRepository">
+            <summary>
+            Unit repository
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.Repository.UnitRepository.#ctor(Api.Infra.Data.Context.ApiDBContext)">
+            <summary>
+            Unit repository constructor
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Api.Infra.Data.UnitOfWork.UnitOfWork">
+            <summary>
+            Unit of work pattern
+            </summary>
+        </member>
+        <member name="F:Api.Infra.Data.UnitOfWork.UnitOfWork._apiDBContext">
+            <summary>
+            Application database context
+            </summary>
+        </member>
+        <member name="F:Api.Infra.Data.UnitOfWork.UnitOfWork._disposed">
+            <summary>
+            Disposed
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.UnitOfWork.UnitOfWork.#ctor(Api.Infra.Data.Context.ApiDBContext)">
+            <summary>
+            Unit of work constructor
+            </summary>
+            <param name="apiDBContext"></param>
+        </member>
+        <member name="P:Api.Infra.Data.UnitOfWork.UnitOfWork.BuildingRepository">
+            <summary>
+            Building instance repository
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.UnitOfWork.UnitOfWork.ClassRepository">
+            <summary>
+            Class instance repository
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.UnitOfWork.UnitOfWork.ClassShiftRepository">
+            <summary>
+            Class shift instance repository
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.UnitOfWork.UnitOfWork.CourseRepository">
+            <summary>
+            Course instance repository
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.UnitOfWork.UnitOfWork.CourseUnitRepository">
+            <summary>
+            Course unit instance repository
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.UnitOfWork.UnitOfWork.PropertyRepository">
+            <summary>
+            Property instance repository
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.UnitOfWork.UnitOfWork.QualityScheduleRepository">
+            <summary>
+            Quality schedule instance repository
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.UnitOfWork.UnitOfWork.RoomPropertyRepository">
+            <summary>
+            Room property instance repository
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.UnitOfWork.UnitOfWork.RoomRepository">
+            <summary>
+            Room instance repository
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.UnitOfWork.UnitOfWork.SessionRepository">
+            <summary>
+            Session instance repository
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.UnitOfWork.UnitOfWork.ShiftRepository">
+            <summary>
+            Shift instance repository
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.UnitOfWork.UnitOfWork.SlotRepository">
+            <summary>
+            Slot instance repository
+            </summary>
+        </member>
+        <member name="P:Api.Infra.Data.UnitOfWork.UnitOfWork.UnitRepository">
+            <summary>
+            Unit instance repository
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.UnitOfWork.UnitOfWork.BeginTransaction">
+            <summary>
+            Begin transaction
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.UnitOfWork.UnitOfWork.Commit">
+            <summary>
+            Commit changes
+            </summary>
+        </member>
+        <member name="M:Api.Infra.Data.UnitOfWork.UnitOfWork.Dispose(System.Boolean)">
+            <summary>
+            Dispose
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Api.Infra.Data.UnitOfWork.UnitOfWork.Dispose">
+            <summary>
+            Dipose
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -3,7 +3,10 @@ using System.Collections.Generic;
 
 namespace Api.Service.ViewModels
 {
-    public class RoomViewModel : BaseModel
+    /// <summary>
+    /// Room model
+    /// </summary>
+    public class RoomViewModel : ScheduleModel
     {
         /// <summary>
         /// Get or Set Room Key

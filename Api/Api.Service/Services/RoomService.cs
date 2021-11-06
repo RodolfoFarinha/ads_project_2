@@ -8,10 +8,23 @@ using System.Collections.Generic;
 
 namespace Api.Service.Services
 {
+    /// <summary>
+    /// Room service
+    /// </summary>
     public class RoomService : BaseService, IRoomService
     {
+        /// <summary>
+        /// Room service constructor
+        /// </summary>
+        /// <param name="mapper"></param>
+        /// <param name="unitOfWork"></param>
         public RoomService(IMapper mapper, IUnitOfWork unitOfWork) : base(mapper, unitOfWork) { }
 
+        /// <summary>
+        /// Method to get room by key
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public RoomViewModel GetByKey(Guid key)
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -22,6 +35,10 @@ namespace Api.Service.Services
             }
         }
 
+        /// <summary>
+        /// Method to get all rooms
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<RoomViewModel> GetAll()
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -32,6 +49,11 @@ namespace Api.Service.Services
             }
         }
 
+        /// <summary>
+        /// Method to save room
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public RoomViewModel Save(RoomViewModel obj)
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -50,6 +72,11 @@ namespace Api.Service.Services
             }
         }
 
+        /// <summary>
+        /// Method to delete room
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public RoomViewModel Delete(Guid key)
         {
             using (var unitOfwork = GetUnitOfWorkInstance())

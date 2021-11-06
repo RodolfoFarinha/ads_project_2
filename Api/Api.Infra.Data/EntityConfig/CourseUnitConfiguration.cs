@@ -4,8 +4,15 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Api.Infra.Data.EntityConfig
 {
+    /// <summary>
+    /// Course unit configuration
+    /// </summary>
     internal class CourseUnitConfiguration : IEntityTypeConfiguration<CourseUnit>
     {
+        /// <summary>
+        /// Course unit configuration builder
+        /// </summary>
+        /// <param name="builder"></param>
         public void Configure(EntityTypeBuilder<CourseUnit> builder)
         {
             builder.ToTable("CourseUnits");

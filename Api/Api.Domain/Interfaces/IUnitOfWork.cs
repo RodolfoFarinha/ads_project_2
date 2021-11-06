@@ -34,6 +34,11 @@ namespace Api.Domain.Interfaces
         IPropertyRepository PropertyRepository { get; }
 
         /// <summary>
+        /// Quality schedule instance repository
+        /// </summary>
+        IQualityScheduleRepository QualityScheduleRepository { get; }
+
+        /// <summary>
         /// Room property repository
         /// </summary>
         IRoomPropertyRepository RoomPropertyRepository { get; }
@@ -52,6 +57,11 @@ namespace Api.Domain.Interfaces
         /// Shift repository
         /// </summary>
         IShiftRepository ShiftRepository { get; }
+
+        /// <summary>
+        /// Slot repository
+        /// </summary>
+        ISlotRepository SlotRepository { get; }
 
         /// <summary>
         /// Unit repository

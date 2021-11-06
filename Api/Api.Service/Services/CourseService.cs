@@ -8,10 +8,23 @@ using System.Collections.Generic;
 
 namespace Api.Service.Services
 {
+    /// <summary>
+    /// Course service
+    /// </summary>
     public class CourseService : BaseService, ICourseService
     {
+        /// <summary>
+        /// Course service constructor
+        /// </summary>
+        /// <param name="mapper"></param>
+        /// <param name="unitOfWork"></param>
         public CourseService(IMapper mapper, IUnitOfWork unitOfWork) : base(mapper, unitOfWork) { }
 
+        /// <summary>
+        /// Method to get course by key
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public CourseViewModel GetByKey(Guid key)
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -22,6 +35,10 @@ namespace Api.Service.Services
             }
         }
 
+        /// <summary>
+        /// Method to get all courses
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<CourseViewModel> GetAll()
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -32,6 +49,11 @@ namespace Api.Service.Services
             }
         }
 
+        /// <summary>
+        /// Method to save course
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public CourseViewModel Save(CourseViewModel obj)
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -50,6 +72,11 @@ namespace Api.Service.Services
             }
         }
 
+        /// <summary>
+        /// Method to delete course
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public CourseViewModel Delete(Guid key)
         {
             using (var unitOfwork = GetUnitOfWorkInstance())

@@ -4,8 +4,15 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Api.Infra.Data.EntityConfig
 {
+    /// <summary>
+    /// Room configuration
+    /// </summary>
     internal class RoomConfiguration : IEntityTypeConfiguration<Room>
     {
+        /// <summary>
+        /// Room configuration builder
+        /// </summary>
+        /// <param name="builder"></param>
         public void Configure(EntityTypeBuilder<Room> builder)
         {
             builder.ToTable("Rooms");

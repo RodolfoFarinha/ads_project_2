@@ -1,0 +1,1274 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api.Service</name>
+    </assembly>
+    <members>
+        <member name="T:Api.Service.Interfaces.Services.IBaseService">
+            <summary>
+            Base service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IBaseService.GetMapperInstance">
+            <summary>
+            Method to get mapper instance
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IBaseService.GetUnitOfWorkInstance">
+            <summary>
+            Method to get unit of work instance
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IBaseService.BeginTransaction">
+            <summary>
+            Method to begin transaction
+            </summary>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IBaseService.Commit">
+            <summary>
+            Method to commit changes
+            </summary>
+        </member>
+        <member name="T:Api.Service.Interfaces.Services.IBuildingService">
+            <summary>
+            Building service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IBuildingService.GetByKey(System.Guid)">
+            <summary>
+            Method to get building by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IBuildingService.GetAll">
+            <summary>
+            Method to get all buildings
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IBuildingService.Save(Api.Service.ViewModels.BuildingViewModel)">
+            <summary>
+            Method to save building
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IBuildingService.Delete(System.Guid)">
+            <summary>
+            Method to delete building
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Interfaces.Services.IClassService">
+            <summary>
+            Class service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IClassService.GetByKey(System.Guid)">
+            <summary>
+            Method to get class by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IClassService.GetAll">
+            <summary>
+            Method to get all classes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IClassService.Save(Api.Service.ViewModels.ClassViewModel)">
+            <summary>
+            Method to save class
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IClassService.Delete(System.Guid)">
+            <summary>
+            Method to delete class
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Interfaces.Services.ICourseService">
+            <summary>
+            Course service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.ICourseService.GetByKey(System.Guid)">
+            <summary>
+            Method to get course by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.ICourseService.GetAll">
+            <summary>
+            Method to get all courses
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.ICourseService.Save(Api.Service.ViewModels.CourseViewModel)">
+            <summary>
+            Method to save course
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.ICourseService.Delete(System.Guid)">
+            <summary>
+            Method to delete course
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Interfaces.Services.IFilesService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Api.Service.Interfaces.Services.IPropertyService">
+            <summary>
+            Property service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IPropertyService.GetByKey(System.Guid)">
+            <summary>
+            Method to get property by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IPropertyService.GetAll">
+            <summary>
+            Method to get all properties
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IPropertyService.Save(Api.Service.ViewModels.PropertyViewModel)">
+            <summary>
+            Method to save property
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IPropertyService.Delete(System.Guid)">
+            <summary>
+            Method to delete property
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Interfaces.Services.IRoomService">
+            <summary>
+            Room service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IRoomService.GetByKey(System.Guid)">
+            <summary>
+            Method to get room by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IRoomService.GetAll">
+            <summary>
+            Method to get all rooms
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IRoomService.Save(Api.Service.ViewModels.RoomViewModel)">
+            <summary>
+            Method to save room
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IRoomService.Delete(System.Guid)">
+            <summary>
+            Method to delete room
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Interfaces.Services.ISessionService">
+            <summary>
+            Session service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.ISessionService.GetByKey(System.Guid)">
+            <summary>
+            Method to get session by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.ISessionService.GetAll">
+            <summary>
+            Method to get all sessions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.ISessionService.Save(Api.Service.ViewModels.SessionViewModel)">
+            <summary>
+            Method to save session
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.ISessionService.Delete(System.Guid)">
+            <summary>
+            Method to delete session
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Interfaces.Services.IShiftService">
+            <summary>
+            Shift service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IShiftService.GetByKey(System.Guid)">
+            <summary>
+            Method to get shift by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IShiftService.GetAll">
+            <summary>
+            Method to get all shifts
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IShiftService.Save(Api.Service.ViewModels.ShiftViewModel)">
+            <summary>
+            Method to save shift
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IShiftService.Delete(System.Guid)">
+            <summary>
+            Method to delete shift
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Interfaces.Services.ISlotService">
+            <summary>
+            Slot service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.ISlotService.GetByKey(System.Guid)">
+            <summary>
+            Method to get slot by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.ISlotService.GetAll">
+            <summary>
+            Method to get all slots
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.ISlotService.Save(Api.Service.ViewModels.SlotViewModel)">
+            <summary>
+            Method to save slot
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.ISlotService.Delete(System.Guid)">
+            <summary>
+            Method to delete slot
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Interfaces.Services.IUnitService">
+            <summary>
+            Unit Service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IUnitService.GetByKey(System.Guid)">
+            <summary>
+            Method to get unit by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IUnitService.GetAll">
+            <summary>
+            Method to get all units
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IUnitService.Save(Api.Service.ViewModels.UnitViewModel)">
+            <summary>
+            Method to save unit
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IUnitService.Delete(System.Guid)">
+            <summary>
+            Method to delete unit
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Mapping.AutoMapperConfig">
+            <summary>
+            Automapper configuration
+            </summary>
+        </member>
+        <member name="M:Api.Service.Mapping.AutoMapperConfig.RegisterMappings">
+            <summary>
+            Method to register all mappings
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Services.BaseService">
+            <summary>
+            Base service
+            </summary>
+        </member>
+        <member name="F:Api.Service.Services.BaseService._mapper">
+            <summary>
+            Get and set mapper
+            </summary>
+        </member>
+        <member name="F:Api.Service.Services.BaseService._unitOfWork">
+            <summary>
+            Get and set unit of work
+            </summary>
+        </member>
+        <member name="M:Api.Service.Services.BaseService.#ctor(AutoMapper.IMapper,Api.Domain.Interfaces.IUnitOfWork)">
+            <summary>
+            Base service constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="unitOfWork"></param>
+        </member>
+        <member name="M:Api.Service.Services.BaseService.GetMapperInstance">
+            <summary>
+            Method to get mapper instance
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.BaseService.GetUnitOfWorkInstance">
+            <summary>
+            Method to get unit of work instance
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.BaseService.BeginTransaction">
+            <summary>
+            Method to begin transaction
+            </summary>
+        </member>
+        <member name="M:Api.Service.Services.BaseService.Commit">
+            <summary>
+            Method to commit changes
+            </summary>
+        </member>
+        <member name="T:Api.Service.Services.BuildingService">
+            <summary>
+            Building service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Services.BuildingService.#ctor(AutoMapper.IMapper,Api.Domain.Interfaces.IUnitOfWork)">
+            <summary>
+            Building service constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="unitOfWork"></param>
+        </member>
+        <member name="M:Api.Service.Services.BuildingService.GetByKey(System.Guid)">
+            <summary>
+            Method to get building by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.BuildingService.GetAll">
+            <summary>
+            Method to get all buildings
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.BuildingService.Save(Api.Service.ViewModels.BuildingViewModel)">
+            <summary>
+            Method to save building
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.BuildingService.Delete(System.Guid)">
+            <summary>
+            Method to delete building
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Services.ClassService">
+            <summary>
+            Class service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Services.ClassService.#ctor(AutoMapper.IMapper,Api.Domain.Interfaces.IUnitOfWork)">
+            <summary>
+            Class service constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="unitOfWork"></param>
+        </member>
+        <member name="M:Api.Service.Services.ClassService.GetByKey(System.Guid)">
+            <summary>
+            Method to get class by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.ClassService.GetAll">
+            <summary>
+            Method to get all classs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.ClassService.Save(Api.Service.ViewModels.ClassViewModel)">
+            <summary>
+            Method to save class
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.ClassService.Delete(System.Guid)">
+            <summary>
+            Method to delete class
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Services.CourseService">
+            <summary>
+            Course service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Services.CourseService.#ctor(AutoMapper.IMapper,Api.Domain.Interfaces.IUnitOfWork)">
+            <summary>
+            Course service constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="unitOfWork"></param>
+        </member>
+        <member name="M:Api.Service.Services.CourseService.GetByKey(System.Guid)">
+            <summary>
+            Method to get course by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.CourseService.GetAll">
+            <summary>
+            Method to get all courses
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.CourseService.Save(Api.Service.ViewModels.CourseViewModel)">
+            <summary>
+            Method to save course
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.CourseService.Delete(System.Guid)">
+            <summary>
+            Method to delete course
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Services.PropertyService">
+            <summary>
+            Property service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Services.PropertyService.#ctor(AutoMapper.IMapper,Api.Domain.Interfaces.IUnitOfWork)">
+            <summary>
+            Property service constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="unitOfWork"></param>
+        </member>
+        <member name="M:Api.Service.Services.PropertyService.GetByKey(System.Guid)">
+            <summary>
+            Method to get property by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.PropertyService.GetAll">
+            <summary>
+            Method to get all properties
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.PropertyService.Save(Api.Service.ViewModels.PropertyViewModel)">
+            <summary>
+            Method to save property
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.PropertyService.Delete(System.Guid)">
+            <summary>
+            Method to delete property
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Services.RoomService">
+            <summary>
+            Room service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Services.RoomService.#ctor(AutoMapper.IMapper,Api.Domain.Interfaces.IUnitOfWork)">
+            <summary>
+            Room service constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="unitOfWork"></param>
+        </member>
+        <member name="M:Api.Service.Services.RoomService.GetByKey(System.Guid)">
+            <summary>
+            Method to get room by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.RoomService.GetAll">
+            <summary>
+            Method to get all rooms
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.RoomService.Save(Api.Service.ViewModels.RoomViewModel)">
+            <summary>
+            Method to save room
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.RoomService.Delete(System.Guid)">
+            <summary>
+            Method to delete room
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Services.SessionService">
+            <summary>
+            Session service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Services.SessionService.#ctor(AutoMapper.IMapper,Api.Domain.Interfaces.IUnitOfWork)">
+            <summary>
+            Session service constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="unitOfWork"></param>
+        </member>
+        <member name="M:Api.Service.Services.SessionService.GetByKey(System.Guid)">
+            <summary>
+            Method to get session by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.SessionService.GetAll">
+            <summary>
+            Method to get all sessions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.SessionService.Save(Api.Service.ViewModels.SessionViewModel)">
+            <summary>
+            Method to save session
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.SessionService.Delete(System.Guid)">
+            <summary>
+            Method to delete session
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Services.ShiftService">
+            <summary>
+            Shift service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Services.ShiftService.#ctor(AutoMapper.IMapper,Api.Domain.Interfaces.IUnitOfWork)">
+            <summary>
+            Shift service constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="unitOfWork"></param>
+        </member>
+        <member name="M:Api.Service.Services.ShiftService.GetByKey(System.Guid)">
+            <summary>
+            Method to get shift by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.ShiftService.GetAll">
+            <summary>
+            Method to get all shifts
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.ShiftService.Save(Api.Service.ViewModels.ShiftViewModel)">
+            <summary>
+            Method to save shift
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.ShiftService.Delete(System.Guid)">
+            <summary>
+            Method to delete shift
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Services.SlotService">
+            <summary>
+            Slot service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Services.SlotService.#ctor(AutoMapper.IMapper,Api.Domain.Interfaces.IUnitOfWork)">
+            <summary>
+            Slot service constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="unitOfWork"></param>
+        </member>
+        <member name="M:Api.Service.Services.SlotService.GetByKey(System.Guid)">
+            <summary>
+            Method to get slot by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.SlotService.GetAll">
+            <summary>
+            Method to get all slots
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.SlotService.Save(Api.Service.ViewModels.SlotViewModel)">
+            <summary>
+            Method to save slot
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.SlotService.Delete(System.Guid)">
+            <summary>
+            Method to delete slot
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.Services.UnitService">
+            <summary>
+            Unit service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Services.UnitService.#ctor(AutoMapper.IMapper,Api.Domain.Interfaces.IUnitOfWork)">
+            <summary>
+            Unit service constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="unitOfWork"></param>
+        </member>
+        <member name="M:Api.Service.Services.UnitService.GetByKey(System.Guid)">
+            <summary>
+            Method to get unit by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.UnitService.GetAll">
+            <summary>
+            Method to get all units
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.UnitService.Save(Api.Service.ViewModels.UnitViewModel)">
+            <summary>
+            Method to save unit
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Services.UnitService.Delete(System.Guid)">
+            <summary>
+            Method to delete unit
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Service.ViewModels.BaseModel">
+            <summary>
+            Base model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.BaseModel.Id">
+            <summary>
+            Get or Set Id
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.BuildingViewModel">
+            <summary>
+            Building model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.BuildingViewModel.BuildingKey">
+            <summary>
+            Get or Set Building Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.BuildingViewModel.BuildingName">
+            <summary>
+            Get or Set Building Name
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.BuildingViewModel.Rooms">
+            <summary>
+            Get or Set Building Rooms
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.ClassViewModel">
+            <summary>
+            Class model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ClassViewModel.ClassKey">
+            <summary>
+            Get or Set Class Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ClassViewModel.ClassName">
+            <summary>
+            Get or Set Class Name
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ClassViewModel.ClassShifts">
+            <summary>
+            Get or Set Class Shifts
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.ClassShiftViewModel">
+            <summary>
+            Class shift model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ClassShiftViewModel.ClassShiftKey">
+            <summary>
+            Get or Set Class Shift Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ClassShiftViewModel.ClassKey">
+            <summary>
+            Get or Set Class Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ClassShiftViewModel.Class">
+            <summary>
+            Get or Set Class
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ClassShiftViewModel.ShiftKey">
+            <summary>
+            Get or Set Shift Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ClassShiftViewModel.Shift">
+            <summary>
+            Get or Set Shift
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.CourseViewModel">
+            <summary>
+            Course model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.CourseViewModel.CourseKey">
+            <summary>
+            Get or Set Course Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.CourseViewModel.CourseName">
+            <summary>
+            Get or Set Course Name
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.CourseViewModel.CourseUnits">
+            <summary>
+            Get or Set Course Units
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.CourseUnitViewModel">
+            <summary>
+            Course Unit model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.CourseUnitViewModel.CourseUnitKey">
+            <summary>
+            Get or Set Course Unit Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.CourseUnitViewModel.CourseKey">
+            <summary>
+            Get or Set Course Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.CourseUnitViewModel.Course">
+            <summary>
+            Get or Set Course
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.CourseUnitViewModel.UnitKey">
+            <summary>
+            Get or Set Unit Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.CourseUnitViewModel.Unit">
+            <summary>
+            Get or Set Unit Id
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.PropertyViewModel">
+            <summary>
+            Property model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.PropertyViewModel.PropertyKey">
+            <summary>
+            Get or Set Property Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.PropertyViewModel.PropertyName">
+            <summary>
+            Get or Set Property Name
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.PropertyViewModel.PropertyDescription">
+            <summary>
+            Get or Set Property Description
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.PropertyViewModel.PropertyStatus">
+            <summary>
+            Get or Set Property Status
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.PropertyViewModel.AvailableManagement">
+            <summary>
+            Get or Set Available Management
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.PropertyViewModel.AvailableRequest">
+            <summary>
+            Get or Set Available Request
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.PropertyViewModel.PropertyRooms">
+            <summary>
+            Get or Set Property Rooms
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.PropertyViewModel.Sessions">
+            <summary>
+            Get or Set Sessions
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.QualityScheduleViewModel">
+            <summary>
+            Quality schedule model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TimeExecution">
+            <summary>
+            Get or Set Time Execution
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomsWithoutSession">
+            <summary>
+            Get or Set Total Rooms Without Session
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomsWithoutSessionMasters">
+            <summary>
+            Get or Set Total Rooms Without Session Masters
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomsWithoutSessionDegrees">
+            <summary>
+            Get or Set Total Rooms Without Session Degrees
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomsWithoutSessionWork">
+            <summary>
+            Get or Set Total Rooms Without Session Work
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomsWithoutSessionAfterWork">
+            <summary>
+            Get or Set Total Rooms Without Session After Work
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomChangeInSessions">
+            <summary>
+            Get or Set Total Room Change In Sessions
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomChangeInSessionsMasters">
+            <summary>
+            Get or Set Total Room Change In Sessions Masters
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomChangeInSessionsDegrees">
+            <summary>
+            Get or Set Total Room Change In Sessions Degrees
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomChangeInSessionsWork">
+            <summary>
+            Get or Set Total Room Change In Sessions Work
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomChangeInSessionsAfterWork">
+            <summary>
+            Get or Set Total Room Change In Sessions After Work
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomChangeBetweenSessions">
+            <summary>
+            Get or Set Total Room Change Between Sessions
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomChangeBetweenSessionsMasters">
+            <summary>
+            Get or Set Total Room Change Between Sessions Masters
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomChangeBetweenSessionsDegrees">
+            <summary>
+            Get or Set Total Room Change Between Sessions Degrees
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomChangeBetweenSessionsWork">
+            <summary>
+            Get or Set Total Room Change Between Sessions Work
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomChangeBetweenSessionsAfterWork">
+            <summary>
+            Get or Set Total Room Change Between Sessions After Work
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomChangeInShifts">
+            <summary>
+            Get or Set Total Room Change In Shifts
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomChangeInShiftsMasters">
+            <summary>
+            Get or Set Total Room Change In Shifts Masters
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomChangeInShiftsDegrees">
+            <summary>
+            Get or Set Total Room Change In Shifts Degrees
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomChangeInShiftsWork">
+            <summary>
+            Get or Set Total Room Change In Shifts Work
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomChangeInShiftsAfterWork">
+            <summary>
+            Get or Set Total Room Change In Shifts After Work
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.AvarageGapBetweenSessionsByShift">
+            <summary>
+            Get or Set Avarage Gap Between Sessions By Shift
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.RoomViewModel">
+            <summary>
+            Room model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomViewModel.RoomKey">
+            <summary>
+            Get or Set Room Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomViewModel.BuildingKey">
+            <summary>
+            Get or Set Building Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomViewModel.Building">
+            <summary>
+            Get or Set Building
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomViewModel.RoomName">
+            <summary>
+            Get or Set Room Name
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomViewModel.NormalCapacity">
+            <summary>
+            Get or Set Normal Capacity
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomViewModel.ExamCapacity">
+            <summary>
+            Get or Set Exam Capacity
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomViewModel.RoomProperties">
+            <summary>
+            Get or Set Room Properties
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomViewModel.Sessions">
+            <summary>
+            Get or Set Sessions
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.RoomPropertyViewModel">
+            <summary>
+            Room property model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomPropertyViewModel.RoomPropertyKey">
+            <summary>
+            Get or Set Room Property Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomPropertyViewModel.RoomKey">
+            <summary>
+            Get or Set Room Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomPropertyViewModel.Room">
+            <summary>
+            Get or Set Room
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomPropertyViewModel.PropertyKey">
+            <summary>
+            Get or Set Property Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomPropertyViewModel.Property">
+            <summary>
+            Get or Set Property
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.ScheduleModel">
+            <summary>
+            Schedule model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ScheduleModel.ScheduleKey">
+            <summary>
+            Get or Set Schedule Id
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ScheduleModel.ScheduleVersion">
+            <summary>
+            Get or Set Schedule Version
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.SessionViewModel">
+            <summary>
+            Session model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionViewModel.SessionKey">
+            <summary>
+            Get or Set Session Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionViewModel.ShiftKey">
+            <summary>
+            Get or Set Shift Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionViewModel.Shift">
+            <summary>
+            Get or Set Shift
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionViewModel.PropertyKey">
+            <summary>
+            Get or Set Property Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionViewModel.Property">
+            <summary>
+            Get or Set Property
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionViewModel.StartDate">
+            <summary>
+            Get or Set Start Date
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionViewModel.EndDate">
+            <summary>
+            Get or Set End Date
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionViewModel.TimeLength">
+            <summary>
+            Get or Set Time Length
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionViewModel.TimeSlot">
+            <summary>
+            Get or Set Time Slot
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionViewModel.SessionIsCompleted">
+            <summary>
+            Get or Set Session Is Completed
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionViewModel.Slots">
+            <summary>
+            Get or Set Slots
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.ShiftViewModel">
+            <summary>
+            Shift model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ShiftViewModel.ShiftKey">
+            <summary>
+            Get or Set Shift Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ShiftViewModel.UnitKey">
+            <summary>
+            Get or Set Unit Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ShiftViewModel.Unit">
+            <summary>
+            Get or Set Unit
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ShiftViewModel.EnrolledStudents">
+            <summary>
+            Get or Set Enrolled Students
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ShiftViewModel.ShiftClasses">
+            <summary>
+            Get or Set Shift Classes
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ShiftViewModel.Sessions">
+            <summary>
+            Get or Set Sessions
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.SlotViewModel">
+            <summary>
+            Slot model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SlotViewModel.SlotKey">
+            <summary>
+            Get or Set Slot Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SlotViewModel.SessionKey">
+            <summary>
+            Get or Set Session Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SlotViewModel.Session">
+            <summary>
+            Get or Set Session
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SlotViewModel.RoomKey">
+            <summary>
+            Get or Set Room Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SlotViewModel.Room">
+            <summary>
+            Get or Set Room
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SlotViewModel.StartDate">
+            <summary>
+            Get or Set Start Date
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SlotViewModel.EndDate">
+            <summary>
+            Get or Set End Date
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.UnitViewModel">
+            <summary>
+            Unit model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.UnitViewModel.UnitKey">
+            <summary>
+            Get or Set Unit Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.UnitViewModel.UnitName">
+            <summary>
+            Get or Set Unit Name
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.UnitViewModel.UnitCourses">
+            <summary>
+            Get or Set Unit Courses
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.UnitViewModel.Shifts">
+            <summary>
+            Get or Set Shifts
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -6,7 +6,7 @@ namespace Api.Domain.Entities
     /// <summary>
     /// Course entity
     /// </summary>
-    public class Course : BaseEntity
+    public class Course : Schedule
     {
         /// <summary>
         /// Get or Set Course Key
@@ -17,6 +17,11 @@ namespace Api.Domain.Entities
         /// Get or Set Course Name
         /// </summary>
         public string CourseName { get; set; }
+
+        /// <summary>
+        /// Get or Set Course Type
+        /// </summary>
+        public Guid Type { get; set; }
 
         /// <summary>
         /// Get or Set Course Units

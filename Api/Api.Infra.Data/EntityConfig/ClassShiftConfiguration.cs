@@ -4,8 +4,15 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Api.Infra.Data.EntityConfig
 {
+    /// <summary>
+    /// Class shift configuration
+    /// </summary>
     internal class ClassShiftConfiguration : IEntityTypeConfiguration<ClassShift>
     {
+        /// <summary>
+        /// Class shift configuration builder
+        /// </summary>
+        /// <param name="builder"></param>
         public void Configure(EntityTypeBuilder<ClassShift> builder)
         {
             builder.ToTable("ClassShifts");

@@ -6,7 +6,7 @@ namespace Api.Domain.Entities
     /// <summary>
     /// Room entity
     /// </summary>
-    public class Room : BaseEntity
+    public class Room : Schedule
     {
         /// <summary>
         /// Get or Set Room Key
@@ -44,8 +44,8 @@ namespace Api.Domain.Entities
         public IEnumerable<RoomProperty> RoomProperties { get; set; }
 
         /// <summary>
-        /// Get or Set Sessions
+        /// Get or Set Slots
         /// </summary>
-        public IEnumerable<Session> Sessions { get; set; }
+        public IEnumerable<Slot> Slots { get; set; }
     }
 }

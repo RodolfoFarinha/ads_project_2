@@ -8,10 +8,23 @@ using System.Collections.Generic;
 
 namespace Api.Service.Services
 {
+    /// <summary>
+    /// Building service
+    /// </summary>
     public class BuildingService : BaseService, IBuildingService
     {
+        /// <summary>
+        /// Building service constructor
+        /// </summary>
+        /// <param name="mapper"></param>
+        /// <param name="unitOfWork"></param>
         public BuildingService(IMapper mapper, IUnitOfWork unitOfWork) : base(mapper, unitOfWork) { }
 
+        /// <summary>
+        /// Method to get building by key
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public BuildingViewModel GetByKey(Guid key)
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -22,6 +35,10 @@ namespace Api.Service.Services
             }
         }
 
+        /// <summary>
+        /// Method to get all buildings
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<BuildingViewModel> GetAll()
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -32,6 +49,11 @@ namespace Api.Service.Services
             }
         }
 
+        /// <summary>
+        /// Method to save building
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public BuildingViewModel Save(BuildingViewModel obj)
         {
             using (var unitOfwork = GetUnitOfWorkInstance())
@@ -50,6 +72,11 @@ namespace Api.Service.Services
             }
         }
 
+        /// <summary>
+        /// Method to delete building
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public BuildingViewModel Delete(Guid key)
         {
             using (var unitOfwork = GetUnitOfWorkInstance())

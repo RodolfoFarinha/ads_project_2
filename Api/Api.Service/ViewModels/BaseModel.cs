@@ -1,5 +1,8 @@
 ﻿namespace Api.Service.ViewModels
 {
+    /// <summary>
+    /// Base model
+    /// </summary>
     public class BaseModel
     {
         /// <summary>

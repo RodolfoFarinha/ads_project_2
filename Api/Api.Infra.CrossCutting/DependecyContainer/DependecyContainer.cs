@@ -10,8 +10,16 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Api.Indra.CrossCutting.DependecyContainer
 {
+    /// <summary>
+    /// Dependecy container register
+    /// </summary>
     public static class DependecyContainer
     {
+        /// <summary>
+        /// Method to add configuration, automapper and register services on service collection
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="configuration"></param>
         public static void AddApiConfigurations(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDatabaseSetup(configuration);
@@ -19,6 +27,10 @@ namespace Api.Indra.CrossCutting.DependecyContainer
             services.RegisterServices();
         }
 
+        /// <summary>
+        /// Method to register all services
+        /// </summary>
+        /// <param name="services"></param>
         private static void RegisterServices(this IServiceCollection services)
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>();

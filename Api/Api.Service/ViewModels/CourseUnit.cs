@@ -2,6 +2,9 @@
 
 namespace Api.Service.ViewModels
 {
+    /// <summary>
+    /// Course Unit model
+    /// </summary>
     public class CourseUnitViewModel : BaseModel
     {
         /// <summary>

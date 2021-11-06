@@ -3,7 +3,10 @@ using System.Collections.Generic;
 
 namespace Api.Service.ViewModels
 {
-    public class UnitViewModel : BaseModel
+    /// <summary>
+    /// Unit model
+    /// </summary>
+    public class UnitViewModel : ScheduleModel
     {
         /// <summary>
         /// Get or Set Unit Key

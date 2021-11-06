@@ -6,7 +6,7 @@ namespace Api.Domain.Entities
     /// <summary>
     /// Class entity
     /// </summary>
-    public class Class : BaseEntity
+    public class Class : Schedule
     {
         /// <summary>
         /// Get or Set Class Key
