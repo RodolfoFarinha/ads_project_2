@@ -14,5 +14,6 @@ App project was developed in Angular 9.1.15
 ssh -i ./ads_key.pem ubuntu@adsapi.menu-ai.com
 
 ng add angular-calendar
+
 ng add @ng-bootstrap/ng-bootstrap
 
