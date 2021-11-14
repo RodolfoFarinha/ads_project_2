@@ -104,3 +104,6 @@ C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\bin\Release\netcoreapp3.1
 C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\bin\Release\netcoreapp3.1\Api.Infra.Data.xml
 C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\bin\Release\netcoreapp3.1\Api.Service.xml
 C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\obj\Release\netcoreapp3.1\Api.xml
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\bin\Release\netcoreapp3.1\Newtonsoft.Json.Bson.dll

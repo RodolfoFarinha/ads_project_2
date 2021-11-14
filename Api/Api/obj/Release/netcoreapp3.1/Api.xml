@@ -302,14 +302,20 @@
             <param name="key"></param>
             <returns></returns>
         </member>
-        <member name="T:Api.Controllers.ScheduleCalculaterController">
+        <member name="T:Api.Controllers.ScheduleCalculatorController">
             <summary>
-            Controller for files
+            Controller for schedule calculater
             </summary>
         </member>
-        <member name="M:Api.Controllers.ScheduleCalculaterController.ScheduleCalculater">
+        <member name="M:Api.Controllers.ScheduleCalculatorController.#ctor(Api.Service.Interfaces.Services.IScheduleCalculatorService)">
             <summary>
-            
+            Contructor of schedule calculater controller
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Api.Controllers.ScheduleCalculatorController.ScheduleCalculator">
+            <summary>
+            Method to calulate the schedule
             </summary>
         </member>
         <member name="T:Api.Controllers.SessionsController">

@@ -88,7 +88,7 @@ namespace Api
             });
 
             //app.UseAuthentication();
-            //app.UseAuthorization();
+            app.UseAuthorization();
 
             app.UseSwagger()
                 .UseSwaggerUI(options =>
