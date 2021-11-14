@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Api.Domain.Enum;
+using System;
 using System.Collections.Generic;
 
 namespace Api.Service.ViewModels
@@ -26,12 +27,12 @@ namespace Api.Service.ViewModels
         /// <summary>
         /// Get or Set Shift Name
         /// </summary>
-        public Guid ShiftName { get; set; }
+        public string ShiftName { get; set; }
 
         /// <summary>
         /// Get or Set Shift Type
         /// </summary>
-        public Guid ShiftType { get; set; }
+        public ShiftEnum ShiftType { get; set; }
 
         /// <summary>
         /// Get or Set Enrolled Students
@@ -41,11 +42,11 @@ namespace Api.Service.ViewModels
         /// <summary>
         /// Get or Set Shift Classes
         /// </summary>
-        public IEnumerable<ClassShiftViewModel> ShiftClasses { get; set; }
+        public List<ClassShiftViewModel> ShiftClasses { get; set; } = new List<ClassShiftViewModel>();
 
         /// <summary>
         /// Get or Set Sessions
         /// </summary>
-        public IEnumerable<SessionViewModel> Sessions { get; set; }
+        public List<SessionViewModel> Sessions { get; set; } = new List<SessionViewModel>();
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Api.Domain.Enum;
+using System;
 using System.Collections.Generic;
 
 namespace Api.Domain.Entities
@@ -21,7 +22,7 @@ namespace Api.Domain.Entities
         /// <summary>
         /// Get or Set Course Type
         /// </summary>
-        public Guid Type { get; set; }
+        public CourseEnum CourseType { get; set; }
 
         /// <summary>
         /// Get or Set Course Units

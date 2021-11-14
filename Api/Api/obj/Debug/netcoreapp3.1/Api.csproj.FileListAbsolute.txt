@@ -223,7 +223,6 @@ C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\obj\Debug\netcoreapp3.1\A
 C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\obj\Debug\netcoreapp3.1\Api.AssemblyInfoInputs.cache
 C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\obj\Debug\netcoreapp3.1\Api.AssemblyInfo.cs
 C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\obj\Debug\netcoreapp3.1\Api.csproj.CoreCompileInputs.cache
-C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\obj\Debug\netcoreapp3.1\Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\obj\Debug\netcoreapp3.1\Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\obj\Debug\netcoreapp3.1\staticwebassets\Api.StaticWebAssets.Manifest.cache
 C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\obj\Debug\netcoreapp3.1\staticwebassets\Api.StaticWebAssets.xml
@@ -355,3 +354,6 @@ C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\bin\Debug\netcoreapp3.1\A
 C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\bin\Debug\netcoreapp3.1\Api.Domain.xml
 C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\bin\Debug\netcoreapp3.1\Api.Infra.Data.xml
 C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\bin\Debug\netcoreapp3.1\Api.Service.xml
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

@@ -1,8 +1,9 @@
-import { Component, ChangeDetectionStrategy, ViewChild, TemplateRef} from '@angular/core';
+import { Component, ChangeDetectionStrategy, ViewChild, TemplateRef, OnInit} from '@angular/core';
 import { startOfDay, endOfDay, subDays, addDays, endOfMonth, isSameDay, isSameMonth, addHours} from 'date-fns';
 import { Subject } from 'rxjs';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { CalendarEvent, CalendarEventAction, CalendarEventTimesChangedEvent, CalendarView } from 'angular-calendar';
+import { SharedQualityScheduleService } from 'src/app/util/shared-quality-schedule/SharedQualitySchedule.service';
 
 const colors: any = {
   red: {
@@ -25,7 +26,7 @@ const colors: any = {
   styleUrls: ['calendar.component.css'],
   templateUrl: 'calendar.component.html',
 })
-export class CalendarComponent {
+export class CalendarComponent implements OnInit {
   @ViewChild('modalContent', { static: true }) modalContent: TemplateRef<any>;
 
   view: CalendarView = CalendarView.Month;
@@ -59,50 +60,69 @@ export class CalendarComponent {
 
   refresh: Subject<any> = new Subject();
 
-  events: CalendarEvent[] = [
-    {
-      start: subDays(startOfDay(new Date()), 1),
-      end: addDays(new Date(), 1),
-      title: 'A 3 day event',
-      color: colors.red,
-      actions: this.actions,
-      allDay: true,
-      resizable: {
-        beforeStart: true,
-        afterEnd: true,
-      },
-      draggable: true,
-    },
-    {
-      start: startOfDay(new Date()),
-      title: 'An event with no end date',
-      color: colors.yellow,
-      actions: this.actions,
-    },
-    {
-      start: subDays(endOfMonth(new Date()), 3),
-      end: addDays(endOfMonth(new Date()), 3),
-      title: 'A long event that spans 2 months',
-      color: colors.blue,
-      allDay: true,
-    },
-    {
-      start: addHours(startOfDay(new Date()), 2),
-      end: addHours(new Date(), 2),
-      title: 'A draggable and resizable event',
-      color: colors.yellow,
-      actions: this.actions,
-      resizable: {
-        beforeStart: true,
-        afterEnd: true,
-      },
-      draggable: true,
-    },
-  ];
+  // events: CalendarEvent[] = [
+  //   {
+  //     start: subDays(startOfDay(new Date()), 1),
+  //     end: addDays(new Date(), 1),
+  //     title: 'A 3 day event',
+  //     color: colors.red,
+  //     actions: this.actions,
+  //     allDay: true,
+  //     resizable: {
+  //       beforeStart: true,
+  //       afterEnd: true,
+  //     },
+  //     draggable: true,
+  //   },
+  //   {
+  //     start: startOfDay(new Date()),
+  //     title: 'An event with no end date',
+  //     color: colors.yellow,
+  //     actions: this.actions,
+  //   },
+  //   {
+  //     start: subDays(endOfMonth(new Date()), 3),
+  //     end: addDays(endOfMonth(new Date()), 3),
+  //     title: 'A long event that spans 2 months',
+  //     color: colors.blue,
+  //     allDay: true,
+  //   },
+  //   {
+  //     start: addHours(startOfDay(new Date()), 2),
+  //     end: addHours(new Date(), 2),
+  //     title: 'A draggable and resizable event',
+  //     color: colors.yellow,
+  //     actions: this.actions,
+  //     resizable: {
+  //       beforeStart: true,
+  //       afterEnd: true,
+  //     },
+  //     draggable: true,
+  //   },
+  // ];
+
+  events: CalendarEvent[] = [];
 
   activeDayIsOpen: boolean = true;
 
-  constructor(private modal: NgbModal) { }
+  constructor(private modal: NgbModal, private sharedQualityScheduleService: SharedQualityScheduleService) { }
+
+  ngOnInit() {
+    this.sharedQualityScheduleService.getGlobalQualitySchedule().basicSessions.forEach(basicSession => {
+      this.events.push({
+        start: basicSession.start,
+        end: basicSession.end,
+        title: basicSession.title,
+        color: colors.yellow,
+        actions: this.actions,
+        resizable: {
+         beforeStart: true,
+         afterEnd: true,
+        },
+        draggable: true,
+      });
+    });
+  }
 
   dayClicked({ date, events }: { date: Date; events: CalendarEvent[] }): void {
     if (isSameMonth(date, this.viewDate)) {

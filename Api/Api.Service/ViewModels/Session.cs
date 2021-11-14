@@ -72,6 +72,6 @@ namespace Api.Service.ViewModels
         /// <summary>
         /// Get or Set Slots
         /// </summary>
-        public IEnumerable<SlotViewModel> Slots { get; set; }
+        public List<SlotViewModel> Slots { get; set; } = new List<SlotViewModel>();
     }
 }

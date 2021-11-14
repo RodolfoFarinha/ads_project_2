@@ -1,23 +1,58 @@
+// Angular
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { CalendarModule, DateAdapter } from 'angular-calendar';
+// Angular Calendar
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+
+// Ng Bootstrap
+import { NgbModalModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+// Ngx Bootstrap
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+
+// Components
+import { AppComponent } from './app.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
+import { DataUploadComponent } from './components/data-upload/data-upload.component';
+import { MenuComponent } from './components/menu/menu.component';
+
+// Routing
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
+    // Components
     AppComponent,
-    CalendarComponent
+    CalendarComponent,
+    DataUploadComponent,
+    MenuComponent
   ],
   imports: [
+    // Angular
     BrowserModule,
+    BrowserAnimationsModule,
+    CommonModule,
+    FormsModule,
+    HttpClientModule,
+
+    // Ng Bootstrap
+    NgbModule,
+    NgbModalModule,
+
+    // Ngx Bootstrap
+    CollapseModule.forRoot(),
+
+    //Routing
     AppRoutingModule,
+
+    // Angular Calendar
     CalendarModule.forRoot({ provide: DateAdapter, useFactory: adapterFactory }),
-    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

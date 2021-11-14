@@ -21,6 +21,6 @@ namespace Api.Service.ViewModels
         /// <summary>
         /// Get or Set Class Shifts
         /// </summary>
-        public IEnumerable<ClassShiftViewModel> ClassShifts { get; set; }
+        public List<ClassShiftViewModel> ClassShifts { get; set; } = new List<ClassShiftViewModel>();
     }
 }

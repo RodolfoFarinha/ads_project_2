@@ -1,11 +1,11 @@
 ﻿using Api.Domain.Interfaces;
 using Api.Infra.Data.UnitOfWork;
 using Api.Service.Interfaces.Services;
-using Api.Service.Mapping;
+using Api.Service.Mapping.AutoMapper;
 using Api.Service.Services;
 using AutoMapper;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection; 
 
 namespace Api.Infra.CrossCutting.DependecyContainer
 {
@@ -22,7 +22,25 @@ namespace Api.Infra.CrossCutting.DependecyContainer
         public static void AddApiConfigurations(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDatabaseSetup(configuration);
+
+            services.AddControllersWithViews().AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+             );
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    policy =>
+                    {
+                        policy
+                            .AllowAnyHeader()
+                            .AllowAnyMethod()
+                            .AllowAnyOrigin();
+                    });
+            });
+
             services.AddAutoMapper(typeof(AutoMapperConfig));
+            
             services.RegisterServices();
         }
 
@@ -42,6 +60,7 @@ namespace Api.Infra.CrossCutting.DependecyContainer
             services.AddScoped<IPropertyService, PropertyService>(); 
             services.AddScoped<IQualityScheduleService, QualityScheduleService>();
             services.AddScoped<IRoomService, RoomService>();
+            services.AddScoped<IScheduleCalculatorService, ScheduleCalculatorService>();
             services.AddScoped<ISessionService, SessionService>();
             services.AddScoped<IShiftService, ShiftService>();
             services.AddScoped<ISlotService, SlotService>();

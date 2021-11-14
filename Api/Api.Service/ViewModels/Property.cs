@@ -41,11 +41,11 @@ namespace Api.Service.ViewModels
         /// <summary>
         /// Get or Set Property Rooms
         /// </summary>
-        public IEnumerable<RoomPropertyViewModel> PropertyRooms { get; set; }
+        public List<RoomPropertyViewModel> PropertyRooms { get; set; } = new List<RoomPropertyViewModel>();
 
         /// <summary>
         /// Get or Set Sessions
         /// </summary>
-        public IEnumerable<SessionViewModel> Sessions { get; set; }
+        public List<SessionViewModel> Sessions { get; set; } = new List<SessionViewModel>();
     }
 }

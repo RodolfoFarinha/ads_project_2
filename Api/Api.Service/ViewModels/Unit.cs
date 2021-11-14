@@ -21,11 +21,11 @@ namespace Api.Service.ViewModels
         /// <summary>
         /// Get or Set Unit Courses
         /// </summary>
-        public IEnumerable<CourseUnitViewModel> UnitCourses { get; set; }
+        public List<CourseUnitViewModel> UnitCourses { get; set; } = new List<CourseUnitViewModel>();
 
         /// <summary>
         /// Get or Set Shifts
         /// </summary>
-        public IEnumerable<ShiftViewModel> Shifts { get; set; }
+        public List<ShiftViewModel> Shifts { get; set; } = new List<ShiftViewModel>();
     }
 }

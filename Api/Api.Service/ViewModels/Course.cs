@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Api.Domain.Enum;
+using System;
 using System.Collections.Generic;
 
 namespace Api.Service.ViewModels
@@ -19,8 +20,13 @@ namespace Api.Service.ViewModels
         public string CourseName { get; set; }
 
         /// <summary>
+        /// Get or Set Course Type
+        /// </summary>
+        public CourseEnum CourseType { get; set; }
+
+        /// <summary>
         /// Get or Set Course Units
         /// </summary>
-        public IEnumerable<CourseUnitViewModel> CourseUnits { get; set; }
+        public List<CourseUnitViewModel> CourseUnits { get; set; } = new List<CourseUnitViewModel>();
     }
 }

@@ -17,3 +17,5 @@ ng add angular-calendar
 
 ng add @ng-bootstrap/ng-bootstrap
 
+npm i guid-typescript
+

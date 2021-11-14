@@ -188,11 +188,6 @@
             <param name="key"></param>
             <returns></returns>
         </member>
-        <member name="T:Api.Controllers.FilesController">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="T:Api.Controllers.PropertiesController">
             <summary>
             Controller for property model
@@ -306,6 +301,16 @@
             </summary>
             <param name="key"></param>
             <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.ScheduleCalculaterController">
+            <summary>
+            Controller for files
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.ScheduleCalculaterController.ScheduleCalculater">
+            <summary>
+            
+            </summary>
         </member>
         <member name="T:Api.Controllers.SessionsController">
             <summary>

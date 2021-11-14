@@ -21,6 +21,6 @@ namespace Api.Service.ViewModels
         /// <summary>
         /// Get or Set Building Rooms
         /// </summary>
-        public IEnumerable<RoomViewModel> Rooms { get; set; }
+        public List<RoomViewModel> Rooms { get; set; } = new List<RoomViewModel>();
     }
 }

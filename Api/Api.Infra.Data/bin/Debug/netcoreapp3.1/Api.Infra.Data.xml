@@ -274,12 +274,6 @@
             </summary>
             <param name="modelBuilder"></param>
         </member>
-        <member name="M:Api.Infra.Data.Migrations.ApiDBContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <summary>
-            Build Model
-            </summary>
-            <param name="modelBuilder"></param>
-        </member>
         <member name="T:Api.Infra.Data.Repository.BaseRepository`1">
             <summary>
             Base repository

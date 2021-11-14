@@ -4,6 +4,21 @@
         <name>Api.Service</name>
     </assembly>
     <members>
+        <member name="T:Api.Service.Business.ScheduleCalculater">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Service.Business.ScheduleCalculater.CreateSessionSlots(Api.Service.ViewModels.QualityScheduleViewModel,System.Collections.Generic.List{Api.Service.ViewModels.SessionViewModel},System.Collections.Generic.List{Api.Service.ViewModels.RoomViewModel})">
+            <summary>
+            Generate calendar based on sessions and rooms 
+            </summary>
+        </member>
+        <member name="M:Api.Service.Business.ScheduleCalculater.GetAvailableRoom(System.Collections.Generic.IEnumerable{Api.Service.ViewModels.RoomViewModel},Api.Service.ViewModels.SessionViewModel)">
+            <summary>
+            Get available room based in date
+            </summary>
+        </member>
         <member name="T:Api.Service.Interfaces.Services.IBaseService">
             <summary>
             Base service
@@ -260,6 +275,20 @@
             <param name="key"></param>
             <returns></returns>
         </member>
+        <member name="T:Api.Service.Interfaces.Services.IScheduleCalculatorService">
+            <summary>
+            Schedule calculator service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Interfaces.Services.IScheduleCalculatorService.AllocateRoomsToSessions(System.Tuple{System.String[],System.Collections.Generic.List{System.String[]}},System.Tuple{System.String[],System.Collections.Generic.List{System.String[]}},System.Tuple{System.String[],System.Collections.Generic.List{System.String[]}})">
+            <summary>
+            Method that allocate rooms to sessions
+            </summary>
+            <param name="propertiesData"></param>
+            <param name="roomsData"></param>
+            <param name="sessionsData"></param>
+            <returns></returns>
+        </member>
         <member name="T:Api.Service.Interfaces.Services.ISessionService">
             <summary>
             Session service
@@ -388,16 +417,153 @@
             <param name="key"></param>
             <returns></returns>
         </member>
-        <member name="T:Api.Service.Mapping.AutoMapperConfig">
+        <member name="T:Api.Service.Mapping.AutoMapper.AutoMapperConfig">
             <summary>
             Automapper configuration
             </summary>
         </member>
-        <member name="M:Api.Service.Mapping.AutoMapperConfig.RegisterMappings">
+        <member name="M:Api.Service.Mapping.AutoMapper.AutoMapperConfig.RegisterMappings">
             <summary>
             Method to register all mappings
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:Api.Service.Mapping.AutoMapper.EntityToModelProfile">
+            <summary>
+            Entity to model profile
+            </summary>
+        </member>
+        <member name="M:Api.Service.Mapping.AutoMapper.EntityToModelProfile.#ctor">
+            <summary>
+            Entity to model profile constructor
+            </summary>
+        </member>
+        <member name="T:Api.Service.Mapping.AutoMapper.ModelToEntityProfile">
+            <summary>
+            Model to entity profile
+            </summary>
+        </member>
+        <member name="M:Api.Service.Mapping.AutoMapper.ModelToEntityProfile.#ctor">
+            <summary>
+            Model to entity profile constructor
+            </summary>
+        </member>
+        <member name="T:Api.Service.Mapping.ManualMapper.FileDataToModel">
+            <summary>
+            Convert file data to models
+            </summary>
+        </member>
+        <member name="M:Api.Service.Mapping.ManualMapper.FileDataToModel.#ctor(System.Collections.Generic.IEnumerable{Api.Service.ViewModels.ConfigurationViewModel})">
+            <summary>
+            Constructor file data to model 
+            </summary>
+            <param name="configurations"></param>
+        </member>
+        <member name="M:Api.Service.Mapping.ManualMapper.FileDataToModel.MappingPropertyViewModel(System.Tuple{System.String[],System.Collections.Generic.List{System.String[]}})">
+            <summary>
+            Method for mapping properties data to property model
+            </summary>
+            <param name="propertiesData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Mapping.ManualMapper.FileDataToModel.MappingRoomViewModel(Api.Service.ViewModels.ScheduleModel,System.Tuple{System.String[],System.Collections.Generic.List{System.String[]}},System.Collections.Generic.List{Api.Service.ViewModels.PropertyViewModel})">
+            <summary>
+            Method for mapping rooms data to property model
+            </summary>
+            <param name="scheduleModel"></param>
+            <param name="roomsData"></param>
+            <param name="properties"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Mapping.ManualMapper.FileDataToModel.MappingSessionViewModel(Api.Service.ViewModels.ScheduleModel,System.Tuple{System.String[],System.Collections.Generic.List{System.String[]}},System.Collections.Generic.List{Api.Service.ViewModels.PropertyViewModel})">
+            <summary>
+            Method for mapping sessions data to property model
+            </summary>
+            <param name="scheduleModel"></param>
+            <param name="sessionsData"></param>
+            <param name="properties"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Mapping.ManualMapper.FileDataToModel.GetValueString(Api.Domain.Enum.ConfigurationEnum,System.String[],System.String[])">
+            <summary>
+            Method for get string value from configurations 
+            </summary>
+            <param name="convigurationType"></param>
+            <param name="columns"></param>
+            <param name="line"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Mapping.ManualMapper.FileDataToModel.GetValuesString(Api.Domain.Enum.ConfigurationEnum,System.String[],System.String[])">
+            <summary>
+            Method for get string value from configurations 
+            </summary>
+            <param name="convigurationType"></param>
+            <param name="columns"></param>
+            <param name="line"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Mapping.ManualMapper.FileDataToModel.GetValueInt(Api.Domain.Enum.ConfigurationEnum,System.String[],System.String[])">
+            <summary>
+            Method for get int value from configurations 
+            </summary>
+            <param name="convigurationType"></param>
+            <param name="columns"></param>
+            <param name="line"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Mapping.ManualMapper.FileDataToModel.GetValueBool(Api.Domain.Enum.ConfigurationEnum,System.String[],System.String[])">
+            <summary>
+            Method for get bool value from configurations 
+            </summary>
+            <param name="convigurationType"></param>
+            <param name="columns"></param>
+            <param name="line"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Mapping.ManualMapper.FileDataToModel.GetRoomProperties(Api.Service.ViewModels.RoomViewModel,System.Collections.Generic.List{Api.Service.ViewModels.PropertyViewModel},System.String[],System.String[])">
+            <summary>
+            Method for get room properties from room and properties 
+            </summary>
+            <param name="roomViewModel"></param>
+            <param name="properties"></param>
+            <param name="columns"></param>
+            <param name="line"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Mapping.ManualMapper.FileDataToModel.GetSessionPropertyKey(System.Collections.Generic.List{Api.Service.ViewModels.PropertyViewModel},System.String[],System.String[])">
+            <summary>
+            Method for get property from properties 
+            </summary>
+            <param name="properties"></param>
+            <param name="columns"></param>
+            <param name="line"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Mapping.ManualMapper.FileDataToModel.GetCourseUnits(Api.Service.ViewModels.ScheduleModel,Api.Service.ViewModels.UnitViewModel,System.Collections.Generic.Dictionary{System.String,Api.Service.ViewModels.CourseViewModel},System.String[],System.String[])">
+            <summary>
+            Method for get course units from unit and courses 
+            </summary>
+            <param name="scheduleModel"></param>
+            <param name="unit"></param>
+            <param name="courses"></param>
+            <param name="columns"></param>
+            <param name="line"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Service.Mapping.ManualMapper.FileDataToModel.GetClassShifts(Api.Service.ViewModels.ScheduleModel,Api.Service.ViewModels.ShiftViewModel,System.Collections.Generic.Dictionary{System.String,Api.Service.ViewModels.ClassViewModel},System.String[],System.String[])">
+            <summary>
+            Method for get class shifts from shift and classes 
+            </summary>
+            <param name="scheduleModel"></param>
+            <param name="shift"></param>
+            <param name="classes"></param>
+            <param name="columns"></param>
+            <param name="line"></param>
+        </member>
+        <member name="T:Api.Service.Mapping.ManualMapper.ModelToFileData">
+            <summary>
+            
+            </summary>
         </member>
         <member name="T:Api.Service.Services.BaseService">
             <summary>
@@ -716,6 +882,27 @@
             <param name="key"></param>
             <returns></returns>
         </member>
+        <member name="T:Api.Service.Services.ScheduleCalculatorService">
+            <summary>
+            Session service
+            </summary>
+        </member>
+        <member name="M:Api.Service.Services.ScheduleCalculatorService.#ctor(AutoMapper.IMapper,Api.Domain.Interfaces.IUnitOfWork)">
+            <summary>
+            Session service constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="unitOfWork"></param>
+        </member>
+        <member name="M:Api.Service.Services.ScheduleCalculatorService.AllocateRoomsToSessions(System.Tuple{System.String[],System.Collections.Generic.List{System.String[]}},System.Tuple{System.String[],System.Collections.Generic.List{System.String[]}},System.Tuple{System.String[],System.Collections.Generic.List{System.String[]}})">
+            <summary>
+            Method that allocate rooms to sessions
+            </summary>
+            <param name="propertiesData"></param>
+            <param name="roomsData"></param>
+            <param name="sessionsData"></param>
+            <returns></returns>
+        </member>
         <member name="T:Api.Service.Services.SessionService">
             <summary>
             Session service
@@ -962,9 +1149,9 @@
             Get or Set Configuration Key
             </summary>
         </member>
-        <member name="P:Api.Service.ViewModels.ConfigurationViewModel.Key">
+        <member name="P:Api.Service.ViewModels.ConfigurationViewModel.ConfigurationType">
             <summary>
-            Get or Set Configuration Key Dictionary
+            Get or Set Configuration Configuration Type
             </summary>
         </member>
         <member name="P:Api.Service.ViewModels.ConfigurationViewModel.Value">
@@ -985,6 +1172,11 @@
         <member name="P:Api.Service.ViewModels.CourseViewModel.CourseName">
             <summary>
             Get or Set Course Name
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.CourseViewModel.CourseType">
+            <summary>
+            Get or Set Course Type
             </summary>
         </member>
         <member name="P:Api.Service.ViewModels.CourseViewModel.CourseUnits">
@@ -1182,6 +1374,11 @@
             Get or Set Avarage Gap Between Sessions By Shift
             </summary>
         </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.BasicSessions">
+            <summary>
+            Get or Set Basic Sessions
+            </summary>
+        </member>
         <member name="T:Api.Service.ViewModels.RoomViewModel">
             <summary>
             Room model
@@ -1222,7 +1419,7 @@
             Get or Set Room Properties
             </summary>
         </member>
-        <member name="P:Api.Service.ViewModels.RoomViewModel.Sessions">
+        <member name="P:Api.Service.ViewModels.RoomViewModel.Slots">
             <summary>
             Get or Set Sessions
             </summary>
@@ -1330,6 +1527,61 @@
         <member name="P:Api.Service.ViewModels.SessionViewModel.Slots">
             <summary>
             Get or Set Slots
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.SessionBasicInfoViewModel">
+            <summary>
+            Session model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.SessionKey">
+            <summary>
+            Get or Set Session Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.ShiftKey">
+            <summary>
+            Get or Set Shift Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.PropertyKey">
+            <summary>
+            Get or Set Property Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.BuildingKey">
+            <summary>
+            Get or Set Building Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.BuildingName">
+            <summary>
+            Get or Set Building Name
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.RoomKey">
+            <summary>
+            Get or Set Room Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.RoomName">
+            <summary>
+            Get or Set Room Name
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.Title">
+            <summary>
+            Get or Set Title
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.Start">
+            <summary>
+            Get or Set Start Date
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.End">
+            <summary>
+            Get or Set End Date
             </summary>
         </member>
         <member name="T:Api.Service.ViewModels.ShiftViewModel">

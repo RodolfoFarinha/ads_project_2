@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Api.Domain.Enum;
+using System;
 
 namespace Api.Service.ViewModels
 {
@@ -13,9 +14,9 @@ namespace Api.Service.ViewModels
         public Guid ConfigurationKey { get; set; }
 
         /// <summary>
-        /// Get or Set Configuration Key Dictionary
+        /// Get or Set Configuration Configuration Type
         /// </summary>
-        public string Key { get; set; }
+        public ConfigurationEnum ConfigurationType { get; set; }
 
         /// <summary>
         /// Get or Set Configuration Value Dictionary

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Api.Service.ViewModels
 {
@@ -112,10 +113,14 @@ namespace Api.Service.ViewModels
         /// </summary>
         public int TotalRoomChangeInShiftsAfterWork { get; set; }
 
-
         /// <summary>
         /// Get or Set Avarage Gap Between Sessions By Shift
         /// </summary>
         public int AvarageGapBetweenSessionsByShift { get; set; }
+
+        /// <summary>
+        /// Get or Set Basic Sessions
+        /// </summary>
+        public List<SessionBasicInfoViewModel> BasicSessions { get; set; } = new List<SessionBasicInfoViewModel>();
     }
 }

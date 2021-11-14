@@ -4,11 +4,6 @@
         <name>Api.Domain</name>
     </assembly>
     <members>
-        <member name="T:Api.Domain.Business.Calculater">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="T:Api.Domain.Entities.BaseEntity">
             <summary>
             Base entity
@@ -134,9 +129,9 @@
             Get or Set Configuration Key
             </summary>
         </member>
-        <member name="P:Api.Domain.Entities.Configuration.Key">
+        <member name="P:Api.Domain.Entities.Configuration.ConfigurationType">
             <summary>
-            Get or Set Configuration Key Dictionary
+            Get or Set Configuration Configuration Type
             </summary>
         </member>
         <member name="P:Api.Domain.Entities.Configuration.Value">
@@ -159,7 +154,7 @@
             Get or Set Course Name
             </summary>
         </member>
-        <member name="P:Api.Domain.Entities.Course.Type">
+        <member name="P:Api.Domain.Entities.Course.CourseType">
             <summary>
             Get or Set Course Type
             </summary>
@@ -617,6 +612,131 @@
         <member name="P:Api.Domain.Entities.Unit.Shifts">
             <summary>
             Get or Set Shifts
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Enum.ConfigurationEnum">
+            <summary>
+            Configuration Enum
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ConfigurationEnum.PropertyName">
+            <summary>
+            Property Name
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ConfigurationEnum.PropertyDescription">
+            <summary>
+            Property Description
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ConfigurationEnum.PropertyStatus">
+            <summary>
+            Property Status
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ConfigurationEnum.AvailableManagement">
+            <summary>
+            Available Management
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ConfigurationEnum.AvailableRequest">
+            <summary>
+            Available Request,
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ConfigurationEnum.BuildingName">
+            <summary>
+            Building Name
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ConfigurationEnum.RoomName">
+            <summary>
+            Room Name
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ConfigurationEnum.NormalCapacity">
+            <summary>
+            Room Normal Capacity
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ConfigurationEnum.ExamCapacity">
+            <summary>
+            Room Exam Capacity
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ConfigurationEnum.CourseName">
+            <summary>
+            Course Name
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ConfigurationEnum.UnitName">
+            <summary>
+            Unit Name
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ConfigurationEnum.ShiftName">
+            <summary>
+            Shift Name
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ConfigurationEnum.ClassName">
+            <summary>
+            Class Name
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ConfigurationEnum.StartDate">
+            <summary>
+            Start Date
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ConfigurationEnum.EndDate">
+            <summary>
+            End Date
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ConfigurationEnum.Day">
+            <summary>
+            Day
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ConfigurationEnum.PropertySessionName">
+            <summary>
+            Property Session Name
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ConfigurationEnum.EnrolledStudents">
+            <summary>
+            Enrolled Students
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Enum.CourseEnum">
+            <summary>
+            Course Enum
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.CourseEnum.Degree">
+            <summary>
+            Degree
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.CourseEnum.Master">
+            <summary>
+            Master
+            </summary>
+        </member>
+        <member name="T:Api.Domain.Enum.ShiftEnum">
+            <summary>
+            Shift Enum
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ShiftEnum.Work">
+            <summary>
+            Work
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ShiftEnum.AfterWork">
+            <summary>
+            After Work
             </summary>
         </member>
         <member name="T:Api.Domain.Interfaces.IUnitOfWork">

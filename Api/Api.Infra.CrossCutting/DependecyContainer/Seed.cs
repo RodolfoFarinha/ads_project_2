@@ -1,4 +1,5 @@
 ﻿using Api.Domain.Entities;
+using Api.Domain.Enum;
 using Api.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -41,20 +42,26 @@ namespace Api.Infra.CrossCutting.DependecyContainer
            
             if (!await dataCtx.Configurations.AnyAsync())
             {
-                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, Key = "BuildingName", Value = "Edifício" });
-                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, Key = "RoomName", Value = "Nome sala" });
-                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, Key = "NormalCapacity", Value = "Capacidade Normal" });
-                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, Key = "ExamCapacity", Value = "Capacidade Exame" });
+                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, ConfigurationType = ConfigurationEnum.PropertyName, Value = "Nome Características" });
+                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, ConfigurationType = ConfigurationEnum.PropertyDescription, Value = "Descrição" });
+                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, ConfigurationType = ConfigurationEnum.PropertyStatus, Value = "Activa" });
+                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, ConfigurationType = ConfigurationEnum.AvailableManagement, Value = "Disponível na Gestão de Aulas" }); 
+                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, ConfigurationType = ConfigurationEnum.AvailableRequest, Value = "Disponível no Pedido de Sala de Aula" });
 
-                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, Key = "CourseName", Value = "Curso" });
-                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, Key = "UnitName", Value = "Unidade de execução" });
-                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, Key = "ShiftName", Value = "Turno" });
-                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, Key = "ClassName", Value = "Turma" });
-                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, Key = "StartDate", Value = "Início" });
-                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, Key = "EndDate", Value = "Fim" });
-                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, Key = "Day", Value = "Dia" });
-                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, Key = "PropertyName", Value = "Características da sala pedida" });
-                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, Key = "EnrolledStudents", Value = "Inscritos no turno" });
+                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, ConfigurationType = ConfigurationEnum.BuildingName, Value = "Edifício" });
+                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, ConfigurationType = ConfigurationEnum.RoomName, Value = "Nome sala" });
+                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, ConfigurationType = ConfigurationEnum.NormalCapacity, Value = "Capacidade Normal" });
+                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, ConfigurationType = ConfigurationEnum.ExamCapacity, Value = "Capacidade Exame" });
+
+                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, ConfigurationType = ConfigurationEnum.CourseName, Value = "Curso" });
+                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, ConfigurationType = ConfigurationEnum.UnitName, Value = "Unidade de execução" });
+                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, ConfigurationType = ConfigurationEnum.ShiftName, Value = "Turno" });
+                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, ConfigurationType = ConfigurationEnum.ClassName, Value = "Turma" });
+                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, ConfigurationType = ConfigurationEnum.StartDate, Value = "Início" });
+                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, ConfigurationType = ConfigurationEnum.EndDate, Value = "Fim" });
+                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, ConfigurationType = ConfigurationEnum.Day, Value = "Dia" });
+                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, ConfigurationType = ConfigurationEnum.PropertySessionName, Value = "Características da sala pedida para a aula" });
+                dataCtx.Configurations.Add(new Configuration() { ConfigurationKey = Guid.NewGuid(), CreateUser = "Unknow", CreateDate = DateTime.Now, ConfigurationType = ConfigurationEnum.EnrolledStudents, Value = "Inscritos no turno (no 1º semestre é baseado em estimativas)" });
 
                 await dataCtx.SaveChangesAsync();
             }

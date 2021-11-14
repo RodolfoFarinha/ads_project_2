@@ -1,0 +1,23 @@
+<div class="data-upload-container">
+  <div style="padding: 20px">
+    <div class="form-group">
+      <label for="hora">Lista de Característias:</label>
+      <input #properties type="file" id="properties" class="form-control input-file" style="height: 45px;"
+        accept='csv/*' (change)="propertiesFileChage(properties.files)">
+    </div>
+    <div class="form-group">
+      <label for="hora">Lista de Salas:</label>
+      <input #rooms type="file" id="rooms" class="form-control input-file" style="height: 45px;" accept='csv/*'
+        (change)="roomsFileChage(rooms.files)">
+    </div>
+    <div class="form-group">
+      <label for="hora">Lista de Aulas:</label>
+      <input #sessions type="file" id="sessions" class="form-control input-file" style="height: 45px;" accept='csv/*'
+        (change)="sessionsFileChage(sessions.files)">
+    </div>
+
+    <div style="width: 100%;" class="text-center">
+      <div class="btn" style="background-color: black; color: white;" (click)="calcular()">Calcular</div>
+    </div>
+  </div>
+</div>
