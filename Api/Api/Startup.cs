@@ -68,6 +68,8 @@ namespace Api
         /// <param name="env"></param>
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCors("CorsPolicy");
+
             app.UseSerilogRequestLogging(options =>
             {
                 var assembly = System.Reflection.Assembly.GetEntryAssembly()?.GetName().Name;
@@ -78,8 +80,6 @@ namespace Api
             });
 
             app.UseMiddleware<ErrorHandlingMiddleware>();
-            app.UseStaticFiles();
-            app.UseCors("CorsPolicy");
 
             app.UseStaticFiles(new StaticFileOptions()
             {
@@ -88,7 +88,7 @@ namespace Api
             });
 
             //app.UseAuthentication();
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
             app.UseSwagger()
                 .UseSwaggerUI(options =>
