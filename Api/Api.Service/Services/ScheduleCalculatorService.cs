@@ -48,42 +48,78 @@ namespace Api.Service.Services
 
                 // First algorithm
                 DateTime exectutionStart = DateTime.Now;
-                qualitySchedule.BasicSessions = MappingSessionBasicInfoViewModel(ScheduleCalculater.CreateSessionSlots(qualitySchedule, sessions, rooms));
+                qualitySchedule.EventsCalendar = MappingSessionBasicInfoViewModel(ScheduleCalculater.CreateSessionSlots(qualitySchedule, sessions, rooms));
                 qualitySchedule.TimeExecution = DateTime.Now.Subtract(exectutionStart);
 
                 return qualitySchedule;
             }          
         }
 
-        private List<SessionBasicInfoViewModel> MappingSessionBasicInfoViewModel (List<SessionViewModel> sessionsViewModel)
+        private List<CalendarEventViewModel> MappingSessionBasicInfoViewModel (List<SessionViewModel> sessionsViewModel)
         {
-            List<SessionBasicInfoViewModel> sessionsBasicInfoViewModel = new List<SessionBasicInfoViewModel>();
+            List<CalendarEventViewModel> calendarEventsViewModel = new List<CalendarEventViewModel>();
 
             foreach (SessionViewModel sessionViewModel in sessionsViewModel)
             {
                 RoomViewModel room = sessionViewModel.Slots.AsEnumerable().Select(x => x.Room).FirstOrDefault();
+                string roomName = room != null ? room.RoomName : "Sem Sala";
 
-                if(room != null)
+                CalendarEventViewModel calendarEventViewModel =
+                    calendarEventsViewModel.Where(x => x.Start == sessionViewModel.StartDate && x.End == sessionViewModel.EndDate).FirstOrDefault();
+
+                if(calendarEventViewModel == null)
                 {
-                    int i = 0;
+                    calendarEventsViewModel.Add( new CalendarEventViewModel
+                    {
+                        Title = $"{sessionViewModel.Shift.Unit.UnitName} ({roomName})",
+                        TotalSessionsWithoutRoom = room != null ? 0 : 1,
+                        Color = new EventColor() { Primary = "#1e90ff", Secundary = "#D1E8FF" },
+                        Start = sessionViewModel.StartDate,
+                        End = sessionViewModel.EndDate,
+                        SessionsBasicInfo = new List<SessionBasicInfoViewModel>() {
+                            new SessionBasicInfoViewModel {
+                                SessionKey = sessionViewModel.SessionKey,
+                                ShiftKey = sessionViewModel.ShiftKey,
+                                ShiftName = sessionViewModel.Shift.ShiftName,
+                                PropertyKey = sessionViewModel?.PropertyKey,
+                                PropertyName = sessionViewModel?.Property?.PropertyName,
+                                BuildingKey = room?.BuildingKey,
+                                BuildingName = room?.Building?.BuildingName,
+                                RoomKey = room?.RoomKey,
+                                RoomName = room?.RoomName,
+                                UnitKey = sessionViewModel.Shift.UnitKey,
+                                UnitName = sessionViewModel.Shift.Unit.UnitName,
+                                StartDate = sessionViewModel.StartDate,
+                                EndDate = sessionViewModel.EndDate
+                            }
+                        }
+                    });
                 }
-
-                sessionsBasicInfoViewModel.Add(new SessionBasicInfoViewModel
+                else
                 {
-                    SessionKey = sessionViewModel.SessionKey,
-                    ShiftKey = sessionViewModel.ShiftKey,
-                    PropertyKey = sessionViewModel.PropertyKey,
-                    BuildingKey = room?.BuildingKey,
-                    BuildingName = room?.Building.BuildingName,
-                    RoomKey = room?.RoomKey,
-                    RoomName = room?.RoomName,
-                    Title = sessionViewModel.Shift.ShiftName + ", " + sessionViewModel.Shift.Unit.UnitName,
-                    Start = sessionViewModel.StartDate,
-                    End = sessionViewModel.EndDate
-                });
+                    calendarEventViewModel.Title += $",<br>{sessionViewModel.Shift.Unit.UnitName} ({roomName})";
+                    calendarEventViewModel.TotalSessionsWithoutRoom += room != null ? 0 : 1;
+                    calendarEventViewModel.SessionsBasicInfo.Add(
+                        new SessionBasicInfoViewModel
+                        {
+                            SessionKey = sessionViewModel.SessionKey,
+                            ShiftKey = sessionViewModel.ShiftKey,
+                            ShiftName = sessionViewModel.Shift.ShiftName,
+                            PropertyKey = sessionViewModel?.PropertyKey,
+                            PropertyName = sessionViewModel?.Property?.PropertyName,
+                            BuildingKey = room?.BuildingKey,
+                            BuildingName = room?.Building?.BuildingName,
+                            RoomKey = room?.RoomKey,
+                            RoomName = room?.RoomName,
+                            UnitKey = sessionViewModel.Shift.UnitKey,
+                            UnitName = sessionViewModel.Shift.Unit.UnitName,
+                            StartDate = sessionViewModel.StartDate,
+                            EndDate = sessionViewModel.EndDate
+                        });
+                }
             }
 
-            return sessionsBasicInfoViewModel;
+            return calendarEventsViewModel;
         }
     }    
 }

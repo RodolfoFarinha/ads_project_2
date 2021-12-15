@@ -1059,6 +1059,126 @@
             <param name="key"></param>
             <returns></returns>
         </member>
+        <member name="T:Api.Service.ViewModels.CalendarEventViewModel">
+            <summary>
+            Calendar event model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.CalendarEventViewModel.Title">
+            <summary>
+            Get or Set Title
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.CalendarEventViewModel.TotalSessionsWithoutRoom">
+            <summary>
+            Get or Set Number of Sessions Without Room
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.CalendarEventViewModel.Start">
+            <summary>
+            Get or Set Start Date
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.CalendarEventViewModel.End">
+            <summary>
+            Get or Set End Date
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.CalendarEventViewModel.Color">
+            <summary>
+            Get or Set Color
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.CalendarEventViewModel.SessionsBasicInfo">
+            <summary>
+            Get or Set Sessions Basic Info
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.EventColor">
+            <summary>
+            Event color model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.EventColor.Primary">
+            <summary>
+            Get or Set Primary Color
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.EventColor.Secundary">
+            <summary>
+            Get or Set Secundary Color
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.SessionBasicInfoViewModel">
+            <summary>
+            Session basic info model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.SessionKey">
+            <summary>
+            Get or Set Session Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.ShiftKey">
+            <summary>
+            Get or Set Shift Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.ShiftName">
+            <summary>
+            Get or Set Shift Name
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.PropertyKey">
+            <summary>
+            Get or Set Property Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.PropertyName">
+            <summary>
+            Get or Set Property Name
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.BuildingKey">
+            <summary>
+            Get or Set Building Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.BuildingName">
+            <summary>
+            Get or Set Building Name
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.RoomKey">
+            <summary>
+            Get or Set Room Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.RoomName">
+            <summary>
+            Get or Set Room Name
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.UnitKey">
+            <summary>
+            Get or Set Unit Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.UnitName">
+            <summary>
+            Get or Set Unit Name
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.StartDate">
+            <summary>
+            Get or Set Start Date
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.EndDate">
+            <summary>
+            Get or Set End Date
+            </summary>
+        </member>
         <member name="T:Api.Service.ViewModels.BaseModel">
             <summary>
             Base model
@@ -1067,6 +1187,41 @@
         <member name="P:Api.Service.ViewModels.BaseModel.Id">
             <summary>
             Get or Set Id
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.ScheduleModel">
+            <summary>
+            Schedule model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ScheduleModel.ScheduleKey">
+            <summary>
+            Get or Set Schedule Id
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ScheduleModel.ScheduleVersion">
+            <summary>
+            Get or Set Schedule Version
+            </summary>
+        </member>
+        <member name="T:Api.Service.ViewModels.ConfigurationViewModel">
+            <summary>
+            Configuration entity
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ConfigurationViewModel.ConfigurationKey">
+            <summary>
+            Get or Set Configuration Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ConfigurationViewModel.ConfigurationType">
+            <summary>
+            Get or Set Configuration Configuration Type
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.ConfigurationViewModel.Value">
+            <summary>
+            Get or Set Configuration Value Dictionary
             </summary>
         </member>
         <member name="T:Api.Service.ViewModels.BuildingViewModel">
@@ -1137,26 +1292,6 @@
         <member name="P:Api.Service.ViewModels.ClassShiftViewModel.Shift">
             <summary>
             Get or Set Shift
-            </summary>
-        </member>
-        <member name="T:Api.Service.ViewModels.ConfigurationViewModel">
-            <summary>
-            Configuration entity
-            </summary>
-        </member>
-        <member name="P:Api.Service.ViewModels.ConfigurationViewModel.ConfigurationKey">
-            <summary>
-            Get or Set Configuration Key
-            </summary>
-        </member>
-        <member name="P:Api.Service.ViewModels.ConfigurationViewModel.ConfigurationType">
-            <summary>
-            Get or Set Configuration Configuration Type
-            </summary>
-        </member>
-        <member name="P:Api.Service.ViewModels.ConfigurationViewModel.Value">
-            <summary>
-            Get or Set Configuration Value Dictionary
             </summary>
         </member>
         <member name="T:Api.Service.ViewModels.CourseViewModel">
@@ -1374,7 +1509,7 @@
             Get or Set Avarage Gap Between Sessions By Shift
             </summary>
         </member>
-        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.BasicSessions">
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.EventsCalendar">
             <summary>
             Get or Set Basic Sessions
             </summary>
@@ -1454,21 +1589,6 @@
             Get or Set Property
             </summary>
         </member>
-        <member name="T:Api.Service.ViewModels.ScheduleModel">
-            <summary>
-            Schedule model
-            </summary>
-        </member>
-        <member name="P:Api.Service.ViewModels.ScheduleModel.ScheduleKey">
-            <summary>
-            Get or Set Schedule Id
-            </summary>
-        </member>
-        <member name="P:Api.Service.ViewModels.ScheduleModel.ScheduleVersion">
-            <summary>
-            Get or Set Schedule Version
-            </summary>
-        </member>
         <member name="T:Api.Service.ViewModels.SessionViewModel">
             <summary>
             Session model
@@ -1527,61 +1647,6 @@
         <member name="P:Api.Service.ViewModels.SessionViewModel.Slots">
             <summary>
             Get or Set Slots
-            </summary>
-        </member>
-        <member name="T:Api.Service.ViewModels.SessionBasicInfoViewModel">
-            <summary>
-            Session model
-            </summary>
-        </member>
-        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.SessionKey">
-            <summary>
-            Get or Set Session Key
-            </summary>
-        </member>
-        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.ShiftKey">
-            <summary>
-            Get or Set Shift Key
-            </summary>
-        </member>
-        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.PropertyKey">
-            <summary>
-            Get or Set Property Key
-            </summary>
-        </member>
-        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.BuildingKey">
-            <summary>
-            Get or Set Building Key
-            </summary>
-        </member>
-        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.BuildingName">
-            <summary>
-            Get or Set Building Name
-            </summary>
-        </member>
-        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.RoomKey">
-            <summary>
-            Get or Set Room Key
-            </summary>
-        </member>
-        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.RoomName">
-            <summary>
-            Get or Set Room Name
-            </summary>
-        </member>
-        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.Title">
-            <summary>
-            Get or Set Title
-            </summary>
-        </member>
-        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.Start">
-            <summary>
-            Get or Set Start Date
-            </summary>
-        </member>
-        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.End">
-            <summary>
-            Get or Set End Date
             </summary>
         </member>
         <member name="T:Api.Service.ViewModels.ShiftViewModel">

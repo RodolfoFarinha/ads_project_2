@@ -33,7 +33,7 @@ export class CalendarComponent implements OnInit {
 
   CalendarView = CalendarView;
 
-  viewDate: Date = new Date();
+  viewDate: Date = new Date("2015-10-01T00:00:00");
 
   modalData: {
     action: string;
@@ -108,11 +108,12 @@ export class CalendarComponent implements OnInit {
   constructor(private modal: NgbModal, private sharedQualityScheduleService: SharedQualityScheduleService) { }
 
   ngOnInit() {
-    this.sharedQualityScheduleService.getGlobalQualitySchedule().basicSessions.forEach(basicSession => {
+    this.sharedQualityScheduleService.getGlobalQualitySchedule().eventsCalendar.forEach(eventCalendar => {
+      console.log(eventCalendar)
       this.events.push({
-        start: basicSession.start,
-        end: basicSession.end,
-        title: basicSession.title,
+        start: new Date(eventCalendar.start.toString()),
+        end: new Date(eventCalendar.end.toString()),
+        title: eventCalendar.title,
         color: colors.yellow,
         actions: this.actions,
         resizable: {

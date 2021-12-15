@@ -69,13 +69,6 @@ namespace Api
         /// <param name="env"></param>
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseForwardedHeaders(new ForwardedHeadersOptions
-            {
-                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
-            });
-
-            app.UseAuthentication();
-
             app.UseCors("CorsPolicy");
 
             app.UseSerilogRequestLogging(options =>

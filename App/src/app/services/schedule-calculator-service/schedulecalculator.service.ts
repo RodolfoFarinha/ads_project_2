@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { environment } from 'src/environments/environment';
 
-import { QualitySchedule } from './../../models/QualitySchedule';
+import { QualitySchedule } from '../../models/entities/QualitySchedule';
 
 @Injectable({
   providedIn: 'root'

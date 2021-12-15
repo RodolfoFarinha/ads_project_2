@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { QualitySchedule } from 'src/app/models/QualitySchedule';
+import { QualitySchedule } from 'src/app/models/entities/QualitySchedule';
 
 @Injectable({
   providedIn: 'root'

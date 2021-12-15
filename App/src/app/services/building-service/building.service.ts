@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 
 import { Guid } from 'guid-typescript';
-import { Building } from './../../models/Building';
+import { Building } from '../../models/entities/Building';
 
 @Injectable({
   providedIn: 'root'
