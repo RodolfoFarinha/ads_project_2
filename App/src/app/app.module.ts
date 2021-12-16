@@ -10,6 +10,9 @@ import { NgModule } from '@angular/core';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 
+// PrimeNg
+import { TableModule } from 'primeng/table';
+
 // Ng Bootstrap
 import { NgbModalModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -24,6 +27,7 @@ import { MenuComponent } from './components/menu/menu.component';
 
 // Routing
 import { AppRoutingModule } from './app-routing.module';
+import { TableComponent } from './components/table/table.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,8 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     CalendarComponent,
     DataUploadComponent,
-    MenuComponent
+    MenuComponent,
+    TableComponent
   ],
   imports: [
     // Angular
@@ -40,6 +45,9 @@ import { AppRoutingModule } from './app-routing.module';
     CommonModule,
     FormsModule,
     HttpClientModule,
+
+    //PrimeNg
+    TableModule,
 
     // Ng Bootstrap
     NgbModule,

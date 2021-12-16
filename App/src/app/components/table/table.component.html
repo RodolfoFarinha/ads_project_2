@@ -1,0 +1,63 @@
+<div style="width: 100%; text-align: center;">
+  <div class="table-container">
+    <p-table [value]="events" dataKey="title" responsiveLayout="scroll">
+      <ng-template pTemplate="header">
+        <tr>
+          <th style="width: 3rem"></th>
+          <th pSortableColumn="title">Title <p-sortIcon field="title"></p-sortIcon></th>
+          <th pSortableColumn="start">Start <p-sortIcon field="start"></p-sortIcon></th>
+          <th pSortableColumn="end">End <p-sortIcon field="end"></p-sortIcon></th>
+          <th pSortableColumn="totalSessionsWithoutRoom">Sessions Without Room <p-sortIcon field="totalSessionsWithoutRoom"></p-sortIcon></th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-event let-expanded="expanded">
+        <tr>
+          <td>
+            <button type="button" pButton pRipple [pRowToggler]="event"
+              class="p-button-text p-button-rounded p-button-plain"
+              [icon]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'"></button>
+          </td>
+          <td>{{event.title}}</td>
+          <td>{{event.start}}</td>
+          <td>{{event.end}}</td>
+          <td>{{event.totalSessionsWithoutRoom}}</td>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="rowexpansion" let-product>
+        <tr>
+          <td colspan="7">
+            <div class="p-p-3">
+              <p-table [value]="product.orders" dataKey="id">
+                <ng-template pTemplate="header">
+        <tr>
+          <th pSortableColumn="unitName">Unit Name <p-sortIcon field="unitName"></p-sortIcon></th>
+          <th pSortableColumn="shiftName">Shift Name <p-sortIcon field="shiftName"></p-sortIcon></th>
+          <th pSortableColumn="buildingName">Building Name <p-sortIcon field="buildingName"></p-sortIcon></th>
+          <th pSortableColumn="roomName">Room Name <p-sortIcon field="roomName"></p-sortIcon></th>
+          <th pSortableColumn="startDate">Start Date <p-sortIcon field="startDate"></p-sortIcon></th>
+          <th pSortableColumn="endDate">End Date <p-sortIcon field="endDate"></p-sortIcon></th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-order>
+        <tr>
+          <td>{{order.unitName}}</td>
+          <td>{{order.shiftName}}</td>
+          <td>{{order.buildingName}}</td>
+          <td>{{order.roomName}}</td>
+          <td>{{order.startDate}}</td>
+          <td>{{order.endDate}}</td>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="emptymessage">
+        <tr>
+          <td colspan="6">There are no order for this product yet.</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+  </td>
+  </tr>
+  </ng-template>
+  </p-table>
+</div>
+</div>
