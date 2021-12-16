@@ -63,6 +63,16 @@ namespace Api.Service.ViewModels
         public string UnitName { get; set; }
 
         /// <summary>
+        /// Get or Set Course Key
+        /// </summary>
+        public Guid? CourseKey { get; set; }
+
+        /// <summary>
+        /// Get or Set Course Name
+        /// </summary>
+        public string CourseName { get; set; }
+
+        /// <summary>
         /// Get or Set Start Date
         /// </summary>
         public DateTime StartDate { get; set; }

@@ -6,7 +6,7 @@ import { QualitySchedule } from 'src/app/models/entities/QualitySchedule';
 })
 export class SharedQualityScheduleService {
 
-  globalQualitySchedule: QualitySchedule;
+  globalQualitySchedule: QualitySchedule | undefined;
 
   constructor() { }
 
@@ -14,7 +14,7 @@ export class SharedQualityScheduleService {
     this.globalQualitySchedule = newQualitySchedule;
   }
 
-  getGlobalQualitySchedule(): QualitySchedule {
+  getGlobalQualitySchedule(): QualitySchedule | undefined {
     return this.globalQualitySchedule;
   }
 }

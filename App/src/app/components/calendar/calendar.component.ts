@@ -27,7 +27,7 @@ const colors: any = {
   templateUrl: 'calendar.component.html',
 })
 export class CalendarComponent implements OnInit {
-  @ViewChild('modalContent', { static: true }) modalContent: TemplateRef<any>;
+  @ViewChild('modalContent', { static: true }) modalContent: TemplateRef<any> | undefined;
 
   view: CalendarView = CalendarView.Month;
 
@@ -38,7 +38,7 @@ export class CalendarComponent implements OnInit {
   modalData: {
     action: string;
     event: CalendarEvent;
-  };
+  } | undefined;
 
   actions: CalendarEventAction[] = [
     {
@@ -108,7 +108,7 @@ export class CalendarComponent implements OnInit {
   constructor(private modal: NgbModal, private sharedQualityScheduleService: SharedQualityScheduleService) { }
 
   ngOnInit() {
-    this.sharedQualityScheduleService.getGlobalQualitySchedule().eventsCalendar.forEach(eventCalendar => {
+    this.sharedQualityScheduleService.getGlobalQualitySchedule()?.eventsCalendar.forEach(eventCalendar => {
       console.log(eventCalendar)
       this.events.push({
         start: new Date(eventCalendar.start.toString()),

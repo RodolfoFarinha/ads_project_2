@@ -10,11 +10,17 @@ import { SharedQualityScheduleService } from 'src/app/util/shared-quality-schedu
 })
 export class TableComponent implements OnInit {
 
-  events: EventCalendar[] = [];
+  events: EventCalendar[] | undefined;
 
   constructor(private sharedQualityScheduleService: SharedQualityScheduleService) { }
 
   ngOnInit() {
-    this.events = this.sharedQualityScheduleService.getGlobalQualitySchedule().eventsCalendar;
+    this.sharedQualityScheduleService.getGlobalQualitySchedule()?.eventsCalendar.forEach(eventCalendar => {
+      console.log(eventCalendar)
+      });
+
+    this.events = this.sharedQualityScheduleService.getGlobalQualitySchedule()?.eventsCalendar;
+    console.log(this.sharedQualityScheduleService.getGlobalQualitySchedule()?.eventsCalendar)
+    console.log(this.events)
   }
 }

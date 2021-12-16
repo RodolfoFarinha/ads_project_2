@@ -15,7 +15,7 @@ export class ScheduleCalculatorService {
 
   constructor(private http: HttpClient) { }
 
-  ScheduleCalculator(propertiesCsv: File, roomsCsv: File, sessionsCsv: File): Observable<QualitySchedule> {
+  ScheduleCalculator(propertiesCsv: File | undefined, roomsCsv: File | undefined, sessionsCsv: File | undefined): Observable<QualitySchedule> {
     const propertiesCsvToPost = propertiesCsv as File;
     const roomsCsvToPost = roomsCsv as File;
     const sessionsCsvToPost = sessionsCsv as File;

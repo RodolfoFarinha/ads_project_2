@@ -1169,6 +1169,16 @@
             Get or Set Unit Name
             </summary>
         </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.CourseKey">
+            <summary>
+            Get or Set Course Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.CourseName">
+            <summary>
+            Get or Set Course Name
+            </summary>
+        </member>
         <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.StartDate">
             <summary>
             Get or Set Start Date

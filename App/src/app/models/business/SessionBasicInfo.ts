@@ -16,5 +16,7 @@ export interface SessionBasicInfo {
   unitName: string,
   startDate: Date,
   endDate: Date
+  courseKey: Guid,
+  courseName: string,
 }
 

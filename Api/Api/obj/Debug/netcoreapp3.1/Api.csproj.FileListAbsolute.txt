@@ -357,3 +357,4 @@ C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\bin\Debug\netcoreapp3.1\A
 C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api\obj\Debug\netcoreapp3.1\Api.MvcApplicationPartsAssemblyInfo.cs

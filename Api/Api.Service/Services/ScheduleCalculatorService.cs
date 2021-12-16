@@ -67,7 +67,12 @@ namespace Api.Service.Services
                 CalendarEventViewModel calendarEventViewModel =
                     calendarEventsViewModel.Where(x => x.Start == sessionViewModel.StartDate && x.End == sessionViewModel.EndDate).FirstOrDefault();
 
-                if(calendarEventViewModel == null)
+                string courseName = "";
+
+                foreach (var course in sessionViewModel.Shift.Unit.UnitCourses)
+                    courseName += course.Course.CourseName + ",";
+
+                if (calendarEventViewModel == null)
                 {
                     calendarEventsViewModel.Add( new CalendarEventViewModel
                     {
@@ -90,7 +95,8 @@ namespace Api.Service.Services
                                 UnitKey = sessionViewModel.Shift.UnitKey,
                                 UnitName = sessionViewModel.Shift.Unit.UnitName,
                                 StartDate = sessionViewModel.StartDate,
-                                EndDate = sessionViewModel.EndDate
+                                EndDate = sessionViewModel.EndDate,
+                                CourseName =  courseName
                             }
                         }
                     });
@@ -114,7 +120,8 @@ namespace Api.Service.Services
                             UnitKey = sessionViewModel.Shift.UnitKey,
                             UnitName = sessionViewModel.Shift.Unit.UnitName,
                             StartDate = sessionViewModel.StartDate,
-                            EndDate = sessionViewModel.EndDate
+                            EndDate = sessionViewModel.EndDate,
+                            CourseName = courseName
                         });
                 }
             }

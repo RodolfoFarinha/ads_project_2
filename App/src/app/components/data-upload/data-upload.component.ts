@@ -9,9 +9,9 @@ import { SharedQualityScheduleService } from 'src/app/util/shared-quality-schedu
 })
 export class DataUploadComponent implements OnInit {
 
-  propertiesFile: File;
-  roomsFile: File;
-  sessionsFile: File;
+  propertiesFile: File | undefined;
+  roomsFile: File | undefined;
+  sessionsFile: File | undefined;
 
   constructor(private scheduleCalculatorService: ScheduleCalculatorService, private sharedQualityScheduleService: SharedQualityScheduleService) { }
 
@@ -19,25 +19,30 @@ export class DataUploadComponent implements OnInit {
 
   }
 
-  propertiesFileChage(files) {
-    if (files.length === 0)
-      return;
+  propertiesFileChage(files: FileList | null) {
+    if (files != null) {
+      if (files.length === 0)
+        return;
 
-    this.propertiesFile = <File>files[0];
+      this.propertiesFile = <File>files[0];
+    }
   }
 
-  roomsFileChage(files) {
-    if (files.length === 0)
-      return;
-
-    this.roomsFile = <File>files[0];
+  roomsFileChage(files: FileList | null) {
+    if (files != null) {
+      if (files?.length === 0)
+        return;
+      this.roomsFile = <File>files[0];
+    }
   }
 
-  sessionsFileChage(files) {
-    if (files.length === 0)
-      return;
+  sessionsFileChage(files: FileList | null) {
+    if (files != null) {
+      if (files.length === 0)
+        return;
 
-    this.sessionsFile = <File>files[0];
+      this.sessionsFile = <File>files[0];
+    }
   }
 
   calcular() {
