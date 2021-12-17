@@ -25,10 +25,12 @@ export class TableComponent implements OnInit {
 
     this.sharedQualityScheduleService.getGlobalQualitySchedule()?.forEach(qualitySchedule => {
       if (qualitySchedule.scheduleType == ScheduleType.Normal) {
+        console.log("normal")
         this.eventsNormal = qualitySchedule.eventsCalendar;
         this.eventsNormal = this.eventsNormal?.sort((x, y) => x.start < y.end ? -1 : 1);
       }
       else {
+        console.log("over booking")
         this.eventsOverBooking25 = qualitySchedule.eventsCalendar;
         this.eventsOverBooking25 = this.eventsOverBooking25?.sort((x, y) => x.start < y.end ? -1 : 1);
       }
