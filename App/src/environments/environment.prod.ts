@@ -1,8 +1,8 @@
 export const environment = {
   production: true,
-  browser: 'https://linksport.pt',
-  url: 'https://adsapi.menu-ai.com',
-  apiUrl: 'https://adsapi.menu-ai.com/api/',
+  browser: 'https://damm-it.pt',
+  url: 'https://api.damm-it.pt.com',
+  apiUrl: 'https://api.damm-it.pt/api/',
   calendar: {
     firstDayOfWeek: 1,
     dayNames: ['domingo', '2ª feira', '3ª feira', '4ª feira', '5ª feira', '6ª feira', 'sábado'],

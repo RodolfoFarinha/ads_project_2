@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 
 import { Guid } from 'guid-typescript';
-import { Session } from './../../models/Session';
+import { Session } from './../../models/entities/Session';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +20,7 @@ export class SessionService {
     return this.http.get<Session[]>(this.controller);
   }
 
-  getByKey(key): Observable<Session> {
+  getByKey(key: any): Observable<Session> {
     return this.http.get<Session>(`${this.controller}/${key}`);
   }
 

@@ -20,7 +20,7 @@ export class BuildingService {
     return this.http.get<Building[]>(this.controller);
   }
 
-  getByKey(key): Observable<Building> {
+  getByKey(key: any): Observable<Building> {
     return this.http.get<Building>(`${this.controller}/${key}`);
   }
 

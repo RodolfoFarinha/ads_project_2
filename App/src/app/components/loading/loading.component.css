@@ -1,0 +1,29 @@
+.loading {
+    height: 100vh;
+    width: 100%;
+    display: table;
+}
+
+.logo-container{
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.logo-image{
+  margin-top: 40px;
+  margin-left: 5px;
+  width: 100px;
+}
+
+.mat-progress-spinner {
+  position: absolute;
+}
+
+:host ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+  stroke: white !important;
+}

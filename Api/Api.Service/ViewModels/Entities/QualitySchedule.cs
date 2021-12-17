@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Api.Domain.Enum;
+using System;
 using System.Collections.Generic;
 
 namespace Api.Service.ViewModels
@@ -12,6 +13,11 @@ namespace Api.Service.ViewModels
         /// Get or Set Time Execution
         /// </summary>
         public TimeSpan TimeExecution { get; set; }
+
+        /// <summary>
+        /// Get or Set Schedule Type
+        /// </summary>
+        public ScheduleTypeEnum ScheduleType { get; }
 
         /// <summary>
         /// Get or Set Total Rooms Without Session
@@ -122,5 +128,14 @@ namespace Api.Service.ViewModels
         /// Get or Set Basic Sessions
         /// </summary>
         public List<CalendarEventViewModel> EventsCalendar { get; set; } = new List<CalendarEventViewModel>();
+
+        /// <summary>
+        /// Quality Schedule View Model Constructor
+        /// </summary>
+        /// <param name="scheduleTypeEnum"></param>
+        public QualityScheduleViewModel(ScheduleTypeEnum scheduleTypeEnum)
+        {
+            this.ScheduleType = scheduleTypeEnum;
+        }
     }
 }

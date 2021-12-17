@@ -15,7 +15,7 @@ export class ScheduleCalculatorService {
 
   constructor(private http: HttpClient) { }
 
-  ScheduleCalculator(propertiesCsv: File | undefined, roomsCsv: File | undefined, sessionsCsv: File | undefined): Observable<QualitySchedule> {
+  ScheduleCalculator(propertiesCsv: File | undefined, roomsCsv: File | undefined, sessionsCsv: File | undefined): Observable<QualitySchedule[]> {
     const propertiesCsvToPost = propertiesCsv as File;
     const roomsCsvToPost = roomsCsv as File;
     const sessionsCsvToPost = sessionsCsv as File;
@@ -34,6 +34,6 @@ export class ScheduleCalculatorService {
       formData.append('file', sessionsCsvToPost, "sessions.csv");
     }
 
-    return this.http.post<QualitySchedule>(`${this.controller}`, formData);
+    return this.http.post<QualitySchedule[]>(`${this.controller}`, formData);
   }
 }

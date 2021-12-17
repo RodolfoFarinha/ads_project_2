@@ -9,12 +9,12 @@
             
             </summary>
         </member>
-        <member name="M:Api.Service.Business.ScheduleCalculater.CreateSessionSlots(Api.Service.ViewModels.QualityScheduleViewModel,System.Collections.Generic.List{Api.Service.ViewModels.SessionViewModel},System.Collections.Generic.List{Api.Service.ViewModels.RoomViewModel})">
+        <member name="M:Api.Service.Business.ScheduleCalculater.CreateSessionSlots(Api.Service.ViewModels.QualityScheduleViewModel,System.Collections.Generic.List{Api.Service.ViewModels.SessionViewModel},System.Collections.Generic.List{Api.Service.ViewModels.RoomViewModel},System.Decimal)">
             <summary>
             Generate calendar based on sessions and rooms 
             </summary>
         </member>
-        <member name="M:Api.Service.Business.ScheduleCalculater.GetAvailableRoom(System.Collections.Generic.IEnumerable{Api.Service.ViewModels.RoomViewModel},Api.Service.ViewModels.SessionViewModel)">
+        <member name="M:Api.Service.Business.ScheduleCalculater.GetAvailableRoom(System.Collections.Generic.IEnumerable{Api.Service.ViewModels.RoomViewModel},Api.Service.ViewModels.SessionViewModel,System.Decimal)">
             <summary>
             Get available room based in date
             </summary>
@@ -1179,6 +1179,11 @@
             Get or Set Course Name
             </summary>
         </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.CourseType">
+            <summary>
+            Get or Set Course Type
+            </summary>
+        </member>
         <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.StartDate">
             <summary>
             Get or Set Start Date
@@ -1414,6 +1419,11 @@
             Get or Set Time Execution
             </summary>
         </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.ScheduleType">
+            <summary>
+            Get or Set Schedule Type
+            </summary>
+        </member>
         <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomsWithoutSession">
             <summary>
             Get or Set Total Rooms Without Session
@@ -1523,6 +1533,12 @@
             <summary>
             Get or Set Basic Sessions
             </summary>
+        </member>
+        <member name="M:Api.Service.ViewModels.QualityScheduleViewModel.#ctor(Api.Domain.Enum.ScheduleTypeEnum)">
+            <summary>
+            Quality Schedule View Model Constructor
+            </summary>
+            <param name="scheduleTypeEnum"></param>
         </member>
         <member name="T:Api.Service.ViewModels.RoomViewModel">
             <summary>

@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 
 import { Guid } from 'guid-typescript';
-import { Class } from './../../models/Class';
+import { Class } from './../../models/entities/Class';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +20,7 @@ export class ClassService {
     return this.http.get<Class[]>(this.controller);
   }
 
-  getByKey(key): Observable<Class> {
+  getByKey(key: any): Observable<Class> {
     return this.http.get<Class>(`${this.controller}/${key}`);
   }
 

@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 
 import { Guid } from 'guid-typescript';
-import { Property } from './../../models/Property';
+import { Property } from './../../models/entities/Property';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +20,7 @@ export class PropertyService {
     return this.http.get<Property[]>(this.controller);
   }
 
-  getByKey(key): Observable<Property> {
+  getByKey(key: any): Observable<Property> {
     return this.http.get<Property>(`${this.controller}/${key}`);
   }
 

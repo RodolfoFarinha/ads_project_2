@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 
 import { Guid } from 'guid-typescript';
-import { Room } from './../../models/Room';
+import { Room } from './../../models/entities/Room';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +20,7 @@ export class RoomService {
     return this.http.get<Room[]>(this.controller);
   }
 
-  getByKey(key): Observable<Room> {
+  getByKey(key: any): Observable<Room> {
     return this.http.get<Room>(`${this.controller}/${key}`);
   }
 

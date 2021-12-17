@@ -10,6 +10,7 @@
 
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <UserSecretsId>7eac6b85-183a-4d3b-ac80-c1128f090d52</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

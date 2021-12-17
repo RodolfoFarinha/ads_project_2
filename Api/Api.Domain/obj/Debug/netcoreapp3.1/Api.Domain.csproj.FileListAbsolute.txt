@@ -25,3 +25,4 @@ C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Domain\obj\Debug\netcorea
 C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Domain\obj\Debug\netcoreapp3.1\Api.Domain.dll
 C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Domain\obj\Debug\netcoreapp3.1\Api.Domain.pdb
 C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Domain\bin\Debug\netcoreapp3.1\Api.Domain.xml
+C:\Users\rodol\Documentos\GitHub\ads_project_2\Api\Api.Domain\obj\Debug\netcoreapp3.1\Api.Domain.csprojAssemblyReference.cache

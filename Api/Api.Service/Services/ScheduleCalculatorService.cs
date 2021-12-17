@@ -8,6 +8,7 @@ using AutoMapper;
 using System.Collections.Generic;
 using System;
 using System.Linq;
+using Api.Domain.Enum;
 
 namespace Api.Service.Services
 {
@@ -30,12 +31,12 @@ namespace Api.Service.Services
         /// <param name="roomsData"></param>
         /// <param name="sessionsData"></param>
         /// <returns></returns>
-        public QualityScheduleViewModel AllocateRoomsToSessions(Tuple<string[], List<string[]>> propertiesData, Tuple<string[], List<string[]>> roomsData, Tuple<string[], List<string[]>> sessionsData)
+        public List<QualityScheduleViewModel> AllocateRoomsToSessions(Tuple<string[], List<string[]>> propertiesData, Tuple<string[], List<string[]>> roomsData, Tuple<string[], List<string[]>> sessionsData)
         {
             using (IUnitOfWork unitOfwork = GetUnitOfWorkInstance())
             {
                 ScheduleModel scheduleModel = new ScheduleModel() { ScheduleKey = Guid.NewGuid(), ScheduleVersion = 0 };
-                QualityScheduleViewModel qualitySchedule = new QualityScheduleViewModel();
+                List<QualityScheduleViewModel> qualitySchedules = new List<QualityScheduleViewModel>();
 
                 List<ConfigurationViewModel> configuration = 
                     GetMapperInstance().Map<IEnumerable<Configuration>, List<ConfigurationViewModel>>(unitOfwork.ConfigurationRepository.GetAll());
@@ -47,15 +48,22 @@ namespace Api.Service.Services
                 List<SessionViewModel> sessions = fileDataToModel.MappingSessionViewModel(scheduleModel, sessionsData, propperties);
 
                 // First algorithm
-                DateTime exectutionStart = DateTime.Now;
-                qualitySchedule.EventsCalendar = MappingSessionBasicInfoViewModel(ScheduleCalculater.CreateSessionSlots(qualitySchedule, sessions, rooms));
-                qualitySchedule.TimeExecution = DateTime.Now.Subtract(exectutionStart);
+                qualitySchedules.Add(NewQualityScheduleViewModel(new QualityScheduleViewModel(ScheduleTypeEnum.Normal), sessions, rooms, 0,"#1e90ff", "#D1E8FF"));
 
-                return qualitySchedule;
+                // Second algorithm - with over booking 25%
+                qualitySchedules.Add(NewQualityScheduleViewModel(new QualityScheduleViewModel(ScheduleTypeEnum.OverBooking25), sessions, rooms, 25, "#1e90ff", "#D1E8FF"));
+
+                return qualitySchedules;
             }          
         }
 
-        private List<CalendarEventViewModel> MappingSessionBasicInfoViewModel (List<SessionViewModel> sessionsViewModel)
+        private QualityScheduleViewModel NewQualityScheduleViewModel(QualityScheduleViewModel qualityScheduleViewModel, List<SessionViewModel> sessions, List<RoomViewModel> rooms, decimal overBookingPercent, string primaryColor, string secundaryColor)
+        {
+            qualityScheduleViewModel.EventsCalendar = MappingSessionBasicInfoViewModel(ScheduleCalculater.CreateSessionSlots(qualityScheduleViewModel, sessions, rooms, overBookingPercent), primaryColor, secundaryColor);
+            return qualityScheduleViewModel;
+        }
+
+        private List<CalendarEventViewModel> MappingSessionBasicInfoViewModel (List<SessionViewModel> sessionsViewModel, string primaryColor, string secundaryColor)
         {
             List<CalendarEventViewModel> calendarEventsViewModel = new List<CalendarEventViewModel>();
 
@@ -78,7 +86,7 @@ namespace Api.Service.Services
                     {
                         Title = $"{sessionViewModel.Shift.Unit.UnitName} ({roomName})",
                         TotalSessionsWithoutRoom = room != null ? 0 : 1,
-                        Color = new EventColor() { Primary = "#1e90ff", Secundary = "#D1E8FF" },
+                        Color = new EventColor() { Primary = primaryColor, Secundary = secundaryColor },
                         Start = sessionViewModel.StartDate,
                         End = sessionViewModel.EndDate,
                         SessionsBasicInfo = new List<SessionBasicInfoViewModel>() {

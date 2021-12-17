@@ -1,18 +1,19 @@
 <div style="width: 100%; text-align: center;">
   <div class="calender-container">
+    <br>
     <div class="row text-center">
       <div class="col-md-4">
         <div class="btn-group">
           <div class="btn btn-primary" mwlCalendarPreviousView [view]="view" [(viewDate)]="viewDate"
             (viewDateChange)="closeOpenMonthViewDay()">
-            Previous
+            Anterior
           </div>
           <div class="btn btn-outline-secondary" mwlCalendarToday [(viewDate)]="viewDate">
-            Today
+            Hoje
           </div>
           <div class="btn btn-primary" mwlCalendarNextView [view]="view" [(viewDate)]="viewDate"
             (viewDateChange)="closeOpenMonthViewDay()">
-            Next
+            Próximo
           </div>
         </div>
       </div>
@@ -23,13 +24,13 @@
         <div class="btn-group">
           <div class="btn btn-primary" (click)="setView(CalendarView.Month)"
             [class.active]="view === CalendarView.Month">
-            Month
+            Mês
           </div>
           <div class="btn btn-primary" (click)="setView(CalendarView.Week)" [class.active]="view === CalendarView.Week">
-            Week
+            Semana
           </div>
           <div class="btn btn-primary" (click)="setView(CalendarView.Day)" [class.active]="view === CalendarView.Day">
-            Day
+            Dia
           </div>
         </div>
       </div>
@@ -49,11 +50,10 @@
         (eventTimesChanged)="eventTimesChanged($event)">
       </mwl-calendar-day-view>
     </div>
-
   </div>
 </div>
 
-<ng-template #modalContent let-close="close">
+<!-- <ng-template #modalContent let-close="close">
   <div class="modal-header">
     <h5 class="modal-title">Event action occurred</h5>
     <button type="button" class="close" (click)="close()">
@@ -75,4 +75,4 @@
       OK
     </button>
   </div>
-</ng-template>
+</ng-template> -->

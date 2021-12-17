@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 
 import { Guid } from 'guid-typescript';
-import { QualitySchedule } from './../../models/QualitySchedule';
+import { QualitySchedule } from './../../models/entities/QualitySchedule';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +20,7 @@ export class QualityScheduleService {
     return this.http.get<QualitySchedule[]>(this.controller);
   }
 
-  getByKey(key): Observable<QualitySchedule> {
+  getByKey(key: any): Observable<QualitySchedule> {
     return this.http.get<QualitySchedule>(`${this.controller}/${key}`);
   }
 

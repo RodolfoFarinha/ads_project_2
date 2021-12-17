@@ -724,6 +724,21 @@
             Master
             </summary>
         </member>
+        <member name="T:Api.Domain.Enum.ScheduleTypeEnum">
+            <summary>
+            Schedule Type Enum
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ScheduleTypeEnum.Normal">
+            <summary>
+            Normal
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ScheduleTypeEnum.OverBooking25">
+            <summary>
+            Over Booking 25%
+            </summary>
+        </member>
         <member name="T:Api.Domain.Enum.ShiftEnum">
             <summary>
             Shift Enum

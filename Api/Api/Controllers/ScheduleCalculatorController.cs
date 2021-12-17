@@ -31,7 +31,7 @@ namespace Api.Controllers
         /// </summary>
         [HttpPost("api/schedulecalculator")]
         [AllowAnonymous]
-        public ActionResult<QualityScheduleViewModel> ScheduleCalculator()
+        public ActionResult<List<QualityScheduleViewModel>> ScheduleCalculator()
         {
             Tuple<string[], List<string[]>> rooms = null;
             Tuple<string[], List<string[]>> sessions = null;

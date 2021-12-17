@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 
 import { Guid } from 'guid-typescript';
-import { Slot } from './../../models/Slot';
+import { Slot } from './../../models/entities/Slot';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +20,7 @@ export class SlotService {
     return this.http.get<Slot[]>(this.controller);
   }
 
-  getByKey(key): Observable<Slot> {
+  getByKey(key: any): Observable<Slot> {
     return this.http.get<Slot>(`${this.controller}/${key}`);
   }
 

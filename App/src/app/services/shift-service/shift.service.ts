@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 
 import { Guid } from 'guid-typescript';
-import { Shift } from './../../models/Shift';
+import { Shift } from './../../models/entities/Shift';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +20,7 @@ export class ShiftService {
     return this.http.get<Shift[]>(this.controller);
   }
 
-  getByKey(key): Observable<Shift> {
+  getByKey(key: any): Observable<Shift> {
     return this.http.get<Shift>(`${this.controller}/${key}`);
   }
 

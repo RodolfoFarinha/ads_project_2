@@ -1,0 +1,516 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="T:Api.Controllers.BaseController`2">
+            <summary>
+            Base controller which extend by all controllers
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.BaseController`2.GetAll">
+            <summary>
+            Get all generic
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.BaseController`2.GetByKey(`1)">
+            <summary>
+            Get generic by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.BaseController`2.Save(`0)">
+            <summary>
+            Add or edit generic
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.BaseController`2.Remove(`1)">
+            <summary>
+            Delete generic by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.QualitySchedulesController">
+            <summary>
+            Controller for quality schedule model
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.QualitySchedulesController.#ctor(Api.Service.Interfaces.Services.IQualityScheduleService)">
+            <summary>
+            Contructor of quality schedule controller
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Api.Controllers.QualitySchedulesController.GetAll">
+            <summary>
+            Get all quality schedules
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.QualitySchedulesController.GetByKey(System.Guid)">
+            <summary>
+            Get quality schedule by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.QualitySchedulesController.Save(Api.Service.ViewModels.QualityScheduleViewModel)">
+            <summary>
+            Add or edit quality schedule
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.QualitySchedulesController.Remove(System.Guid)">
+            <summary>
+            Delete quality schedule by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.ClassesController">
+            <summary>
+            Controller for class model
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.ClassesController.#ctor(Api.Service.Interfaces.Services.IClassService)">
+            <summary>
+            Contructor of class controller
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Api.Controllers.ClassesController.GetAll">
+            <summary>
+            Get all classes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ClassesController.GetByKey(System.Guid)">
+            <summary>
+            Get class by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ClassesController.Save(Api.Service.ViewModels.ClassViewModel)">
+            <summary>
+            Add or edit class
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ClassesController.Remove(System.Guid)">
+            <summary>
+            Delete class by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.ConfigurationsController">
+            <summary>
+            Controller for configuration model
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.ConfigurationsController.#ctor(Api.Service.Interfaces.Services.IConfigurationService)">
+            <summary>
+            Contructor of configuration controller
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Api.Controllers.ConfigurationsController.GetAll">
+            <summary>
+            Get all configurations
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ConfigurationsController.GetByKey(System.Guid)">
+            <summary>
+            Get configuration by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ConfigurationsController.Save(Api.Service.ViewModels.ConfigurationViewModel)">
+            <summary>
+            Add or edit configuration
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ConfigurationsController.Remove(System.Guid)">
+            <summary>
+            Delete configuration by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.CoursesController">
+            <summary>
+            Controller for course model
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.CoursesController.#ctor(Api.Service.Interfaces.Services.ICourseService)">
+            <summary>
+            Contructor of course controller
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Api.Controllers.CoursesController.GetAll">
+            <summary>
+            Get all courses
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.CoursesController.GetByKey(System.Guid)">
+            <summary>
+            Get course by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.CoursesController.Save(Api.Service.ViewModels.CourseViewModel)">
+            <summary>
+            Add or edit course
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.CoursesController.Remove(System.Guid)">
+            <summary>
+            Delete course by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.PropertiesController">
+            <summary>
+            Controller for property model
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.PropertiesController.#ctor(Api.Service.Interfaces.Services.IPropertyService)">
+            <summary>
+            Contructor of property controller
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Api.Controllers.PropertiesController.GetAll">
+            <summary>
+            Get all properties
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.PropertiesController.GetByKey(System.Guid)">
+            <summary>
+            Get property by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.PropertiesController.Save(Api.Service.ViewModels.PropertyViewModel)">
+            <summary>
+            Add or edit property
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.PropertiesController.Remove(System.Guid)">
+            <summary>
+            Delete property by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.BuildingsController">
+            <summary>
+            Controller for building model
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.BuildingsController.#ctor(Api.Service.Interfaces.Services.IBuildingService)">
+            <summary>
+            Contructor of building controller
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Api.Controllers.BuildingsController.GetAll">
+            <summary>
+            Get all buildings
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.BuildingsController.GetByKey(System.Guid)">
+            <summary>
+            Get building by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.BuildingsController.Save(Api.Service.ViewModels.BuildingViewModel)">
+            <summary>
+            Add or edit building
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.BuildingsController.Remove(System.Guid)">
+            <summary>
+            Delete building by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.RoomsController">
+            <summary>
+            Controller for room model
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.RoomsController.#ctor(Api.Service.Interfaces.Services.IRoomService)">
+            <summary>
+            Contructor of room controller
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Api.Controllers.RoomsController.GetAll">
+            <summary>
+            Get all rooms
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.RoomsController.GetByKey(System.Guid)">
+            <summary>
+            Get room by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.RoomsController.Save(Api.Service.ViewModels.RoomViewModel)">
+            <summary>
+            Add or edit room
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.RoomsController.Remove(System.Guid)">
+            <summary>
+            Delete room by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.ScheduleCalculatorController">
+            <summary>
+            Controller for schedule calculater
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.ScheduleCalculatorController.#ctor(Api.Service.Interfaces.Services.IScheduleCalculatorService)">
+            <summary>
+            Contructor of schedule calculater controller
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Api.Controllers.ScheduleCalculatorController.ScheduleCalculator">
+            <summary>
+            Method to calulate the schedule
+            </summary>
+        </member>
+        <member name="T:Api.Controllers.SessionsController">
+            <summary>
+            Controller for session model
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.SessionsController.#ctor(Api.Service.Interfaces.Services.ISessionService)">
+            <summary>
+            Contructor of session controller
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Api.Controllers.SessionsController.GetAll">
+            <summary>
+            Get all sessions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.SessionsController.GetByKey(System.Guid)">
+            <summary>
+            Get session by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.SessionsController.Save(Api.Service.ViewModels.SessionViewModel)">
+            <summary>
+            Add or edit session
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.SessionsController.Remove(System.Guid)">
+            <summary>
+            Delete session by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.ShiftsController">
+            <summary>
+            Controller for shift model
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.ShiftsController.#ctor(Api.Service.Interfaces.Services.IShiftService)">
+            <summary>
+            Contructor of shift controller
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Api.Controllers.ShiftsController.GetAll">
+            <summary>
+            Get all shifts
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ShiftsController.GetByKey(System.Guid)">
+            <summary>
+            Get shift by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ShiftsController.Save(Api.Service.ViewModels.ShiftViewModel)">
+            <summary>
+            Add or edit shift
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ShiftsController.Remove(System.Guid)">
+            <summary>
+            Delete shift by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.SlotsController">
+            <summary>
+            Controller for slot model
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.SlotsController.#ctor(Api.Service.Interfaces.Services.ISlotService)">
+            <summary>
+            Contructor of slot controller
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Api.Controllers.SlotsController.GetAll">
+            <summary>
+            Get all slots
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.SlotsController.GetByKey(System.Guid)">
+            <summary>
+            Get slot by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.SlotsController.Save(Api.Service.ViewModels.SlotViewModel)">
+            <summary>
+            Add or edit slot
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.SlotsController.Remove(System.Guid)">
+            <summary>
+            Delete slot by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.UnitsController">
+            <summary>
+            Controller for unit model
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.UnitsController.#ctor(Api.Service.Interfaces.Services.IUnitService)">
+            <summary>
+            Contructor of unit controller
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:Api.Controllers.UnitsController.GetAll">
+            <summary>
+            Get all units
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.UnitsController.GetByKey(System.Guid)">
+            <summary>
+            Get unit by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.UnitsController.Save(Api.Service.ViewModels.UnitViewModel)">
+            <summary>
+            Add or edit unit
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.UnitsController.Remove(System.Guid)">
+            <summary>
+            Delete unit by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Program">
+            <summary>
+            Program api
+            </summary>
+        </member>
+        <member name="M:Api.Program.Main(System.String[])">
+            <summary>
+            Main api
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Api.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Create host builder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Startup">
+            <summary>
+            Startup api 
+            </summary>
+        </member>
+        <member name="M:Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor of startup
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configuration of services collection
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configuration of application and host environment
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

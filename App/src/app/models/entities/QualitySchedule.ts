@@ -1,16 +1,18 @@
 ﻿import { Guid } from "guid-typescript";
 import { Time } from "@angular/common";
 import { EventCalendar } from '../business/EventCalendar';
+import { ScheduleType } from "src/app/util/enums/ScheduleType.enum";
 
 export interface QualitySchedule {
   scheduleKey: Guid,
   scheduleVersion: number,
   timeExecution: Time,
+  scheduleType: ScheduleType,
   totalRoomsWithoutSession: number,
   totalRoomsWithoutSessionMasters: number,
   totalRoomsWithoutSessionDegrees: number,
   totalRoomsWithoutSessionWork: number,
-  totalRoomsWithoutSessionAfterWor: number,
+  totalRoomsWithoutSessionAfterWork: number,
   totalRoomChangeInSessions: number,
   totalRoomChangeInSessionsMasters: number,
   totalRoomChangeInSessionsDegrees: number,

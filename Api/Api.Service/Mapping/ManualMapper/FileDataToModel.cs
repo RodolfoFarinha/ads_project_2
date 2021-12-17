@@ -328,7 +328,7 @@ namespace Api.Service.Mapping.ManualMapper
             foreach (string courseName in courseNames)
             {
                 CourseViewModel course = null;
-                courses.TryGetValue(courseName, out course);
+                courses.TryGetValue(courseName.Trim(), out course);
 
                 if (course == null)
                 {
@@ -338,7 +338,7 @@ namespace Api.Service.Mapping.ManualMapper
                         ScheduleVersion = scheduleModel.ScheduleVersion,
                         CourseKey = Guid.NewGuid(),
                         CourseType = courseName.StartsWith("M") ? CourseEnum.Master : CourseEnum.Degree,
-                        CourseName = courseName
+                        CourseName = courseName.Trim()
                     };
 
                     courses.Add(course.CourseName, course);

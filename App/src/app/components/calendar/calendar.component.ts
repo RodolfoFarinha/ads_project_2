@@ -4,6 +4,7 @@ import { Subject } from 'rxjs';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { CalendarEvent, CalendarEventAction, CalendarEventTimesChangedEvent, CalendarView } from 'angular-calendar';
 import { SharedQualityScheduleService } from 'src/app/util/shared-quality-schedule/SharedQualitySchedule.service';
+import { ScheduleType } from 'src/app/util/enums/ScheduleType.enum';
 
 const colors: any = {
   red: {
@@ -108,19 +109,28 @@ export class CalendarComponent implements OnInit {
   constructor(private modal: NgbModal, private sharedQualityScheduleService: SharedQualityScheduleService) { }
 
   ngOnInit() {
-    this.sharedQualityScheduleService.getGlobalQualitySchedule()?.eventsCalendar.forEach(eventCalendar => {
-      console.log(eventCalendar)
-      this.events.push({
-        start: new Date(eventCalendar.start.toString()),
-        end: new Date(eventCalendar.end.toString()),
-        title: eventCalendar.title,
-        color: colors.yellow,
-        actions: this.actions,
-        resizable: {
-         beforeStart: true,
-         afterEnd: true,
-        },
-        draggable: true,
+    this.sharedQualityScheduleService.getGlobalQualitySchedule()?.forEach(qualitySchedule => {
+
+      let color: any;
+
+      if (qualitySchedule.scheduleType == ScheduleType.Normal)
+        color = colors.yellow;
+      else
+        color = colors.blue;
+
+      qualitySchedule.eventsCalendar.forEach(eventCalendar => {
+        this.events.push({
+          start: new Date(eventCalendar.start.toString()),
+          end: new Date(eventCalendar.end.toString()),
+          title: eventCalendar.title,
+          color: color,
+          actions: this.actions,
+          resizable: {
+            beforeStart: true,
+            afterEnd: true,
+          },
+          draggable: true,
+        });
       });
     });
   }
