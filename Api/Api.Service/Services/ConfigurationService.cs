@@ -61,7 +61,7 @@ namespace Api.Service.Services
                 BeginTransaction();
                 var entity = GetMapperInstance().Map<ConfigurationViewModel, Configuration>(obj);
 
-                if (obj.Id > 0)
+                if (obj.ConfigurationKey != Guid.Empty)
                     entity = unitOfwork.ConfigurationRepository.Update(entity);
                 else
                     entity = unitOfwork.ConfigurationRepository.Add(entity);

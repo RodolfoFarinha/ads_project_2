@@ -251,29 +251,6 @@
             </summary>
             <param name="builder"></param>
         </member>
-        <member name="T:Api.Infra.Data.Migrations.Init">
-            <summary>
-            Init migration
-            </summary>
-        </member>
-        <member name="M:Api.Infra.Data.Migrations.Init.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <summary>
-            Up migration
-            </summary>
-            <param name="migrationBuilder"></param>
-        </member>
-        <member name="M:Api.Infra.Data.Migrations.Init.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
-            <summary>
-            Down migration
-            </summary>
-            <param name="migrationBuilder"></param>
-        </member>
-        <member name="M:Api.Infra.Data.Migrations.Init.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <summary>
-            Build target model
-            </summary>
-            <param name="modelBuilder"></param>
-        </member>
         <member name="T:Api.Infra.Data.Repository.BaseRepository`1">
             <summary>
             Base repository

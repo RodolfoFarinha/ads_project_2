@@ -1,0 +1,20 @@
+export enum ConfigurationType {
+  PropertyName,
+  PropertyDescription,
+  PropertyStatus,
+  AvailableManagement,
+  AvailableRequest,
+  BuildingName,
+  RoomName,
+  NormalCapacity,
+  ExamCapacity,
+  CourseName,
+  UnitName,
+  ShiftName,
+  ClassName,
+  StartDate,
+  EndDate,
+  Day,
+  PropertySessionName,
+  EnrolledStudents
+}

@@ -16,9 +16,8 @@ namespace Api.Infra.Data.EntityConfig
         public void Configure(EntityTypeBuilder<Course> builder)
         {
             builder.ToTable("Courses");
-            builder.HasIndex(x => x.Id).IsUnique();
-            builder.Property(x => x.Id).ValueGeneratedOnAdd();
-            builder.HasKey(x => x.CourseKey);
+            builder.HasKey(x => x.Id);
+            builder.HasIndex(x => x.CourseKey).IsUnique();
         }
     }
 }

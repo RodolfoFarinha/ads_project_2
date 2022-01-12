@@ -13,6 +13,16 @@ namespace Api.Service.ViewModels
         public Guid SessionKey { get; set; }
 
         /// <summary>
+        /// Get or Set Class Key
+        /// </summary>
+        public Guid ClassKey { get; set; }
+
+        /// <summary>
+        /// Get or Set Class Name
+        /// </summary>
+        public string ClassName { get; set; }
+
+        /// <summary>
         /// Get or Set Shift Key
         /// </summary>
         public Guid ShiftKey { get; set; }
@@ -53,6 +63,11 @@ namespace Api.Service.ViewModels
         public string RoomName { get; set; }
 
         /// <summary>
+        /// Get or Set Room Capacity
+        /// </summary>
+        public int? RoomCapacity { get; set; }
+
+        /// <summary>
         /// Get or Set Unit Key
         /// </summary>
         public Guid? UnitKey { get; set; }
@@ -86,5 +101,10 @@ namespace Api.Service.ViewModels
         /// Get or Set End Date
         /// </summary>
         public DateTime EndDate { get; set; }
+
+        /// <summary>
+        /// Get or Set Enrollments
+        /// </summary>
+        public int Enrollments { get; set; }
     }
 }

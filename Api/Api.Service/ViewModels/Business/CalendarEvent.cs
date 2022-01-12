@@ -37,7 +37,5 @@ namespace Api.Service.ViewModels
         /// Get or Set Sessions Basic Info
         /// </summary>
         public List<SessionBasicInfoViewModel> SessionsBasicInfo { get; set; }
-
-
     }
 }

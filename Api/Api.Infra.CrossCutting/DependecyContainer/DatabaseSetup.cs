@@ -26,12 +26,12 @@ namespace Api.Infra.CrossCutting.DependecyContainer
             services.AddDbContext<ApiDBContext>(options =>
             {
                 // For Mysql Database
-                options.UseMySQL(configuration.GetConnectionString("ApiDBConnection"), 
-                    x => x.MigrationsHistoryTable(("__EFMigrationsHistory_Data")));
+                //options.UseMySQL(configuration.GetConnectionString("ApiDBConnection"), 
+                //    x => x.MigrationsHistoryTable(("__EFMigrationsHistory_Data")));
 
                 // For SqlServer Database
-                //options.UseSqlServer(configuration.GetConnectionString("ApiDBConnection"),
-                //    x => x.MigrationsHistoryTable(("__EFMigrationsHistory_Data")));
+                options.UseSqlServer(configuration.GetConnectionString("ApiDBConnection"),
+                    x => x.MigrationsHistoryTable(("__EFMigrationsHistory_Data")));
             });
         }
     }

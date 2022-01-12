@@ -739,6 +739,21 @@
             Over Booking 25%
             </summary>
         </member>
+        <member name="F:Api.Domain.Enum.ScheduleTypeEnum.RoomCloseCapacity">
+            <summary>
+            Room Close Capacity
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ScheduleTypeEnum.RandomOrder">
+            <summary>
+            Random Order
+            </summary>
+        </member>
+        <member name="F:Api.Domain.Enum.ScheduleTypeEnum.AllVariables">
+            <summary>
+            Random Order
+            </summary>
+        </member>
         <member name="T:Api.Domain.Enum.ShiftEnum">
             <summary>
             Shift Enum

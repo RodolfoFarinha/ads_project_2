@@ -16,9 +16,8 @@ namespace Api.Infra.Data.EntityConfig
         public void Configure(EntityTypeBuilder<QualitySchedule> builder)
         {
             builder.ToTable("QualitySchedules");
-            builder.HasIndex(x => x.Id).IsUnique();
-            builder.Property(x => x.Id).ValueGeneratedOnAdd();
-            builder.HasKey(x => x.ScheduleKey);
+            builder.HasKey(x => x.Id);
+            builder.HasIndex(x => x.ScheduleKey).IsUnique();
         }
     }
 }

@@ -125,9 +125,19 @@ namespace Api.Service.ViewModels
         public int AvarageGapBetweenSessionsByShift { get; set; }
 
         /// <summary>
+        /// Get or Set Total Rooms Hours
+        /// </summary>
+        public double TotalRoomsHours { get; set; }
+
+        /// <summary>
         /// Get or Set Basic Sessions
         /// </summary>
         public List<CalendarEventViewModel> EventsCalendar { get; set; } = new List<CalendarEventViewModel>();
+
+        /// <summary>
+        /// Get or Set Basic Rooms
+        /// </summary>
+        public List<RoomBasicInfoViewModel> RoomsBasicInfo { get; set; } = new List<RoomBasicInfoViewModel>();
 
         /// <summary>
         /// Quality Schedule View Model Constructor

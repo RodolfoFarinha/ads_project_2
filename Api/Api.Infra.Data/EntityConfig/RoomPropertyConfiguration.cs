@@ -16,21 +16,22 @@ namespace Api.Infra.Data.EntityConfig
         public void Configure(EntityTypeBuilder<RoomProperty> builder)
         {
             builder.ToTable("RoomProperties");
-            builder.HasIndex(x => x.Id).IsUnique();
-            builder.Property(x => x.Id).ValueGeneratedOnAdd();
-            builder.HasKey(x => x.RoomPropertyKey);
+            builder.HasKey(x => x.Id);
+            builder.HasIndex(x => x.RoomPropertyKey).IsUnique();
             builder.HasIndex(x => new { x.RoomKey, x.PropertyKey }).IsUnique();
 
             builder
                 .HasOne(x => x.Room)
                 .WithMany(x => x.RoomProperties)
-                .HasForeignKey(x => x.RoomKey)
+                .HasPrincipalKey(x => x.RoomKey)
+                .HasForeignKey(x => x.RoomKey)            
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder
                 .HasOne(x => x.Property)
                 .WithMany(x => x.PropertyRooms)
-                .HasForeignKey(x => x.PropertyKey)
+                .HasPrincipalKey(x => x.PropertyKey)
+                .HasForeignKey(x => x.PropertyKey)                
                 .OnDelete(DeleteBehavior.Restrict);
         }
     }

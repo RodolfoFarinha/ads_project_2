@@ -8,68 +8,68 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0m2zNycNLk6PFlrSFEilFwAAAAACAAAAAAAQZgAAAAEAACAAAAAtRPyVChc6fXcghpC04A7iljth5c3jV2gA33NiC+Y4eAAAAAAOgAAAAAIAACAAAAD/RIkr4Acdo7Z+BHCSv+QmQOoywPWlIFeybyVZz4EcASAAAAAEKakP9ATnEVmu6tkwv83V9w0H5CO9JMPwUKAImaB6eUAAAADdw9B+sVCK1Xcoy8EyiqPaMo8gsoNhuCbp9mAjwacLbgLuAOcc/hKty3fc0ZW3nsPPxwCTO8cghf9L2lDDP8iu</EncryptedPassword>
     <_PublishTargetUrl>ftp://130.185.84.165/api.damm-it.pt</_PublishTargetUrl>
-    <History>True|2021-12-17T17:50:35.8007298Z;False|2021-12-17T17:46:46.7243215+00:00;</History>
+    <History>True|2022-01-12T21:06:53.5243672Z;True|2022-01-12T21:04:24.2624027+00:00;False|2022-01-12T21:03:36.9153576+00:00;True|2022-01-12T20:58:51.7169006+00:00;False|2022-01-12T20:58:06.8360503+00:00;True|2022-01-12T20:52:06.0726641+00:00;True|2022-01-12T20:25:57.0407525+00:00;True|2022-01-02T11:20:38.0889988+00:00;True|2021-12-31T19:41:28.2529629+00:00;True|2021-12-31T19:40:53.3813657+00:00;True|2021-12-17T17:50:35.8007298+00:00;False|2021-12-17T17:46:46.7243215+00:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="Api.deps.json">
-      <publishTime>12/17/2021 17:50:13</publishTime>
+      <publishTime>01/12/2022 21:06:33</publishTime>
     </File>
     <File Include="Api.dll">
-      <publishTime>12/17/2021 17:50:10</publishTime>
+      <publishTime>01/12/2022 21:06:30</publishTime>
     </File>
     <File Include="Api.Domain.dll">
-      <publishTime>12/17/2021 17:43:59</publishTime>
+      <publishTime>01/09/2022 10:46:07</publishTime>
     </File>
     <File Include="Api.Domain.pdb">
-      <publishTime>12/17/2021 17:43:59</publishTime>
+      <publishTime>01/09/2022 10:46:07</publishTime>
     </File>
     <File Include="Api.Domain.xml">
-      <publishTime>12/17/2021 17:43:59</publishTime>
+      <publishTime>01/09/2022 10:46:07</publishTime>
     </File>
     <File Include="Api.exe">
-      <publishTime>12/17/2021 17:50:10</publishTime>
+      <publishTime>01/12/2022 21:06:30</publishTime>
     </File>
     <File Include="Api.Infra.CrossCutting.dll">
-      <publishTime>12/17/2021 17:44:03</publishTime>
+      <publishTime>01/12/2022 20:25:30</publishTime>
     </File>
     <File Include="Api.Infra.CrossCutting.pdb">
-      <publishTime>12/17/2021 17:44:03</publishTime>
+      <publishTime>01/12/2022 20:25:30</publishTime>
     </File>
     <File Include="Api.Infra.CrossCutting.xml">
-      <publishTime>12/17/2021 17:44:03</publishTime>
+      <publishTime>01/12/2022 20:25:30</publishTime>
     </File>
     <File Include="Api.Infra.Data.dll">
-      <publishTime>12/17/2021 17:44:01</publishTime>
+      <publishTime>01/09/2022 10:46:09</publishTime>
     </File>
     <File Include="Api.Infra.Data.pdb">
-      <publishTime>12/17/2021 17:44:01</publishTime>
+      <publishTime>01/09/2022 10:46:09</publishTime>
     </File>
     <File Include="Api.Infra.Data.xml">
-      <publishTime>12/17/2021 17:44:01</publishTime>
+      <publishTime>01/09/2022 10:46:08</publishTime>
     </File>
     <File Include="Api.pdb">
-      <publishTime>12/17/2021 17:50:10</publishTime>
+      <publishTime>01/12/2022 21:06:30</publishTime>
     </File>
     <File Include="Api.runtimeconfig.json">
       <publishTime>12/17/2021 17:44:04</publishTime>
     </File>
     <File Include="Api.Service.dll">
-      <publishTime>12/17/2021 17:44:00</publishTime>
+      <publishTime>01/12/2022 20:25:28</publishTime>
     </File>
     <File Include="Api.Service.pdb">
-      <publishTime>12/17/2021 17:44:00</publishTime>
+      <publishTime>01/12/2022 20:25:28</publishTime>
     </File>
     <File Include="Api.Service.xml">
-      <publishTime>12/17/2021 17:44:00</publishTime>
+      <publishTime>01/12/2022 20:25:28</publishTime>
     </File>
     <File Include="Api.xml">
-      <publishTime>12/17/2021 17:50:10</publishTime>
+      <publishTime>01/12/2022 21:06:30</publishTime>
     </File>
     <File Include="appsettings.Development.json">
-      <publishTime>11/15/2021 19:49:48</publishTime>
+      <publishTime>12/31/2021 10:13:56</publishTime>
     </File>
     <File Include="appsettings.json">
-      <publishTime>12/17/2021 17:42:17</publishTime>
+      <publishTime>12/31/2021 19:39:51</publishTime>
     </File>
     <File Include="AutoMapper.dll">
       <publishTime>10/16/2020 15:36:54</publishTime>
@@ -96,7 +96,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/17/2021 21:31:52</publishTime>
     </File>
     <File Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll">
-      <publishTime>08/17/2021 21:37:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Microsoft.Data.SqlClient.dll">
       <publishTime>08/25/2020 23:24:48</publishTime>
@@ -126,7 +126,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2020 18:48:28</publishTime>
     </File>
     <File Include="Microsoft.Extensions.DependencyInjection.Abstractions.dll">
-      <publishTime>10/19/2020 18:48:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Microsoft.Extensions.DependencyInjection.dll">
       <publishTime>06/15/2021 19:12:50</publishTime>
@@ -279,7 +279,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/28/2021 05:28:28</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>12/17/2021 17:50:13</publishTime>
+      <publishTime>01/12/2022 21:06:33</publishTime>
     </File>
     <File Include="ZstdNet.dll">
       <publishTime>09/28/2021 05:28:28</publishTime>

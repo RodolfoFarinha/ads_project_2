@@ -1,0 +1,71 @@
+<div style="width: 100%; text-align: center;">
+  <div class="table-container">
+
+    <br>
+    <div style="width: 100%;">
+      <div class="form-group form-margin" style="width: 200px; margin: auto;">
+        <label for="algorithm">Algoritmo:</label>
+        <select #mySelect class="form-control"  (change)="changeAlgorithm(mySelect.value)">
+          <option *ngFor="let name of scheduleTypes" [value]="name"> {{scheduleTypesEnum[name]}} </option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <p-table [value]="events!" dataKey="scheduleKey" responsiveLayout="scroll">
+      <ng-template pTemplate="header">
+        <tr>
+          <th style="width: 3rem"></th>
+          <th pSortableColumn="start">Início <p-sortIcon field="start"></p-sortIcon></th>
+          <th pSortableColumn="end">Fim <p-sortIcon field="end"></p-sortIcon></th>
+          <th pSortableColumn="totalSessionsWithoutRoom">Aulas sem Salas <p-sortIcon field="totalSessionsWithoutRoom"></p-sortIcon></th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-event let-expanded="expanded">
+        <tr>
+          <td>
+            <button pButton type="button" pButton pRipple [pRowToggler]="event" class="p-button-text p-button-rounded p-button-plain" icon="expanded ? 'fas fa-chevron-down' : 'fas fa-chevron-right'"></button>
+          </td>
+          <td>{{event.start | DateTimeFormatPipe}}</td>
+          <td>{{event.end | DateTimeFormatPipe}}</td>
+          <td>{{event.totalSessionsWithoutRoom}}</td>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="rowexpansion" let-event>
+        <tr>
+          <td colspan="4">
+            <div class="p-p-3">
+              <p-table [value]="event.sessionsBasicInfo" dataKey="id">
+                <ng-template pTemplate="header">
+                  <tr>
+                    <th pSortableColumn="unitName">Disciplina <p-sortIcon field="unitName"></p-sortIcon></th>
+                    <th pSortableColumn="shiftName">Truno <p-sortIcon field="shiftName"></p-sortIcon></th>
+                    <th pSortableColumn="enrollments">Inscritos <p-sortIcon field="enrollments"></p-sortIcon>
+                    <th pSortableColumn="buildingName">Edifício <p-sortIcon field="buildingName"></p-sortIcon></th>
+                    <th pSortableColumn="roomName">Sala <p-sortIcon field="roomName"></p-sortIcon></th>
+                    <th pSortableColumn="roomCapacity">Capacidade <p-sortIcon field="roomCapacity"></p-sortIcon></th>
+                  </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-sessionBasicInfo>
+                  <tr>
+                    <td>{{sessionBasicInfo.unitName}}</td>
+                    <td>{{sessionBasicInfo.shiftName}}</td>
+                    <td>{{sessionBasicInfo.enrollments}}</td>
+                    <td>{{sessionBasicInfo.buildingName}}</td>
+                    <td>{{sessionBasicInfo.roomName}}</td>
+                    <td>{{sessionBasicInfo.roomCapacity}}</td>
+                  </tr>
+                </ng-template>
+                <ng-template pTemplate="emptymessage">
+                  <tr>
+                    <td colspan="6">Não existem aulas para esta slot</td>
+                  </tr>
+                </ng-template>
+              </p-table>
+            </div>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+    <br>
+  </div>
+</div>

@@ -14,7 +14,7 @@
             Generate calendar based on sessions and rooms 
             </summary>
         </member>
-        <member name="M:Api.Service.Business.ScheduleCalculater.GetAvailableRoom(System.Collections.Generic.IEnumerable{Api.Service.ViewModels.RoomViewModel},Api.Service.ViewModels.SessionViewModel,System.Decimal)">
+        <member name="M:Api.Service.Business.ScheduleCalculater.GetAvailableRoom(Api.Service.ViewModels.QualityScheduleViewModel,System.Collections.Generic.IEnumerable{Api.Service.ViewModels.RoomViewModel},Api.Service.ViewModels.SessionViewModel,System.Decimal)">
             <summary>
             Get available room based in date
             </summary>
@@ -1109,6 +1109,46 @@
             Get or Set Secundary Color
             </summary>
         </member>
+        <member name="T:Api.Service.ViewModels.RoomBasicInfoViewModel">
+            <summary>
+            Room basic info model
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomBasicInfoViewModel.RoomKey">
+            <summary>
+            Get or Set Room Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomBasicInfoViewModel.RoomName">
+            <summary>
+            Get or Set Room Name
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomBasicInfoViewModel.RoomCapacity">
+            <summary>
+            Get or Set Room Capacity
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomBasicInfoViewModel.BuildingKey">
+            <summary>
+            Get or Set Building Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomBasicInfoViewModel.BuildingName">
+            <summary>
+            Get or Set Building Name
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomBasicInfoViewModel.TotalHoursAllocated">
+            <summary>
+            Get or Set Total Hours Allocated
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.RoomBasicInfoViewModel.AllocationPercentage">
+            <summary>
+            Get or Set Allocation Percentage
+            </summary>
+        </member>
         <member name="T:Api.Service.ViewModels.SessionBasicInfoViewModel">
             <summary>
             Session basic info model
@@ -1117,6 +1157,16 @@
         <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.SessionKey">
             <summary>
             Get or Set Session Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.ClassKey">
+            <summary>
+            Get or Set Class Key
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.ClassName">
+            <summary>
+            Get or Set Class Name
             </summary>
         </member>
         <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.ShiftKey">
@@ -1159,6 +1209,11 @@
             Get or Set Room Name
             </summary>
         </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.RoomCapacity">
+            <summary>
+            Get or Set Room Capacity
+            </summary>
+        </member>
         <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.UnitKey">
             <summary>
             Get or Set Unit Key
@@ -1192,6 +1247,11 @@
         <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.EndDate">
             <summary>
             Get or Set End Date
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.SessionBasicInfoViewModel.Enrollments">
+            <summary>
+            Get or Set Enrollments
             </summary>
         </member>
         <member name="T:Api.Service.ViewModels.BaseModel">
@@ -1529,9 +1589,19 @@
             Get or Set Avarage Gap Between Sessions By Shift
             </summary>
         </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.TotalRoomsHours">
+            <summary>
+            Get or Set Total Rooms Hours
+            </summary>
+        </member>
         <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.EventsCalendar">
             <summary>
             Get or Set Basic Sessions
+            </summary>
+        </member>
+        <member name="P:Api.Service.ViewModels.QualityScheduleViewModel.RoomsBasicInfo">
+            <summary>
+            Get or Set Basic Rooms
             </summary>
         </member>
         <member name="M:Api.Service.ViewModels.QualityScheduleViewModel.#ctor(Api.Domain.Enum.ScheduleTypeEnum)">

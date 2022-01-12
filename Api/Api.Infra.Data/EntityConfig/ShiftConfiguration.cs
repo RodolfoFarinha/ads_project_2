@@ -16,14 +16,14 @@ namespace Api.Infra.Data.EntityConfig
         public void Configure(EntityTypeBuilder<Shift> builder)
         {
             builder.ToTable("Shifts");
-            builder.HasIndex(x => x.Id).IsUnique();
-            builder.Property(x => x.Id).ValueGeneratedOnAdd();
-            builder.HasKey(x => x.ShiftKey);
+            builder.HasKey(x => x.Id);
+            builder.HasIndex(x => x.ShiftKey).IsUnique();
 
             builder
                 .HasOne(x => x.Unit)
                 .WithMany(x => x.Shifts)
-                .HasForeignKey(x => x.UnitKey)
+                .HasPrincipalKey(x => x.UnitKey)
+                .HasForeignKey(x => x.UnitKey)               
                 .OnDelete(DeleteBehavior.Restrict);
         }
     }

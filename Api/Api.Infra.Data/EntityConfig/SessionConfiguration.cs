@@ -16,20 +16,21 @@ namespace Api.Infra.Data.EntityConfig
         public void Configure(EntityTypeBuilder<Session> builder)
         {
             builder.ToTable("Sessions");
-            builder.HasIndex(x => x.Id).IsUnique();
-            builder.Property(x => x.Id).ValueGeneratedOnAdd();
-            builder.HasKey(x => x.SessionKey);
+            builder.HasKey(x => x.Id);
+            builder.HasIndex(x => x.SessionKey).IsUnique();
 
             builder
                 .HasOne(x => x.Shift)
                 .WithMany(x => x.Sessions)
-                .HasForeignKey(x => x.ShiftKey)
+                .HasPrincipalKey(x => x.ShiftKey)
+                .HasForeignKey(x => x.ShiftKey)              
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder
                 .HasOne(x => x.Property)
                 .WithMany(x => x.Sessions)
-                .HasForeignKey(x => x.PropertyKey)
+                .HasPrincipalKey(x => x.PropertyKey)
+                .HasForeignKey(x => x.PropertyKey)              
                 .OnDelete(DeleteBehavior.Restrict);
         }
     }

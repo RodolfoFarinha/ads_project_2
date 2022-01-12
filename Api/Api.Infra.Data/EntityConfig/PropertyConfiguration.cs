@@ -16,9 +16,8 @@ namespace Api.Infra.Data.EntityConfig
         public void Configure(EntityTypeBuilder<Property> builder)
         {
             builder.ToTable("Properties");
-            builder.HasIndex(x => x.Id).IsUnique();
-            builder.Property(x => x.Id).ValueGeneratedOnAdd();
-            builder.HasKey(x => x.PropertyKey);
+            builder.HasKey(x => x.Id);
+            builder.HasIndex(x => x.PropertyKey).IsUnique();
         }
     }
 }

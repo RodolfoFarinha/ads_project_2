@@ -13,6 +13,21 @@
         /// <summary>
         /// Over Booking 25%
         /// </summary>
-        OverBooking25
+        OverBooking25,
+
+        /// <summary>
+        /// Room Close Capacity
+        /// </summary>
+        RoomCloseCapacity,
+
+        /// <summary>
+        /// Random Order
+        /// </summary>
+        RandomOrder,
+
+        /// <summary>
+        /// Random Order
+        /// </summary>
+        AllVariables,
     }
 }

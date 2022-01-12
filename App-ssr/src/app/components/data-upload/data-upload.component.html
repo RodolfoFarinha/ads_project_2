@@ -1,0 +1,176 @@
+<div class="data-upload-container">
+  <div style="padding: 20px">
+
+    <div class="form-row">
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label>Lista de Característias:</label>
+          <input #properties type="file" id="properties" class="form-control input-file" style="height: 45px;"
+            accept='csv/*' (change)="propertiesFileChage(properties.files)">
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label>Lista de Salas:</label>
+          <input #rooms type="file" id="rooms" class="form-control input-file" style="height: 45px;" accept='csv/*'
+            (change)="roomsFileChage(rooms.files)">
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label>Lista de Aulas:</label>
+          <input #sessions type="file" id="sessions" class="form-control input-file" style="height: 45px;"
+            accept='csv/*' (change)="sessionsFileChage(sessions.files)">
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="form-row">
+      <div class="col-lg-6">
+        <div>
+          <div style="width: 100%; text-align: center;">
+            <label style="font-weight: bold;">Propriedades das Características</label>
+          </div>
+
+          <div class="form-group">
+            <label>Nome da Característica</label>
+            <input #PropertyName type="text" id="PropertyName" class="form-control" [(ngModel)]="propertyName.value"
+              (keyup)="propertyChange()">
+          </div>
+
+          <div class="form-group">
+            <label>Descrição da Característica</label>
+            <input #PropertyDescription type="text" id="PropertyDescription" class="form-control"
+              [(ngModel)]="propertyDescription.value" (keyup)="propertyChange()">
+          </div>
+
+          <div class="form-group">
+            <label>Estado</label>
+            <input #PropertyStatus type="text" id="PropertyStatus" class="form-control"
+              [(ngModel)]="propertyStatus.value" (keyup)="propertyChange()">
+          </div>
+
+          <div class="form-group">
+            <label>Disponibilidade na Gestão de Aulas</label>
+            <input #AvailableManagement type="text" id="AvailableManagement" class="form-control"
+              [(ngModel)]="availableManagement.value" (keyup)="propertyChange()">
+          </div>
+
+          <div class="form-group">
+            <label>Disponibilidade no Pedido de Sala de Aula</label>
+            <input #AvailableRequest type="text" id="AvailableRequest" class="form-control"
+              [(ngModel)]="availableRequest.value" (keyup)="propertyChange()">
+          </div>
+
+          <div style="width: 100%; text-align: center; margin-top: 32px;">
+            <label style="font-weight: bold;">Propriedades das Salas</label>
+          </div>
+
+          <div class="form-group">
+            <label>Edifício</label>
+            <input #BuildingName type="text" id="BuildingName" class="form-control" [(ngModel)]="buildingName.value"
+              (keyup)="propertyChange()">
+          </div>
+
+          <div class="form-group">
+            <label>Sala</label>
+            <input #RoomName type="text" id="RoomName" class="form-control" [(ngModel)]="roomName.value"
+              (keyup)="propertyChange()">
+          </div>
+
+          <div class="form-group">
+            <label>Capacidade Normal</label>
+            <input #NormalCapacity type="text" id="NormalCapacity" class="form-control"
+              [(ngModel)]="normalCapacity.value" (keyup)="propertyChange()">
+          </div>
+
+          <div class="form-group">
+            <label>Capacidade Exame</label>
+            <input #ExamCapacity type="text" id="ExamCapacity" class="form-control" [(ngModel)]="examCapacity.value"
+              (keyup)="propertyChange()">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" style="border-left: 1px solid rgba(0, 0, 0, 0.1)">
+        <div>
+          <div style="width: 100%; text-align: center;">
+            <label style="font-weight: bold;">Propriedades das Aulas</label>
+          </div>
+
+          <div class="form-group">
+            <label>Curso</label>
+            <input #CourseName type="text" id="CourseName" class="form-control" [(ngModel)]="courseName.value"
+              (keyup)="propertyChange()">
+          </div>
+
+          <div class="form-group">
+            <label>Unidade Curricular</label>
+            <input #UnitName type="text" id="UnitName" class="form-control" [(ngModel)]="unitName.value"
+              (keyup)="propertyChange()">
+          </div>
+
+          <div class="form-group">
+            <label>Turno</label>
+            <input #ShiftName type="text" id="ShiftName" class="form-control" [(ngModel)]="shiftName.value"
+              (keyup)="propertyChange()">
+          </div>
+
+          <div class="form-group">
+            <label>Turma</label>
+            <input #ClassName type="text" id="ClassName" class="form-control" [(ngModel)]="className.value"
+              (keyup)="propertyChange()">
+          </div>
+
+          <div class="form-group">
+            <label>Início da Aula</label>
+            <input #StartDate type="text" id="StartDate" class="form-control" [(ngModel)]="startDate.value"
+              (keyup)="propertyChange()">
+          </div>
+
+          <div style="height: 45px;"></div>
+
+          <div class="form-group">
+            <label>Fim da Aula</label>
+            <input #EndDate type="text" id="EndDate" class="form-control" [(ngModel)]="endDate.value"
+              (keyup)="propertyChange()">
+          </div>
+
+          <div class="form-group">
+            <label>Dia da Aula</label>
+            <input #Day type="text" id="Day" class="form-control" [(ngModel)]="day.value" (keyup)="propertyChange()">
+          </div>
+
+          <div class="form-group">
+            <label>Caracterisitcas da Sala</label>
+            <input #PropertySessionName type="text" id="PropertySessionName" class="form-control"
+              [(ngModel)]="propertySessionName.value" (keyup)="propertyChange()">
+          </div>
+
+          <div class="form-group">
+            <label>Nº Inscritos</label>
+            <input #EnrolledStudents type="text" id="EnrolledStudents" class="form-control"
+              [(ngModel)]="enrolledStudents.value" (keyup)="propertyChange()">
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <hr>
+    <div style="width: 100%; display: flex; justify-content: center;">
+
+      <div class="btn" style="background-color: black; color: white;" (click)="calcular()">Calcular</div>
+      <div class="btn" style="background-color: black; color: white; margin-left: 15px;" (click)="downloadCSV()">Download CSV</div>
+      <div style="margin-left: 5px;">
+        <select #mySelect class="form-control" (change)="changeAlgorithm(mySelect.value)">
+          <option *ngFor="let name of scheduleTypes" [value]="name"> {{scheduleTypesEnum[name]}} </option>
+        </select>
+      </div>
+
+    </div>
+  </div>
+</div>
+<br>

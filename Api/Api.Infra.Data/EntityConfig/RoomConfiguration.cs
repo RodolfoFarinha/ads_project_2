@@ -16,13 +16,13 @@ namespace Api.Infra.Data.EntityConfig
         public void Configure(EntityTypeBuilder<Room> builder)
         {
             builder.ToTable("Rooms");
-            builder.HasIndex(x => x.Id).IsUnique();
-            builder.Property(x => x.Id).ValueGeneratedOnAdd();
-            builder.HasKey(x => x.RoomKey);
+            builder.HasKey(x => x.Id);
+            builder.HasIndex(x => x.RoomKey).IsUnique();
 
             builder
                 .HasOne(x => x.Building)
                 .WithMany(x => x.Rooms)
+                .HasPrincipalKey(x => x.BuildingKey)
                 .HasForeignKey(x => x.BuildingKey)
                 .OnDelete(DeleteBehavior.Restrict);
         }

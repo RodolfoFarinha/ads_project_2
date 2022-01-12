@@ -16,19 +16,20 @@ namespace Api.Infra.Data.EntityConfig
         public void Configure(EntityTypeBuilder<Slot> builder)
         {
             builder.ToTable("Slots");
-            builder.HasIndex(x => x.Id).IsUnique();
-            builder.Property(x => x.Id).ValueGeneratedOnAdd();
-            builder.HasKey(x => x.SlotKey);
+            builder.HasKey(x => x.Id);
+            builder.HasIndex(x => x.SlotKey).IsUnique();
 
             builder
                 .HasOne(x => x.Session)
                 .WithMany(x => x.Slots)
-                .HasForeignKey(x => x.SessionKey)
+                .HasPrincipalKey(x => x.SessionKey)
+                .HasForeignKey(x => x.SessionKey)              
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder
                 .HasOne(x => x.Room)
                 .WithMany(x => x.Slots)
+                .HasPrincipalKey(x => x.RoomKey)
                 .HasForeignKey(x => x.RoomKey)
                 .OnDelete(DeleteBehavior.Restrict);
         }
